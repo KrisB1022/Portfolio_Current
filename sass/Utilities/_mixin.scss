@@ -1,0 +1,71 @@
+// ===================================
+// Mixins
+// ===================================
+
+
+// Creating Fonts
+@mixin font-face($familyName, $fileName, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $familyName;
+    src: url('#{$fonts-folder}/#{$fileName}.eot');
+    src: url('#{$fonts-folder}/#{$fileName}.eot?#iefix') format('embedded-opentype'),
+         url('#{$fonts-folder}/#{$fileName}.woff') format('woff'),
+         url('#{$fonts-folder}/#{$fileName}.ttf') format('truetype');
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+
+// Media Queries
+@mixin mq( $size ) {
+	@if $size == 'small' {
+		@media screen and ( min-width: $break-small ) {
+			@content;
+		}
+	} 
+	@else if $size == 'medium' {
+		@media screen and ( min-width: $break-medium ) {
+			@content;
+		}
+	} 
+	@else if $size == 'large' {
+		@media screen and ( min-width: $break-large ) {
+			@content;
+		}
+	}
+	@else if $size == 'retina' {
+		@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+			@content;
+		}
+	}
+	@else {
+		@error "Uh Oh! '#{$size}' is not a valid value."
+	}
+}
+
+
+// For images
+@mixin bgImage( $fileName, $w, $h, $altFolder: null ) {
+	@if ( $altFolder ) {
+		background-image: image-url( '#{$altFolder}/#{$fileName}_1x.png' );
+		@include mq(retina) {
+			background-image: image-url( '#{$altFolder}/retina/#{$fileName}_2x.png' );
+		}
+	} @else {
+		background-image: image-url( '#{$fileName}_1x.png' );
+		@include mq(retina) {
+			background-image: image-url( 'retina/#{$fileName}_2x.png' );
+		}
+	}
+	.innerImg {
+		padding-top: per($h, $w)
+	}
+}
+
+
+@mixin verticalCenter {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}

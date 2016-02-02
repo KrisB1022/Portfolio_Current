@@ -1,0 +1,34 @@
+//==================================================
+//	Base Styles
+//==================================================
+body {
+	@include container( $break-large );
+	// font-family: $font-family-primary; 
+	color: $black;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	margin: autpo;
+}
+// Just to make sure Susy is with us :)
+* {
+	@include border-box-sizing;
+}
+img {
+	max-width: 100% !important;
+	height: auto;
+}
+a {
+	// normal, hover, active, visited, focus
+	// @include link-colors($white, $mercury, $white, inherit);
+	text-decoration: none; 
+}
+li {
+	list-style: none;
+}
+
+
+// Helpful docs: http://compass-style.org/reference/compass/typography/vertical_rhythm/
+@include establish-baseline( $base-font-size );
+
+// Specific Element styling is located in Layout/_globals.scss
+
