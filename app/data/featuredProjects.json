@@ -1,0 +1,20 @@
+[
+	{
+		"projectTitle": "Project Title",
+		"projectDesciption": "Description of project",
+		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+		"imgAlt": "Alt Text Here"
+	},
+	{
+		"projectTitle": "Project Title",
+		"projectDesciption": "Description of project",
+		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+		"imgAlt": "Alt Text Here"
+	},
+	{
+		"projectTitle": "Project Title",
+		"projectDesciption": "Description of project",
+		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+		"imgAlt": "Alt Text Here"
+	}
+]
