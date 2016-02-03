@@ -1,24 +1,24 @@
 (function($) {
 	"use strict"
 
-	var currentPage = 'home';
-
 	angular.module("myPortfolio", ['ngRoute'])
 		.config(["$routeProvider", "$sceProvider", function($routeProvider, $sceProvider) {
 			$routeProvider
 			.when('/', {
-				templateUrl: 'home.html',
+				templateUrl: 'app/templates/home.html',
 				controller: 'LandingController',
-				resolve: function() {
-					currentPage = 'home';
-				}
 			})
-			.when('/work.html', {
-				templateUrl: 'work.html',
+			.when('/work', {
+				templateUrl: 'app/templates/work.html',
 				controller: "WorkController",
-				resolve: function() {
-					currentPage = 'work';
-				}
+			})
+			.when('/work/:project', {
+				templateUrl: 'app/templates/project_single.html',
+				controller: "SingleProjectController"
+			})
+			.when('/contact', {
+				templateUrl: 'app/templates/contact.html',
+				controller: "ContactController",
 			})
 			.otherwise({ redirectTo: '/' });
 
@@ -27,18 +27,10 @@
 
 		.controller("MainNav", ["$scope", function($scope) {
 			/* Dynamically sets nav links on pages */
-			var home = {"href": "home.html", "link": "home"},
-				contact = {"href": "contact.html", "link": "contact"},
-				work = {"href": "work.html", "link": "work"};
-			$scope.navLinks = function() {
-				if (currentPage ==  'work') {
-					return [ home, contact ]; 
-				} else if (currentPage == 'contact') {
-					return [ home, work ];
-				} else {
-					return [ work, contact ];
-				}
-			}();
+			var home = {"href": "home", "link": "home"},
+				contact = {"href": "contact", "link": "contact"},
+				work = {"href": "work", "link": "work"};
+			$scope.navLinks = [home, work, contact];
 		}])
 		
 		;
