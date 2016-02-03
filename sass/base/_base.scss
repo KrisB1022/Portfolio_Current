@@ -32,3 +32,9 @@ li {
 
 // Specific Element styling is located in Layout/_globals.scss
 
+
+// For the honey pot
+label[for="winnie_the_pooh"],
+input[name="winnie_the_pooh"] {
+	display: none;
+}

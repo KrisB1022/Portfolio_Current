@@ -477,6 +477,12 @@ html {
   line-height: 1.14286em;
 }
 
+/* line 37, ../sass/base/_base.scss */
+label[for="winnie_the_pooh"],
+input[name="winnie_the_pooh"] {
+  display: none;
+}
+
 /*Global Settings*/
 /* line 2, ../sass/Modules/_images.scss */
 .img {

@@ -1,7 +1,7 @@
 (function($) {
 	"use strict"
 
-	angular.module("myPortfolio", ['ngRoute'])
+	angular.module("myPortfolio", ['ngRoute', 'ngMessages'])
 		.config(["$routeProvider", "$sceProvider", function($routeProvider, $sceProvider) {
 			$routeProvider
 			.when('/', {
@@ -17,17 +17,21 @@
 				controller: "SingleProjectController"
 			})
 			.when('/contact', {
-				templateUrl: 'app/templates/contact.html',
-				controller: "ContactController",
+				templateUrl: 'app/templates/contact.php',
+				controller: "ContactController"
 			})
-			.otherwise({ redirectTo: '/' });
+			.when('/404', {
+				templateUrl: 'app/templates/404.html',
+				controller: "404Controller"
+			})
+			.otherwise({ redirectTo: '/404' });
 
 			$sceProvider.enabled(false);
 		}])
 
-		.controller("MainNav", ["$scope", function($scope) {
+		.controller("MainController", ["$scope", function($scope) {
 			/* Dynamically sets nav links on pages */
-			var home = {"href": "home", "link": "home"},
+			var home = {"href": "", "link": "home"},
 				contact = {"href": "contact", "link": "contact"},
 				work = {"href": "work", "link": "work"};
 			$scope.navLinks = [home, work, contact];

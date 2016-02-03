@@ -3,18 +3,21 @@
 		"projectTitle": "Project Title",
 		"projectDesciption": "Description of project",
 		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
-		"imgAlt": "Alt Text Here"
+		"imgAlt": "Alt Text Here",
+		"projectURL": "surface"
 	},
 	{
 		"projectTitle": "Project Title",
 		"projectDesciption": "Description of project",
 		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
-		"imgAlt": "Alt Text Here"
+		"imgAlt": "Alt Text Here",
+		"projectURL": "band"
 	},
 	{
 		"projectTitle": "Project Title",
 		"projectDesciption": "Description of project",
 		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
-		"imgAlt": "Alt Text Here"
+		"imgAlt": "Alt Text Here",
+		"projectURL": "reactor"
 	}
 ]

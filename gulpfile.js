@@ -93,7 +93,7 @@ gulp.task('browser-sync', function() {
 		debug: true,
 		// autostart browser
 		browser: ["google chrome"],
-		port: 8100
+		port: 8080
 	});
 });
 

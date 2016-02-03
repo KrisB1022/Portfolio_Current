@@ -20,12 +20,11 @@ angular.module("myPortfolio")
 				console.log('added')
 				$scope.project = $scope.projects[projectID];
 			} else {
-				alert("Sorry, there is no project by that path");
-				return;
+				$location.url('/404'); // TODO: Add Error/404 Page
 			}
 
 		}, function(response) {
-			console.log("An error occured in the SingleProjectController: " + response.statusText)
+			console.log("An error occurred in the SingleProjectController: " + response.statusText)
 		});
 
 
