@@ -18,7 +18,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-messages.js"></script>
 
     </head>
-    <body ng-controller="MainController">
+    <body ng-controller="MainController" class="{{ currentPageClass() }}">
         <!--[if lt IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -26,9 +26,8 @@
         <nav>
             <h2>Kris<span>Byrum</span></h2>
             <ul>
-                <li ng-repeat="navLink in navLinks">
-                    <a href="#/{{ navLink.href }}">{{ navLink.link }}</a>
-                </li>
+                <li><a href="#/">home</a></li>
+                <li><a href="#/contact">contact</a></li>
             </ul>
         </nav>
 
@@ -42,7 +41,6 @@
         <!-- build:js js/footer.js -->
         <script src="js/app.js"></script>         
         <script src="app/controllers/LandingController.js"></script>
-        <script src="app/controllers/WorkController.js"></script>
         <script src="app/controllers/ContactController.js"></script>
         <script src="app/controllers/SingleProjectController.js"></script>
         <script src="app/controllers/404Controller.js"></script>

@@ -1,5 +1,5 @@
-<section ng-controller="LandingController">
-home.html
+<section ng-controller="ProjectsController">
+
 	<div>
 		<h1>{{ title }}</h1>
 		<p>{{ introduction }}</p>
@@ -7,12 +7,14 @@ home.html
 
 
 	<div>
-		<div ng-repeat="project in projects">
-			<img ng-src="{{ project.imgURL }}" alt="{{ project.imgAlt }}">
-			<div>
-				<h3>{{ project.projectTitle }}</h3>
-				<p>{{ project.projectDesciption }}</p>
-			</div>
+		<div ng-repeat="project in projects|limitTo:8">
+			<a href="#/project/{{ project.projectURL }}">
+				<img ng-src="{{ project.imgURL }}" alt="{{ project.imgAlt }}">
+				<div>
+					<h3>{{ project.projectTitle }}</h3>
+					<p>{{ project.projectSummary }}</p>
+				</div>
+			</a>
 		</div>
 	</div>
 </section>

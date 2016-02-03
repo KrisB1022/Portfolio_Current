@@ -6,13 +6,9 @@
 			$routeProvider
 			.when('/', {
 				templateUrl: 'app/templates/home.html',
-				controller: 'LandingController',
+				controller: 'ProjectsController',
 			})
-			.when('/work', {
-				templateUrl: 'app/templates/work.html',
-				controller: "WorkController",
-			})
-			.when('/work/:project', {
+			.when('/project/:project', {
 				templateUrl: 'app/templates/project_single.html',
 				controller: "SingleProjectController"
 			})
@@ -20,21 +16,25 @@
 				templateUrl: 'app/templates/contact.php',
 				controller: "ContactController"
 			})
-			.when('/404', {
+			.when('/_404', {
 				templateUrl: 'app/templates/404.html',
 				controller: "404Controller"
 			})
-			.otherwise({ redirectTo: '/404' });
+			.otherwise({ redirectTo: '/_404' });
 
 			$sceProvider.enabled(false);
 		}])
 
-		.controller("MainController", ["$scope", function($scope) {
-			/* Dynamically sets nav links on pages */
-			var home = {"href": "", "link": "home"},
-				contact = {"href": "contact", "link": "contact"},
-				work = {"href": "work", "link": "work"};
-			$scope.navLinks = [home, work, contact];
+		.controller("MainController", ["$scope", "$location", function($scope, $location) {
+			/* dynamically attach current page to body */
+			$scope.currentPageClass = function() {
+				var path = $location.path();
+				if(path.slice(1)) {
+					return path.slice(1);
+				} else {
+					return 'home';
+				}
+			}
 		}])
 		
 		;

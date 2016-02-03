@@ -1,7 +1,7 @@
 <section ng-controller="SingleProjectController">
-	Single Project page
 
-
-	<p ng-repeat="item in project">{{ item }}</p>
+	<h1>{{ project.projectTitle }}</h1>
+	<img ng-src="{{ project.imgURL }}" alt="{{ project.imgAlt }}">
+	<p>{{ project.projectSummary }}</p>
 	
 </section>

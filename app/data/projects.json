@@ -1,23 +1,23 @@
-[
-	{
-		"projectTitle": "Project Title",
-		"projectDesciption": "Description of project",
+{
+	"surface": {
+		"projectTitle": "Surface",
+		"projectSummary": "Summary of Surface project",
 		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
 		"imgAlt": "Alt Text Here",
 		"projectURL": "surface"
 	},
-	{
-		"projectTitle": "Project Title",
-		"projectDesciption": "Description of project",
+	"band": {
+		"projectTitle": "Band",
+		"projectSummary": "Summary of Band project",
 		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
 		"imgAlt": "Alt Text Here",
 		"projectURL": "band"
 	},
-	{
-		"projectTitle": "Project Title",
-		"projectDesciption": "Description of project",
+	"reactor": {
+		"projectTitle": "Reactor",
+		"projectSummary": "Summary of Reactor project",
 		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
 		"imgAlt": "Alt Text Here",
 		"projectURL": "reactor"
 	}
-]
+}

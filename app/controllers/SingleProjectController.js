@@ -9,7 +9,7 @@ angular.module("myPortfolio")
 		$scope.project = [];
 		$http({
 			method: 'GET',
-			url: 'app/data/projectsDetails.json',
+			url: 'app/data/projects.json',
 			cache: $templateCache
 		})
 		.then(function(response) {
@@ -17,10 +17,9 @@ angular.module("myPortfolio")
 			$scope.projects = response.data;
 
 			if( projectID in $scope.projects ) {
-				console.log('added')
 				$scope.project = $scope.projects[projectID];
 			} else {
-				$location.url('/404'); // TODO: Add Error/404 Page
+				$location.url('/_404'); // TODO: Add Error/404 Page
 			}
 
 		}, function(response) {
