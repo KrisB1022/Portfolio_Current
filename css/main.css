@@ -435,13 +435,15 @@ th {
 
 /* line 4, ../sass/base/_base.scss */
 body {
-  max-width: 1020px;
+  max-width: 1280px;
+  max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  color: #222;
+  font-family: "Raleway", sans-serif, Verdana, Arial;
+  color: #D8DBE2;
+  background-color: #1b1b1e;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
-  margin: autpo;
 }
 /* line 12, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 body:after {
@@ -463,7 +465,20 @@ img {
 
 /* line 20, ../sass/base/_base.scss */
 a {
+  color: #D8DBE2;
   text-decoration: none;
+}
+/* line 18, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: inherit;
+}
+/* line 24, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #58a4b0;
+}
+/* line 27, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #D8DBE2;
 }
 
 /* line 25, ../sass/base/_base.scss */
@@ -473,11 +488,11 @@ li {
 
 /* line 106, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
-  font-size: 87.5%;
-  line-height: 1.14286em;
+  font-size: 100%;
+  line-height: 1.375em;
 }
 
-/* line 37, ../sass/base/_base.scss */
+/* line 36, ../sass/base/_base.scss */
 label[for="winnie_the_pooh"],
 input[name="winnie_the_pooh"] {
   display: none;
@@ -509,27 +524,68 @@ input[name="winnie_the_pooh"] {
 }
 
 /*Main Header Featured Image*/
-/* line 6, ../sass/Layout/_globals.scss */
-p {
-  font-size: 1em;
-  margin-bottom: 20px;
+/* line 1, ../sass/Layout/_nav.scss */
+.navigation-wrapper {
+  width: 100%;
+}
+/* line 4, ../sass/Layout/_nav.scss */
+.navigation-wrapper .title {
+  display: inline-block;
+}
+/* line 7, ../sass/Layout/_nav.scss */
+.navigation-wrapper .menu {
+  display: inline-block;
+  float: right;
+  border: 1px solid #D8DBE2;
+  border-radius: 3px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 22px;
+  line-height: 1.375rem;
+  cursor: pointer;
+}
+/* line 15, ../sass/Layout/_nav.scss */
+.navigation-wrapper .nav {
+  margin-bottom: 1.375rem;
+  padding: 0;
+  text-align: center;
+}
+/* line 20, ../sass/Layout/_nav.scss */
+.navigation-wrapper .nav li {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 22px;
+  line-height: 1.375rem;
+  margin-bottom: 1.375rem;
 }
 
-/* line 12, ../sass/Layout/_globals.scss */
+/* line 31, ../sass/Layout/_nav.scss */
+.ng-enter,
+.ng-leave {
+  transition: all ease-in-out 3s;
+}
+
+/* line 41, ../sass/Layout/_nav.scss */
+.ng-enter {
+  top: -100%;
+}
+
+/* line 44, ../sass/Layout/_nav.scss */
+.ng-enter.ng-enter-active {
+  top: 0;
+}
+
+/* line 48, ../sass/Layout/_nav.scss */
+.ng-leave {
+  top: 0;
+}
+
+/* line 51, ../sass/Layout/_nav.scss */
+.ng-leave.ng-leave-active {
+  top: 100%;
+}
+
+/* line 11, ../sass/Layout/_globals.scss */
 h1, h2, h3 {
-  margin-top: 0;
   font-weight: normal;
-}
-
-/* line 17, ../sass/Layout/_globals.scss */
-h1 {
-  line-height: 120%;
-  margin-bottom: 20px;
-}
-
-/* line 22, ../sass/Layout/_globals.scss */
-h3 {
-  font-size: 1.28571em;
-  line-height: 1.77778em;
-  margin-bottom: 0.88889em;
 }

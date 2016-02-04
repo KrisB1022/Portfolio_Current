@@ -3,11 +3,11 @@
 //==================================================
 body {
 	@include container( $break-large );
-	// font-family: $font-family-primary; 
-	color: $black;
+	font-family: $font-family-primary; 
+	color: $font-color-primary;
+	background-color: $black;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
-	margin: autpo;
 }
 // Just to make sure Susy is with us :)
 * {
@@ -19,13 +19,12 @@ img {
 }
 a {
 	// normal, hover, active, visited, focus
-	// @include link-colors($white, $mercury, $white, inherit);
+	@include link-colors($font-color-primary, $font-color-accent, $font-color-primary, inherit);
 	text-decoration: none; 
 }
 li {
 	list-style: none;
 }
-
 
 // Helpful docs: http://compass-style.org/reference/compass/typography/vertical_rhythm/
 @include establish-baseline( $base-font-size );

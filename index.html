@@ -11,11 +11,13 @@
         
         <!-- build:css css/head.css -->
         <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <!-- endbuild -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-messages.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>
 
     </head>
     <body ng-controller="MainController" class="{{ currentPageClass() }}">
@@ -23,9 +25,10 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav>
-            <h2>Kris<span>Byrum</span></h2>
-            <ul>
+        <nav class="navigation-wrapper" role="navigation">
+            <h2 class="title">Kris<span>Byrum</span></h2>
+            <p class="menu" ng-click="mobileNav()">MENU</p>
+            <ul class="nav" ng-if="showMenu">
                 <li><a href="#/">home</a></li>
                 <li><a href="#/contact">contact</a></li>
             </ul>

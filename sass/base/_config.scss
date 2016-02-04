@@ -4,35 +4,34 @@
 
 // Base Colors
  
- $black       : #222 !default;
- $white		  	: #FFF !default;
-
+ $black					: #1b1b1e !default;
+ $white					: #FFF !default;
 
 // Color Usage
-
+$font-color-primary		: #D8DBE2;
+$font-color-accent		: #58a4b0;
 
 // Text
 
-$base-font-size			: 14px !default;
-$base-line-height		: 16px !default;
+$base-font-size			: 16px !default;
+$base-line-height		: 22px !default;
+$round-to-nearest-half-line: true;
+$rhythm-unit: "rem";
+
 
 // Media Queries
 
 $break-small            : 320px;
 $break-medium           : 540px;
-$break-large            : 1020px;
+$break-large            : 1280px;
 
 
 
 // Fonts
 
-// $fonts-folder						 : '../fonts';
+$font-fallBacks          : sans-serif, Verdana, Arial;
 
-// $font-fallBacks          : Segoe, Tahoma, Verdana, Arial, sans-serif;
-
-// $font-family-primary	   : 'Segoe UI Light',  $font-fallBacks;
-// $font-family-secondary	 : 'Segoe UI Regular', $font-fallBacks;
-// $font-family-accent		   : 'Segoe UI Semibold', $font-fallBacks;
+$font-family-primary	 : 'Raleway', $font-fallBacks;
 
 
 

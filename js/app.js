@@ -1,7 +1,7 @@
 (function($) {
 	"use strict"
 
-	angular.module("myPortfolio", ['ngRoute', 'ngMessages'])
+	angular.module("myPortfolio", ['ngRoute', 'ngMessages', 'ngAnimate'])
 		.config(["$routeProvider", "$sceProvider", function($routeProvider, $sceProvider) {
 			$routeProvider
 			.when('/', {
@@ -34,7 +34,13 @@
 				} else {
 					return 'home';
 				}
-			}
+			};
+			
+			/* Mobile Nav hamburger */
+			$scope.showMenu = false;
+			$scope.mobileNav = function() {
+				$scope.showMenu = !$scope.showMenu;
+			};
 		}])
 		
 		;
