@@ -6,14 +6,14 @@
 			$routeProvider
 			.when('/', {
 				templateUrl: 'app/templates/home.html',
-				controller: 'ProjectsController',
+				controller: 'LandingController',
 			})
 			.when('/project/:project', {
 				templateUrl: 'app/templates/project_single.html',
 				controller: "SingleProjectController"
 			})
 			.when('/contact', {
-				templateUrl: 'app/templates/contact.php',
+				templateUrl: 'app/templates/contact.html',
 				controller: "ContactController"
 			})
 			.when('/_404', {
@@ -37,9 +37,8 @@
 			};
 			
 			/* Mobile Nav hamburger */
-			$scope.showMenu = false;
-			$scope.mobileNav = function() {
-				$scope.showMenu = !$scope.showMenu;
+			$scope.slideNav = function() {
+				$('.nav').slideToggle()
 			};
 		}])
 		

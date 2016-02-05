@@ -2,7 +2,7 @@
 	"use strict";
 
 angular.module("myPortfolio")
-	.controller("ProjectsController", ["$scope", "$http", "$location", 
+	.controller("LandingController", ["$scope", "$http", "$location", 
 		function($scope, $http, $location) {
 
 		$scope.title = "introduction statement";
@@ -13,7 +13,7 @@ angular.module("myPortfolio")
 			.then(function(response) {
 				$scope.projects = response.data;
 			}, function(response) {
-				console.log("An error occurred in ProjectsController: " + response.statusText)
+				console.log("An error occurred in LandingController: " + response.statusText)
 			});
 	}]);
 

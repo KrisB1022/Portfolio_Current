@@ -4,7 +4,7 @@
 
 // The Elements
 p {
-	// @include adjust-font-size-to(16px);
+	@include adjust-font-size-to(16px);
 	// margin-bottom: rhythm(1, 20px);
 }
 

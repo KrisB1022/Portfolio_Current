@@ -3,51 +3,43 @@
 
 	.title {
 		display: inline-block;
+		padding-left: 12px;
 	}
-	.menu {
+	.menuHamburger {
 		display: inline-block;
 		float: right;
 		border: 1px solid $font-color-primary;
 		border-radius: 3px;
 		@include adjust-font-size-to(18px);
 		cursor: pointer;
+		padding: 2px;
+		margin-right: 12px;
 	}
 	.nav {
-		// float: right;
-		margin-bottom: rhythm(1, 20px);
 		padding: 0;
 		text-align: center;
+		display: none;
 		li {
-			// float: left;
-			// margin: 0 0 0 20px;
 			@include adjust-font-size-to(18px);
-			margin-bottom: rhythm(1, 20px);
+		}
+		li:first-child {
+			margin-bottom: rhythm(1, 20px);			
 		}
 	}
-
-}
-
-
-.ng-enter, 
-.ng-leave
-{ 
-    -webkit-transition: all ease-in-out 3s;
-    -moz-transition: all ease-in-out 3s;
-    -ms-transition: all ease-in-out 3s;
-    -o-transition: all ease-in-out 3s;
-    transition: all ease-in-out 3s;
-} 
- 
-.ng-enter {
-    top: -100%;
-}
-.ng-enter.ng-enter-active {
-    top: 0;
-}
- 
-.ng-leave {
-    top: 0;
-}
-.ng-leave.ng-leave-active {
-	top: 100%;
+	@include mq(small) {
+		.menuHamburger {
+			display: none;
+		}
+		.nav {
+			display: inline-block;
+			float: right;
+			margin-bottom: rhythm(1, 20px);
+			text-align: left;
+			padding: 0 12px;
+			li {
+				float: left;
+				margin: 6px 0 0 20px;
+			}
+		}
+	}
 }

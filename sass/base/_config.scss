@@ -10,6 +10,7 @@
 // Color Usage
 $font-color-primary		: #D8DBE2;
 $font-color-accent		: #58a4b0;
+$font-color-primary_rgba: rgba(27, 27, 30, 0.7);
 
 // Text
 
@@ -21,8 +22,8 @@ $rhythm-unit: "rem";
 
 // Media Queries
 
-$break-small            : 320px;
-$break-medium           : 540px;
+$break-small           	: 500px;
+$break-medium			: 1000px;
 $break-large            : 1280px;
 
 

@@ -1,18 +1,18 @@
-<section ng-controller="ProjectsController">
+<section ng-controller="LandingController">
 
-	<div>
-		<h1>{{ title }}</h1>
-		<p>{{ introduction }}</p>
+	<div class="intro-wrapper">
+		<h1 class="title_h1">{{ title }}</h1>
+		<p class="intro_p">{{ introduction }}</p>
 	</div>
 
 
-	<div>
-		<div ng-repeat="project in projects|limitTo:8">
+	<div class="gallery-wrapper">
+		<div ng-repeat="project in projects|limitTo:8" class="gallery-item">
 			<a href="#/project/{{ project.projectURL }}">
-				<img ng-src="{{ project.imgURL }}" alt="{{ project.imgAlt }}">
-				<div>
-					<h3>{{ project.projectTitle }}</h3>
-					<p>{{ project.projectSummary }}</p>
+				<img ng-src="{{ project.thumbnail }}" alt="{{ project.thumbnailAlt }}">
+				<div class="gallery-info">
+					<h2 class="projectTitle">{{ project.projectTitle }}</h2>
+					<p class="projectSummary">{{ project.projectSummary }}</p>
 				</div>
 			</a>
 		</div>

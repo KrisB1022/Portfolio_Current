@@ -1,23 +1,28 @@
 {
-	"surface": {
-		"projectTitle": "Surface",
-		"projectSummary": "Summary of Surface project",
-		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+	"MicrosoftReactor": {
+		"projectTitle": "Microsoft Reactor",
+		"projectSummary": "Customized WordPress site",
+		"thumbnail": "img/reactor/thumbnail.png",
+		"thumbnailAlt": "Microsoft Reactor screenshot on Surface Book laptop",
 		"imgAlt": "Alt Text Here",
-		"projectURL": "surface"
+		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+		"projectURL": "MicrosoftReactor"
+	},
+	"QR_Generator": {
+		"projectTitle": "QR Code Generator",
+		"projectSummary": "QR Code Generator with integrated images, fully customized QR Code styling and raster image download.",
+		"thumbnail": "img/qr_code/thumb.png",
+		"thumbnailAlt": "Screen shot of QR Code Generator on a black Dell laptop.",
+		"imgAlt": "Alt Text Here",
+		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+		"projectURL": "QR_Generator"
 	},
 	"band": {
 		"projectTitle": "Band",
 		"projectSummary": "Summary of Band project",
-		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+		"thumbnail": "img/reactor/thumbnail.png",
 		"imgAlt": "Alt Text Here",
+		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
 		"projectURL": "band"
-	},
-	"reactor": {
-		"projectTitle": "Reactor",
-		"projectSummary": "Summary of Reactor project",
-		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
-		"imgAlt": "Alt Text Here",
-		"projectURL": "reactor"
 	}
 }
