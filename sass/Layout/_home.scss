@@ -5,12 +5,19 @@
 	.title_h1 {
 		@include adjust-font-size-to(26px);
 		margin-bottom: rhythm(0.5, 14px);
+		@include mq(medium) {
+			@include adjust-font-size-to(32px);
+		}
 	}
 
 	.gallery-item {
 		// padding: 36px 0;
 		margin: 36px 0;
 		
+		img {
+			padding: 0 12px;
+		}
+
 		@include mq(small) {
 			@include span(6);
 			clear: right;
@@ -42,15 +49,11 @@
 					display: block;
 					color: $font-color-primary;
 
-				    -webkit-animation: fadein 1s;
-				       -moz-animation: fadein 1s;
-				        -ms-animation: fadein 1s;
-				         -o-animation: fadein 1s;
-				            animation: fadein 1s;
-				}
-				img,
-				.gallery-info {
-
+				    -webkit-animation: fadein 0.3s;
+				       -moz-animation: fadein 0.3s;
+				        -ms-animation: fadein 0.3s;
+				         -o-animation: fadein 0.3s;
+				            animation: fadein 0.3s;
 				}
 			}
 		}

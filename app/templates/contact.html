@@ -1,5 +1,5 @@
 <section ng-controller="ContactController">
-	<form name="contactForm" method="POST" action="" required>
+	<form ng-submit="sumitted()" name="contactForm" method="POST" action="" required>
 		<label>First Name:</label>
 		<input type="text" name="firstName" ng-model="firstName" required />
 		<div ng-messages="contactForm.firstName.$error"
@@ -44,7 +44,7 @@
 			<div ng-message="maxlength">Message must not exceed 1000 characters</div>
 		</div>
 
-		<button ng-click="submitted()">Submit</button>
+		<input type="submit" value="Submit!" name="submit">
 	</form>
 </section>
 

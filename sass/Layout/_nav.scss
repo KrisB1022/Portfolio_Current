@@ -42,4 +42,12 @@
 			}
 		}
 	}
+	@include mq(medium) {
+		.title {
+			@include adjust-font-size-to(28px);
+		}
+		.nav li {
+			@include adjust-font-size-to(22px);
+		}
+	}
 }

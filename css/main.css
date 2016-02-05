@@ -583,6 +583,22 @@ input[name="winnie_the_pooh"] {
     margin: 6px 0 0 20px;
   }
 }
+@media screen and (min-width: 1000px) {
+  /* line 46, ../sass/Layout/_nav.scss */
+  .navigation-wrapper .title {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 33px;
+    line-height: 2.0625rem;
+  }
+  /* line 49, ../sass/Layout/_nav.scss */
+  .navigation-wrapper .nav li {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 33px;
+    line-height: 2.0625rem;
+  }
+}
 
 /* line 6, ../sass/Layout/_globals.scss */
 p {
@@ -609,26 +625,39 @@ h1, h2, h3 {
   line-height: 2.0625rem;
   margin-bottom: 0.6875rem;
 }
-/* line 10, ../sass/Layout/_home.scss */
+@media screen and (min-width: 1000px) {
+  /* line 5, ../sass/Layout/_home.scss */
+  .home .title_h1 {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 44px;
+    line-height: 2.75rem;
+  }
+}
+/* line 13, ../sass/Layout/_home.scss */
 .home .gallery-item {
   margin: 36px 0;
 }
+/* line 17, ../sass/Layout/_home.scss */
+.home .gallery-item img {
+  padding: 0 12px;
+}
 @media screen and (min-width: 500px) {
-  /* line 10, ../sass/Layout/_home.scss */
+  /* line 13, ../sass/Layout/_home.scss */
   .home .gallery-item {
     width: 48.41629%;
     float: left;
     margin-right: 3.16742%;
     clear: right;
   }
-  /* line 17, ../sass/Layout/_home.scss */
+  /* line 24, ../sass/Layout/_home.scss */
   .home .gallery-item:nth-child(even) {
     float: right;
     margin-right: 0;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 10, ../sass/Layout/_home.scss */
+  /* line 13, ../sass/Layout/_home.scss */
   .home .gallery-item {
     width: 31.22172%;
     float: left;
@@ -636,18 +665,18 @@ h1, h2, h3 {
     position: relative;
     clear: none;
   }
-  /* line 26, ../sass/Layout/_home.scss */
+  /* line 33, ../sass/Layout/_home.scss */
   .home .gallery-item:nth-child(even) {
     width: 31.22172%;
     float: left;
     margin-right: 3.16742%;
   }
-  /* line 29, ../sass/Layout/_home.scss */
+  /* line 36, ../sass/Layout/_home.scss */
   .home .gallery-item:nth-child(3n) {
     float: right;
     margin-right: 0;
   }
-  /* line 33, ../sass/Layout/_home.scss */
+  /* line 40, ../sass/Layout/_home.scss */
   .home .gallery-item:hover img {
     -webkit-filter: blur(4px) brightness(50%);
     -moz-filter: blur(4px) brightness(50%);
@@ -658,26 +687,26 @@ h1, h2, h3 {
     transition: filter ease-in-out 0.3s;
     transition: filter ease-in-out 0.3s, -webkit-filter ease-in-out 0.3s;
   }
-  /* line 41, ../sass/Layout/_home.scss */
+  /* line 48, ../sass/Layout/_home.scss */
   .home .gallery-item:hover .gallery-info {
     display: block;
     color: #D8DBE2;
-    -webkit-animation: fadein 1s;
-    animation: fadein 1s;
+    -webkit-animation: fadein 0.3s;
+    animation: fadein 0.3s;
   }
 }
-/* line 58, ../sass/Layout/_home.scss */
+/* line 61, ../sass/Layout/_home.scss */
 .home .gallery-info {
   padding: 12px;
 }
-/* line 60, ../sass/Layout/_home.scss */
+/* line 63, ../sass/Layout/_home.scss */
 .home .gallery-info .projectTitle,
 .home .gallery-info .projectSummary {
   margin: 0;
   margin-bottom: 0.6875rem;
 }
 @media screen and (min-width: 1000px) {
-  /* line 58, ../sass/Layout/_home.scss */
+  /* line 61, ../sass/Layout/_home.scss */
   .home .gallery-info {
     display: none;
     position: absolute;
@@ -688,7 +717,7 @@ h1, h2, h3 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  /* line 76, ../sass/Layout/_home.scss */
+  /* line 79, ../sass/Layout/_home.scss */
   .home .gallery-info .projectTitle,
   .home .gallery-info .projectSummary {
     margin-top: 1em;
@@ -711,4 +740,14 @@ h1, h2, h3 {
   to {
     opacity: 1;
   }
+}
+/* line 1, ../sass/Layout/_contact.scss */
+.submissionMessage {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  display: block;
+  box-shadow: 0 0 2px white;
+  width: 60%;
 }
