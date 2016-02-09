@@ -23,14 +23,19 @@ h2 {
 }
 
 
+// ng-view 
+.view-animate {
+	opacity: 1;
+}
+.view-animate.ng-enter {
+	-webkit-animation: fadeIn 1.6s;
+	animation: fadeIn 1.6s;
+}
+.view-animate.ng-enter-active {
+	opacity: 1;
+}
 
-//===============================
-// Animations
-//===============================
-
-//******
-// ng-view (spinner)
-//******
+// ng-view loading screen
 .spinner-wrapper {
 	position: absolute;
 	top: 0;
@@ -42,7 +47,7 @@ h2 {
 }
 .spinner {
 	position: absolute;
-	top: 50%;
+	top: 46%;
 	transform: translateY(-50%);
 	left: 0;
 	right: 0;
@@ -51,15 +56,45 @@ h2 {
 .spinner-wrapper.fade {
 	opacity: 0;
 	z-index: -20;
-	-webkit-animation: fadeOut 2s;
-	animation: fadeOut 2s;
+	-webkit-animation: fadeOut 1.6s;
+	animation: fadeOut 1.6s;
 }
 
-/*
+.spinner-title {
+	text-align: center;
+	-webkit-animation: fadeInOut 1.6s infinite;
+	animation: fadeInOut 1.6s infinite;
+}
+.chasing-dots-spinner {
+	width: 65px;
+	height: 65px;
+	margin: 0 auto;
+}
+.dot1, .dot2 {
+	background: $white;
+}
 
-TODO: add fade in
 
-*/
+//===============================
+// Animations
+//===============================
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}	
+	100% {
+		opacity: 1;
+	}
+}
 
 @-webkit-keyframes fadeOut {
 	0%	{ 
@@ -82,18 +117,7 @@ TODO: add fade in
 	}
 }
 
-.chasing-dots-spinner {
-	width: 65px;
-	height: 65px;
-}
-.dot1, .dot2 {
-	background: $white;
-}
-.loading_title {
-	text-align: center;
-	-webkit-animation: fadeInOut 2s infinite;
-	animation: fadeInOut 2s infinite;
-}
+
 @-webkit-keyframes fadeInOut {
 	0% {
 		opacity: 1;

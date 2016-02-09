@@ -613,7 +613,23 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
+/* line 27, ../sass/Layout/_globals.scss */
+.view-animate {
+  opacity: 1;
+}
+
+/* line 30, ../sass/Layout/_globals.scss */
+.view-animate.ng-enter {
+  -webkit-animation: fadeIn 1.6s;
+  animation: fadeIn 1.6s;
+}
+
 /* line 34, ../sass/Layout/_globals.scss */
+.view-animate.ng-enter-active {
+  opacity: 1;
+}
+
+/* line 39, ../sass/Layout/_globals.scss */
 .spinner-wrapper {
   position: absolute;
   top: 0;
@@ -624,10 +640,10 @@ h1, h2, h3 {
   z-index: 998;
 }
 
-/* line 43, ../sass/Layout/_globals.scss */
+/* line 48, ../sass/Layout/_globals.scss */
 .spinner {
   position: absolute;
-  top: 50%;
+  top: 46%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -636,19 +652,49 @@ h1, h2, h3 {
   width: 100%;
 }
 
-/* line 51, ../sass/Layout/_globals.scss */
+/* line 56, ../sass/Layout/_globals.scss */
 .spinner-wrapper.fade {
   opacity: 0;
   z-index: -20;
-  -webkit-animation: fadeOut 2s;
-  animation: fadeOut 2s;
+  -webkit-animation: fadeOut 1.6s;
+  animation: fadeOut 1.6s;
 }
 
-/*
+/* line 63, ../sass/Layout/_globals.scss */
+.spinner-title {
+  text-align: center;
+  -webkit-animation: fadeInOut 1.6s infinite;
+  animation: fadeInOut 1.6s infinite;
+}
 
-TODO: add fade in
+/* line 68, ../sass/Layout/_globals.scss */
+.chasing-dots-spinner {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
 
-*/
+/* line 73, ../sass/Layout/_globals.scss */
+.dot1, .dot2 {
+  background: #FFF;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
@@ -669,24 +715,6 @@ TODO: add fade in
     z-index: -20;
   }
 }
-/* line 85, ../sass/Layout/_globals.scss */
-.chasing-dots-spinner {
-  width: 65px;
-  height: 65px;
-}
-
-/* line 89, ../sass/Layout/_globals.scss */
-.dot1, .dot2 {
-  background: #FFF;
-}
-
-/* line 92, ../sass/Layout/_globals.scss */
-.loading_title {
-  text-align: center;
-  -webkit-animation: fadeInOut 2s infinite;
-  animation: fadeInOut 2s infinite;
-}
-
 @-webkit-keyframes fadeInOut {
   0% {
     opacity: 1;

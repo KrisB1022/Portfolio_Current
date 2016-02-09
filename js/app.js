@@ -32,7 +32,7 @@
 				template: 
 					"<div class='spinner-wrapper' ng-if='isRouteLoading' ng-class='{fade: startFade}'>" + 
 						"<div class='spinner'>" +
-							"<p class='loading_title'>loading...</p>" +
+							"<p class='spinner-title'>loading...</p>" +
 							"<chasing-dots-spinner></chasing-dots-spinner>" +
 						"</div>" +
 					"</div>",
@@ -52,12 +52,11 @@
 
 
 					$rootScope.$on("$routeChangeStart", function() {
-						// Resets
-						$scope.destroy();
+						// Resets >> only run on first load
+						// $scope.destroy();
 
 						// Start route transitions
 						$scope.isRouteLoading = true;
-						$scope.spinnerAnimate = "test";
 					});
 					$rootScope.$on("$routeChangeSuccess", function() {
 						$timeout(function() {
