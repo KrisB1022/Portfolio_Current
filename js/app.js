@@ -59,9 +59,9 @@
 						$scope.isRouteLoading = true;
 					});
 					$rootScope.$on("$routeChangeSuccess", function() {
-						$timeout(function() {
+						// $timeout(function() {
 							$scope.timeout();
-						}, 2000);
+						// }, 2000);
 					});
 				}
 			}

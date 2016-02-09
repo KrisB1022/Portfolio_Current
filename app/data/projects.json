@@ -4,8 +4,18 @@
 		"projectSummary": "Customized WordPress site",
 		"thumbnail": "img/reactor/thumbnail.png",
 		"thumbnailAlt": "Microsoft Reactor screenshot on Surface Book laptop",
-		"imgAlt": "Alt Text Here",
-		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+		"heroImg": "img/reactor/hero.png",
+		"heroAlt": "Microsoft Reactor screenshot on laptop",
+		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
+		"features": [
+			{
+				"title": "Customized WordPress template",
+				"about": "This is about the title and feature",
+				"img": "img/reactor/wireframes.png",
+				"alt": "Wireframes of the Reactor site"
+			}
+		],
+
 		"projectURL": "MicrosoftReactor"
 	},
 	"QR_Generator": {
