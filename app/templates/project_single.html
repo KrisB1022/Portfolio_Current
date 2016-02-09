@@ -1,30 +1,36 @@
-<section ng-controller="SingleProjectController">
+<section ng-controller="SingleProjectController" class="singleProject-wrapper">
 
 	<nav class="projectNavigation-wrapper">
-		<div ng-click="previousProject()">Previous</div>
-		<div ng-click="nextProject()">Next</div>
+		<div class="prev-wrapper" ng-click="previousProject()">
+			<button class="prevButton">
+				<i></i><i></i>
+				<span class="screenReader">Previous</span>
+			</button>
+		</div>
+		<div class="next-wrapper" ng-click="nextProject()">
+			<button class="nextButton">
+				<i></i><i></i>
+				<span class="screenReader">Next</span>
+			</button>
+		</div>
 	</nav>
 
 	<h1>{{ project.projectTitle }}</h1>
 	<img ng-src="{{ project.heroImg }}" alt="{{ project.heroAlt }}">
 
+
+	<p class="summary">{{ project.projectDetails }}
 	<ul class="languages_ul">
-		<li>Languages / Tools Used: </li>
 		<li ng-repeat="language in project.languages">{{ language }}</li>
 	</ul>
 
-	<p>Quick summary of project here</p>
-	
-	<aside class="features-wrapper" ng-if="project.features">
-		<div ng-repeat="feature in project.features">
-			<div class="featureCopy">
-				<h3>{{ feature.title }}</h3>
-				<p>{{ feature.about }}</p>
-			</div>
-			<figure class="featureImg-wrapper">
-				<img ng-src="{{ feature.img }}" alt="{{ feature.alt }}">
-			</figure>
-		</div>
+	<aside class="projectImage-wrapper" ng-if="project.projectImages">
+		<img ng-repeat="image in project.projectImages" 
+			ng-src="{{ image }}" alt="Screenshot of project">
 	</aside>
+
+	<a class="siteCTA" ng-href="{{ project.websiteUrl }}" ng-if="project.websiteUrl" target="_blank">
+		<p>Visit the live site.</p>
+	</a>
 	
 </section>

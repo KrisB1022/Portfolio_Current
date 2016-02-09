@@ -1,21 +1,17 @@
 {
 	"MicrosoftReactor": {
 		"projectTitle": "Microsoft Reactor",
-		"projectSummary": "Customized WordPress site",
+		"projectSummary": "Customized WordPress site.",
 		"thumbnail": "img/reactor/thumbnail.png",
 		"thumbnailAlt": "Microsoft Reactor screenshot on Surface Book laptop",
+		
 		"heroImg": "img/reactor/hero.png",
 		"heroAlt": "Microsoft Reactor screenshot on laptop",
+		
+		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
-		"features": [
-			{
-				"title": "Customized WordPress template",
-				"about": "This is about the title and feature",
-				"img": "img/reactor/wireframes.png",
-				"alt": "Wireframes of the Reactor site"
-			}
-		],
 
+		"websiteUrl": "http://MicrosoftReactor.com",
 		"projectURL": "MicrosoftReactor"
 	},
 	"QR_Generator": {
@@ -23,16 +19,41 @@
 		"projectSummary": "QR Code Generator with integrated images, fully customized QR Code styling and raster image download.",
 		"thumbnail": "img/qr_code/thumb.png",
 		"thumbnailAlt": "Screen shot of QR Code Generator on a black Dell laptop.",
-		"imgAlt": "Alt Text Here",
-		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
+		
+		"heroImg": "img/qr_code/responsive.png",
+		"heroAlt": "Screenshots of responsive versions of qr generator",
+
+		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"languages": ["PHP", "HTML", "CSS", "SVG", "Javascript"],
+
 		"projectURL": "QR_Generator"
 	},
-	"band": {
-		"projectTitle": "Band",
-		"projectSummary": "Summary of Band project",
-		"thumbnail": "img/reactor/thumbnail.png",
-		"imgAlt": "Alt Text Here",
-		"imgURL": "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97200&w=300&h=200",
-		"projectURL": "band"
+	"MicrosoftVentures": {
+		"projectTitle": "Microsoft Ventures",
+		"projectSummary": "Customized CMS site.",
+		"thumbnail": "",
+		"thumbnailAlt": "Microsoft Ventures screenshot",
+		
+		"heroImg": "",
+		"heroAlt": "Microsoft Ventures screenshot on laptop",
+		
+		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
+		"projectURL": "MicrosoftVentures"
+	},
+	"Irishmen": {
+		"projectTitle": "the Irishmen Pub",
+		"projectSummary": "Customized WordPress site.",
+		"thumbnail": "",
+		"thumbnailAlt": "Screenshot of site",
+		
+		"heroImg": "",
+		"heroAlt": "Sscreenshot on laptop",
+		
+		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
+
+		"websiteUrl": "http://Irishmen.com",
+		"projectURL": "Irishmen"
 	}
 }

@@ -435,8 +435,8 @@ th {
 
 /* line 4, ../sass/base/_base.scss */
 body {
-  max-width: 1280px;
-  max-width: 80rem;
+  max-width: 1200px;
+  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
   font-family: "Raleway", sans-serif, Verdana, Arial;
@@ -865,6 +865,162 @@ h1, h2, h3 {
     opacity: 1;
   }
 }
+/* line 1, ../sass/Layout/_project_single.scss */
+.singleProject-wrapper {
+  padding: 0 12px 60px;
+}
+/* line 3, ../sass/Layout/_project_single.scss */
+.singleProject-wrapper .languages_ul {
+  border-top: 1px solid #58a4b0;
+  padding: 40px 0 60px;
+}
+/* line 6, ../sass/Layout/_project_single.scss */
+.singleProject-wrapper .languages_ul li {
+  float: left;
+  padding-right: 25px;
+}
+@media screen and (min-width: 1000px) {
+  /* line 12, ../sass/Layout/_project_single.scss */
+  .singleProject-wrapper .summary {
+    width: 74.20814%;
+    float: left;
+    margin-right: 3.16742%;
+  }
+  /* line 15, ../sass/Layout/_project_single.scss */
+  .singleProject-wrapper .languages_ul {
+    width: 22.62443%;
+    float: right;
+    margin-right: 0;
+    border-top: none;
+    border-left: 1px solid #58a4b0;
+    padding: 0 0 0 40px;
+  }
+  /* line 20, ../sass/Layout/_project_single.scss */
+  .singleProject-wrapper .languages_ul li {
+    float: none;
+    padding: 0;
+  }
+  /* line 25, ../sass/Layout/_project_single.scss */
+  .singleProject-wrapper .features-wrapper {
+    clear: both;
+  }
+}
+/* line 29, ../sass/Layout/_project_single.scss */
+.singleProject-wrapper .siteCTA {
+  clear: both;
+  border: 1px solid #58a4b0;
+  background: #58a4b0;
+  display: block;
+  padding: 0 12px;
+  width: 150px;
+  margin: auto;
+  transition: background ease 0.2s;
+}
+@media screen and (min-width: 1000px) {
+  /* line 29, ../sass/Layout/_project_single.scss */
+  .singleProject-wrapper .siteCTA {
+    position: relative;
+    top: 60px;
+  }
+}
+/* line 42, ../sass/Layout/_project_single.scss */
+.singleProject-wrapper .siteCTA:hover {
+  background: transparent;
+}
+/* line 45, ../sass/Layout/_project_single.scss */
+.singleProject-wrapper .siteCTA p {
+  margin: 8px 0;
+  color: #FFF;
+}
+
+/* line 53, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper {
+  display: none;
+  padding-right: 12px;
+  float: right;
+}
+@media screen and (min-width: 1200px) {
+  /* line 53, ../sass/Layout/_project_single.scss */
+  .projectNavigation-wrapper {
+    display: inline-block;
+  }
+}
+/* line 60, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper .prev-wrapper,
+.projectNavigation-wrapper .next-wrapper {
+  display: inline;
+}
+/* line 64, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper .screenReader {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  visibility: hidden;
+}
+
+/* Arrows */
+/* line 83, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background: transparent;
+}
+/* line 92, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper button:hover i {
+  background: #58a4b0;
+}
+/* line 95, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper button i {
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  border-radius: 3px;
+  background: #D8DBE2;
+  transition: background ease 0.2s;
+}
+/* line 105, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper .prev-wrapper i {
+  -webkit-transform-origin: 0% 50%;
+      -ms-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+/* line 74, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper .prev-wrapper i:first-child {
+  -webkit-transform: translate(1px, -1px) rotate(40deg);
+      -ms-transform: translate(1px, -1px) rotate(40deg);
+          transform: translate(1px, -1px) rotate(40deg);
+}
+/* line 77, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper .prev-wrapper i:nth-child(2) {
+  -webkit-transform: translate(1px, 1px) rotate(-40deg);
+      -ms-transform: translate(1px, 1px) rotate(-40deg);
+          transform: translate(1px, 1px) rotate(-40deg);
+}
+/* line 111, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper .next-wrapper i {
+  -webkit-transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+/* line 74, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper .next-wrapper i:first-child {
+  -webkit-transform: translate(1px, -1px) rotate(-40deg);
+      -ms-transform: translate(1px, -1px) rotate(-40deg);
+          transform: translate(1px, -1px) rotate(-40deg);
+}
+/* line 77, ../sass/Layout/_project_single.scss */
+.projectNavigation-wrapper .next-wrapper i:nth-child(2) {
+  -webkit-transform: translate(1px, 1px) rotate(40deg);
+      -ms-transform: translate(1px, 1px) rotate(40deg);
+          transform: translate(1px, 1px) rotate(40deg);
+}
+
 /* line 1, ../sass/Layout/_contact.scss */
 .submissionMessage {
   background-color: rgba(255, 255, 255, 0.2);

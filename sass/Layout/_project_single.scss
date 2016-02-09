@@ -1,0 +1,116 @@
+.singleProject-wrapper {
+	padding: 0 12px 60px;
+	.languages_ul {
+		border-top: 1px solid $font-color-accent;		
+		padding: 40px 0 60px;
+		li {
+			float: left;
+			padding-right: 25px;
+		}
+	}
+	@include mq(medium) {
+		.summary {
+			@include span(9);
+		}
+		.languages_ul {
+			@include span(3 last);
+			border-top: none;
+			border-left: 1px solid $font-color-accent;
+			padding: 0 0 0 40px;
+			li {
+				float: none;
+				padding: 0;
+			}
+		}
+		.features-wrapper {
+			clear: both;
+		}	
+	}
+	.siteCTA {
+		clear: both;
+		border: 1px solid $font-color-accent;
+		background: $font-color-accent;
+		display: block;
+		padding: 0 12px;
+		width: 150px;
+		margin: auto;
+		transition: background ease 0.2s;
+		@include mq(medium) {
+			position: relative;
+			top: 60px;
+		}
+		&:hover {
+			background: transparent;
+		}
+		p {
+			margin: 8px 0;
+			color: $white;
+		}
+	}
+}
+
+
+.projectNavigation-wrapper {
+	display: none;
+	@include mq(large) {
+		display: inline-block;
+	}
+	padding-right: 12px;
+	float: right;
+	.prev-wrapper,
+	.next-wrapper {
+		display: inline;		
+	}
+	.screenReader {
+		@include hide-text;
+		visibility: hidden;
+	}
+}
+
+
+/* Arrows */
+
+@mixin transformArrows( $angle, $x: 1, $y: 1) {
+	i:first-child {
+	transform: translate( $x, $y ) rotate( $angle );
+	}
+	i:nth-child(2) {
+	transform: translate( $x, -$y ) rotate( -$angle );		
+	}
+}
+
+.projectNavigation-wrapper {
+	button {
+		cursor: pointer;
+		-webkit-appearance: none;
+		border: none;
+		outline: none;
+		width: 20px;
+		height: 20px;
+		position: relative;
+		background: transparent;
+		&:hover i {
+			background: $font-color-accent;
+		}
+		i {
+			position: absolute;
+			width: 20px;
+			height: 5px;
+			border-radius: 3px;
+			background: $font-color-primary;
+			transition: background ease 0.2s;
+		}
+	}
+	.prev-wrapper {
+		i {
+			transform-origin: 0% 50%;
+		}
+		@include transformArrows(40deg, 1px, -1px);
+	}
+	.next-wrapper {
+		i {
+			transform-origin: 100% 50%;
+		}
+		@include transformArrows(-40deg, 1px, -1px);;
+	}
+}
