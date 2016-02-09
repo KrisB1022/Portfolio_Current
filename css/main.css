@@ -528,12 +528,12 @@ input[name="winnie_the_pooh"] {
 .navigation-wrapper {
   width: 100%;
 }
-/* line 4, ../sass/Layout/_nav.scss */
+/* line 6, ../sass/Layout/_nav.scss */
 .navigation-wrapper .title {
   display: inline-block;
   padding-left: 12px;
 }
-/* line 8, ../sass/Layout/_nav.scss */
+/* line 10, ../sass/Layout/_nav.scss */
 .navigation-wrapper .menuHamburger {
   display: inline-block;
   float: right;
@@ -547,29 +547,29 @@ input[name="winnie_the_pooh"] {
   padding: 2px;
   margin-right: 12px;
 }
-/* line 18, ../sass/Layout/_nav.scss */
+/* line 20, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav {
   padding: 0;
   text-align: center;
   display: none;
 }
-/* line 22, ../sass/Layout/_nav.scss */
+/* line 24, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav li {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 22px;
   line-height: 1.375rem;
 }
-/* line 25, ../sass/Layout/_nav.scss */
+/* line 27, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav li:first-child {
   margin-bottom: 1.375rem;
 }
 @media screen and (min-width: 500px) {
-  /* line 30, ../sass/Layout/_nav.scss */
+  /* line 32, ../sass/Layout/_nav.scss */
   .navigation-wrapper .menuHamburger {
     display: none;
   }
-  /* line 33, ../sass/Layout/_nav.scss */
+  /* line 35, ../sass/Layout/_nav.scss */
   .navigation-wrapper .nav {
     display: inline-block;
     float: right;
@@ -577,21 +577,21 @@ input[name="winnie_the_pooh"] {
     text-align: left;
     padding: 0 12px;
   }
-  /* line 39, ../sass/Layout/_nav.scss */
+  /* line 41, ../sass/Layout/_nav.scss */
   .navigation-wrapper .nav li {
     float: left;
     margin: 6px 0 0 20px;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 46, ../sass/Layout/_nav.scss */
+  /* line 48, ../sass/Layout/_nav.scss */
   .navigation-wrapper .title {
     font-size: 28px;
     font-size: 1.75rem;
     line-height: 33px;
     line-height: 2.0625rem;
   }
-  /* line 49, ../sass/Layout/_nav.scss */
+  /* line 51, ../sass/Layout/_nav.scss */
   .navigation-wrapper .nav li {
     font-size: 22px;
     font-size: 1.375rem;
@@ -613,6 +613,102 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
+/* line 34, ../sass/Layout/_globals.scss */
+.spinner-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #1b1b1e;
+  z-index: 998;
+}
+
+/* line 43, ../sass/Layout/_globals.scss */
+.spinner {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 51, ../sass/Layout/_globals.scss */
+.spinner-wrapper.fade {
+  opacity: 0;
+  z-index: -20;
+  -webkit-animation: fadeOut 2s;
+  animation: fadeOut 2s;
+}
+
+/*
+
+TODO: add fade in
+
+*/
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 998;
+  }
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 998;
+  }
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+/* line 85, ../sass/Layout/_globals.scss */
+.chasing-dots-spinner {
+  width: 65px;
+  height: 65px;
+}
+
+/* line 89, ../sass/Layout/_globals.scss */
+.dot1, .dot2 {
+  background: #FFF;
+}
+
+/* line 92, ../sass/Layout/_globals.scss */
+.loading_title {
+  text-align: center;
+  -webkit-animation: fadeInOut 2s infinite;
+  animation: fadeInOut 2s infinite;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* line 2, ../sass/Layout/_home.scss */
 .home .intro-wrapper {
   padding: 12px;

@@ -1,7 +1,7 @@
 (function($) {
 	"use strict"
 
-	angular.module("myPortfolio", ['ngRoute', 'ngMessages', 'ngAnimate'])
+	angular.module("myPortfolio", ['ngRoute', 'ngMessages', 'ngAnimate', 'angular-spinkit'])
 		.config(["$routeProvider", "$sceProvider", function($routeProvider, $sceProvider) {
 			$routeProvider
 			.when('/', {
@@ -23,6 +23,49 @@
 			.otherwise({ redirectTo: '/_404' });
 
 			$sceProvider.enabled(false);
+		}])
+
+		/* Sets loading status if page loads (prevention for slow reqs / resp) */ 
+		.directive("routeLoading", ["$rootScope", "$timeout", function($rootScope, $timeout) {
+			return {
+				restrict: "E",
+				template: 
+					"<div class='spinner-wrapper' ng-if='isRouteLoading' ng-class='{fade: startFade}'>" + 
+						"<div class='spinner'>" +
+							"<p class='loading_title'>loading...</p>" +
+							"<chasing-dots-spinner></chasing-dots-spinner>" +
+						"</div>" +
+					"</div>",
+				replace: true,
+				link: function($scope, $elem, $attrs) {
+					$scope.isRouteLoading = false;
+					$scope.startFade = false;
+
+					$scope.timeout = function() {
+						$scope.startFade = true;
+					};
+					$scope.destroy = function() {
+						$scope.startFade = false;
+						$scope.isRouteLoading = false;
+						$timeout.cancel($rootScope.timeout);
+					};
+
+
+					$rootScope.$on("$routeChangeStart", function() {
+						// Resets
+						$scope.destroy();
+
+						// Start route transitions
+						$scope.isRouteLoading = true;
+						$scope.spinnerAnimate = "test";
+					});
+					$rootScope.$on("$routeChangeSuccess", function() {
+						$timeout(function() {
+							$scope.timeout();
+						}, 2000);
+					});
+				}
+			}
 		}])
 
 		.controller("MainController", ["$scope", "$location", function($scope, $location) {

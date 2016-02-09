@@ -17,6 +17,7 @@
   },
   "homepage": "",
   "devDependencies": {
+    "angular-spinkit": "^0.3.3",
     "browser-sync": "latest",
     "del": "latest",
     "gulp": "latest",

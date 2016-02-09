@@ -10,14 +10,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- build:css css/head.css -->
+        <link rel="stylesheet" href="node_modules/angular-spinkit/build/angular-spinkit.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <!-- endbuild -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-messages.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-messages.js"></script>
+        
+        <!-- build:js js/head.js -->
+        <script src="node_modules/angular-spinkit/build/angular-spinkit.min.js"></script>
+        <!-- endbuild -->
 
     </head>
     <body ng-controller="MainController" class="{{ currentPageClass() }}">
@@ -33,11 +38,12 @@
                 <li><a href="#/contact">contact</a></li>
             </ul>
         </nav>
+        
+        <route-loading></route-loading>
 
         <section>
-            <div ng-view></div>
+            <div ng-view ng-cloak class="view-animate"></div>
         </section>
-
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
