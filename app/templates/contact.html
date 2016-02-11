@@ -1,50 +1,62 @@
-<section ng-controller="ContactController">
+<section ng-controller="ContactController" class="contact-wrapper">
 	<form ng-submit="sumitted()" name="contactForm" method="POST" action="" required>
-		<label>First Name:</label>
-		<input type="text" name="firstName" ng-model="firstName" required />
-		<div ng-messages="contactForm.firstName.$error"
-			ng-if="contactForm.firstName.$dirty">
-			<div ng-message="required">This field is required</div>
+		<div class="input-wrapper">
+			<label>First Name:</label>
+			<input type="text" name="firstName" ng-model="firstName" required />
+			<div class="errorMessage" ng-messages="contactForm.firstName.$error"
+				ng-if="contactForm.firstName.$dirty">
+				<div ng-message="required">This field is required</div>
+			</div>
 		</div>
 
-		<label>Last Name:</label>
-		<input type="text" name="lastName" ng-model="lastName" required />
-		<div ng-messages="contactForm.lastName.$error"
-			ng-if="contactForm.lastName.$dirty">
-			<div ng-message="required">This field is required</div>
+		<div class="input-wrapper">
+			<label>Last Name:</label>
+			<input type="text" name="lastName" ng-model="lastName" required />
+			<div class="errorMessage" ng-messages="contactForm.lastName.$error"
+				ng-if="contactForm.lastName.$dirty">
+				<div ng-message="required">This field is required</div>
+			</div>
 		</div>
 
-		<label>Email:</label>
-		<input type="email" name="email" ng-model="email" required />
-		<div ng-messages="contactForm.email.$error"
-			ng-if="contactForm.email.$dirty">
-			<div ng-message="required">This field is required</div>
-			<div ng-message="email">Your email address is invalid</div>
+		<div class="input-wrapper">
+			<label>Email:</label>
+			<input type="email" name="email" ng-model="email" required />
+			<div class="errorMessage" ng-messages="contactForm.email.$error"
+				ng-if="contactForm.email.$dirty">
+				<div ng-message="required">This field is required</div>
+				<div ng-message="email">Your email address is invalid</div>
+			</div>
 		</div>
 
-		<label for="winnie_the_pooh">If you're a homo sapien, leave this for Winnie the Pooh. Meaning leave it blank.</label>
-		<input id="winnie_the_pooh" ng-model="winnie_the_pooh" type="text" name="winnie_the_pooh" value="">
-
-		<label>Phone:</label>
-		<input type="text" name="phoneNumber" ng-model="phoneNumber"
-			ng-pattern="/^[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/" required/>
-		<div ng-messages="contactForm.phoneNumber.$error"
-			ng-if="contactForm.phoneNumber.$dirty">
-			<div ng-message="required">This field is required</div>
-			<div ng-message="pattern">Must be a valid 10 digit phone number</div>
-		</div>
-			
-		<label>Message:</label>
-		<textarea type="text" name="message" ng-model="message" ng-minlength="1"
-			ng-maxlength="1000" required></textarea>
-		<div ng-messages="contactForm.message.$error"
-			ng-if="contactForm.message.$dirty">
-			<div ng-message="required">This field is required</div>
-			<div ng-message="minlength">Message must be over 50 characters</div>
-			<div ng-message="maxlength">Message must not exceed 1000 characters</div>
+		<div class="input-wrapper">
+			<label for="winnie_the_pooh">If you're a homo sapien, leave this for 	Winnie the Pooh. Meaning leave it blank.</label>
+			<input id="winnie_the_pooh" ng-model="winnie_the_pooh" type="text" name="winnie_the_pooh" value="">
 		</div>
 
-		<input type="submit" value="Submit!" name="submit">
+		<div class="input-wrapper">
+			<label>Phone:</label>
+			<input type="text" name="phoneNumber" ng-model="phoneNumber"	
+				ng-pattern="/^[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/" required/>
+			<div class="errorMessage" ng-messages="contactForm.phoneNumber.$error"
+				ng-if="contactForm.phoneNumber.$dirty">
+				<div ng-message="required">This field is required</div>
+				<div ng-message="pattern">Must be a valid 10 digit phone number</div>
+			</div>
+		</div>
+				
+		<div class="input-wrapper">
+			<label>Message:</label>
+			<textarea type="text" name="message" ng-model="message" ng-minlength="1"	
+				ng-maxlength="1000" required></textarea>
+			<div class="errorMessage" ng-messages="contactForm.message.$error"
+				ng-if="contactForm.message.$dirty">
+				<div ng-message="required">This field is required</div>
+				<div ng-message="minlength">Message must be over 50 characters</div>
+				<div ng-message="maxlength">Message must not exceed 1000 characters</div>
+			</div>
+		</div>
+
+		<input class="cta" type="submit" value="Reach Out" name="submit">
 	</form>
 </section>
 

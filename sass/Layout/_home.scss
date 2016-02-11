@@ -11,7 +11,6 @@
 	}
 
 	.gallery-item {
-		// padding: 36px 0;
 		margin: 36px 0;
 		
 		img {
@@ -27,6 +26,9 @@
 		}
 		
 		@include mq(medium) {
+			margin-top: 19px;
+			margin-bottom: 19px;
+			padding: 12px;
 			@include span(4);
 			position: relative;
 			clear: none;
@@ -55,6 +57,9 @@
 				         -o-animation: fadein 0.3s;
 				            animation: fadein 0.3s;
 				}
+			}
+			img {
+				padding: 0;
 			}
 		}
 	}

@@ -26,27 +26,6 @@
 			clear: both;
 		}	
 	}
-	.siteCTA {
-		clear: both;
-		border: 1px solid $font-color-accent;
-		background: $font-color-accent;
-		display: block;
-		padding: 0 12px;
-		width: 150px;
-		margin: auto;
-		transition: background ease 0.2s;
-		@include mq(medium) {
-			position: relative;
-			top: 60px;
-		}
-		&:hover {
-			background: transparent;
-		}
-		p {
-			margin: 8px 0;
-			color: $white;
-		}
-	}
 }
 
 

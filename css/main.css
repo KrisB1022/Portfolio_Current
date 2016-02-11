@@ -737,6 +737,39 @@ h1, h2, h3 {
     opacity: 1;
   }
 }
+/* CTA */
+/* line 147, ../sass/Layout/_globals.scss */
+.cta,
+input.cta {
+  clear: both;
+  border: 1px solid #58a4b0;
+  background: #58a4b0;
+  display: block;
+  padding: 0 12px;
+  width: 150px;
+  margin: auto;
+  transition: background ease 0.2s;
+}
+@media screen and (min-width: 1000px) {
+  /* line 147, ../sass/Layout/_globals.scss */
+  .cta,
+  input.cta {
+    position: relative;
+    top: 60px;
+  }
+}
+/* line 161, ../sass/Layout/_globals.scss */
+.cta:hover,
+input.cta:hover {
+  background: transparent;
+}
+/* line 164, ../sass/Layout/_globals.scss */
+.cta p,
+input.cta p {
+  margin: 8px 0;
+  color: #FFF;
+}
+
 /* line 2, ../sass/Layout/_home.scss */
 .home .intro-wrapper {
   padding: 12px;
@@ -762,7 +795,7 @@ h1, h2, h3 {
 .home .gallery-item {
   margin: 36px 0;
 }
-/* line 17, ../sass/Layout/_home.scss */
+/* line 16, ../sass/Layout/_home.scss */
 .home .gallery-item img {
   padding: 0 12px;
 }
@@ -774,7 +807,7 @@ h1, h2, h3 {
     margin-right: 3.16742%;
     clear: right;
   }
-  /* line 24, ../sass/Layout/_home.scss */
+  /* line 23, ../sass/Layout/_home.scss */
   .home .gallery-item:nth-child(even) {
     float: right;
     margin-right: 0;
@@ -783,24 +816,27 @@ h1, h2, h3 {
 @media screen and (min-width: 1000px) {
   /* line 13, ../sass/Layout/_home.scss */
   .home .gallery-item {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    padding: 12px;
     width: 31.22172%;
     float: left;
     margin-right: 3.16742%;
     position: relative;
     clear: none;
   }
-  /* line 33, ../sass/Layout/_home.scss */
+  /* line 35, ../sass/Layout/_home.scss */
   .home .gallery-item:nth-child(even) {
     width: 31.22172%;
     float: left;
     margin-right: 3.16742%;
   }
-  /* line 36, ../sass/Layout/_home.scss */
+  /* line 38, ../sass/Layout/_home.scss */
   .home .gallery-item:nth-child(3n) {
     float: right;
     margin-right: 0;
   }
-  /* line 40, ../sass/Layout/_home.scss */
+  /* line 42, ../sass/Layout/_home.scss */
   .home .gallery-item:hover img {
     -webkit-filter: blur(4px) brightness(50%);
     -moz-filter: blur(4px) brightness(50%);
@@ -811,26 +847,30 @@ h1, h2, h3 {
     transition: filter ease-in-out 0.3s;
     transition: filter ease-in-out 0.3s, -webkit-filter ease-in-out 0.3s;
   }
-  /* line 48, ../sass/Layout/_home.scss */
+  /* line 50, ../sass/Layout/_home.scss */
   .home .gallery-item:hover .gallery-info {
     display: block;
     color: #D8DBE2;
     -webkit-animation: fadein 0.3s;
     animation: fadein 0.3s;
   }
+  /* line 61, ../sass/Layout/_home.scss */
+  .home .gallery-item img {
+    padding: 0;
+  }
 }
-/* line 61, ../sass/Layout/_home.scss */
+/* line 66, ../sass/Layout/_home.scss */
 .home .gallery-info {
   padding: 12px;
 }
-/* line 63, ../sass/Layout/_home.scss */
+/* line 68, ../sass/Layout/_home.scss */
 .home .gallery-info .projectTitle,
 .home .gallery-info .projectSummary {
   margin: 0;
   margin-bottom: 0.6875rem;
 }
 @media screen and (min-width: 1000px) {
-  /* line 61, ../sass/Layout/_home.scss */
+  /* line 66, ../sass/Layout/_home.scss */
   .home .gallery-info {
     display: none;
     position: absolute;
@@ -841,7 +881,7 @@ h1, h2, h3 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  /* line 79, ../sass/Layout/_home.scss */
+  /* line 84, ../sass/Layout/_home.scss */
   .home .gallery-info .projectTitle,
   .home .gallery-info .projectSummary {
     margin-top: 1em;
@@ -905,52 +945,25 @@ h1, h2, h3 {
     clear: both;
   }
 }
-/* line 29, ../sass/Layout/_project_single.scss */
-.singleProject-wrapper .siteCTA {
-  clear: both;
-  border: 1px solid #58a4b0;
-  background: #58a4b0;
-  display: block;
-  padding: 0 12px;
-  width: 150px;
-  margin: auto;
-  transition: background ease 0.2s;
-}
-@media screen and (min-width: 1000px) {
-  /* line 29, ../sass/Layout/_project_single.scss */
-  .singleProject-wrapper .siteCTA {
-    position: relative;
-    top: 60px;
-  }
-}
-/* line 42, ../sass/Layout/_project_single.scss */
-.singleProject-wrapper .siteCTA:hover {
-  background: transparent;
-}
-/* line 45, ../sass/Layout/_project_single.scss */
-.singleProject-wrapper .siteCTA p {
-  margin: 8px 0;
-  color: #FFF;
-}
 
-/* line 53, ../sass/Layout/_project_single.scss */
+/* line 32, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper {
   display: none;
   padding-right: 12px;
   float: right;
 }
 @media screen and (min-width: 1200px) {
-  /* line 53, ../sass/Layout/_project_single.scss */
+  /* line 32, ../sass/Layout/_project_single.scss */
   .projectNavigation-wrapper {
     display: inline-block;
   }
 }
-/* line 60, ../sass/Layout/_project_single.scss */
+/* line 39, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper .prev-wrapper,
 .projectNavigation-wrapper .next-wrapper {
   display: inline;
 }
-/* line 64, ../sass/Layout/_project_single.scss */
+/* line 43, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper .screenReader {
   text-indent: -119988px;
   overflow: hidden;
@@ -960,7 +973,7 @@ h1, h2, h3 {
 }
 
 /* Arrows */
-/* line 83, ../sass/Layout/_project_single.scss */
+/* line 62, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper button {
   cursor: pointer;
   -webkit-appearance: none;
@@ -971,11 +984,11 @@ h1, h2, h3 {
   position: relative;
   background: transparent;
 }
-/* line 92, ../sass/Layout/_project_single.scss */
+/* line 71, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper button:hover i {
   background: #58a4b0;
 }
-/* line 95, ../sass/Layout/_project_single.scss */
+/* line 74, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper button i {
   position: absolute;
   width: 20px;
@@ -984,37 +997,37 @@ h1, h2, h3 {
   background: #D8DBE2;
   transition: background ease 0.2s;
 }
-/* line 105, ../sass/Layout/_project_single.scss */
+/* line 84, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper .prev-wrapper i {
   -webkit-transform-origin: 0% 50%;
       -ms-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
 }
-/* line 74, ../sass/Layout/_project_single.scss */
+/* line 53, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper .prev-wrapper i:first-child {
   -webkit-transform: translate(1px, -1px) rotate(40deg);
       -ms-transform: translate(1px, -1px) rotate(40deg);
           transform: translate(1px, -1px) rotate(40deg);
 }
-/* line 77, ../sass/Layout/_project_single.scss */
+/* line 56, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper .prev-wrapper i:nth-child(2) {
   -webkit-transform: translate(1px, 1px) rotate(-40deg);
       -ms-transform: translate(1px, 1px) rotate(-40deg);
           transform: translate(1px, 1px) rotate(-40deg);
 }
-/* line 111, ../sass/Layout/_project_single.scss */
+/* line 90, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper .next-wrapper i {
   -webkit-transform-origin: 100% 50%;
       -ms-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
 }
-/* line 74, ../sass/Layout/_project_single.scss */
+/* line 53, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper .next-wrapper i:first-child {
   -webkit-transform: translate(1px, -1px) rotate(-40deg);
       -ms-transform: translate(1px, -1px) rotate(-40deg);
           transform: translate(1px, -1px) rotate(-40deg);
 }
-/* line 77, ../sass/Layout/_project_single.scss */
+/* line 56, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper .next-wrapper i:nth-child(2) {
   -webkit-transform: translate(1px, 1px) rotate(40deg);
       -ms-transform: translate(1px, 1px) rotate(40deg);
@@ -1022,12 +1035,88 @@ h1, h2, h3 {
 }
 
 /* line 1, ../sass/Layout/_contact.scss */
-.submissionMessage {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+.contact-wrapper {
+  max-width: 640px;
   padding: 12px;
-  text-align: center;
-  display: block;
-  box-shadow: 0 0 2px white;
-  width: 60%;
+  margin-bottom: 85px;
+  margin-top: 25px;
+}
+/* line 6, ../sass/Layout/_contact.scss */
+.contact-wrapper .errorMessage.ng-active {
+  color: #ff9494;
+  padding: 6px 0;
+  width: 100%;
+}
+/* line 11, ../sass/Layout/_contact.scss */
+.contact-wrapper .input-wrapper {
+  position: relative;
+}
+/* line 13, ../sass/Layout/_contact.scss */
+.contact-wrapper .input-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 19, ../sass/Layout/_contact.scss */
+.contact-wrapper .cta {
+  margin: 8px 0;
+  height: 38px;
+  float: right;
+}
+/* line 24, ../sass/Layout/_contact.scss */
+.contact-wrapper textarea {
+  min-height: 120px;
+}
+/* line 27, ../sass/Layout/_contact.scss */
+.contact-wrapper input:not(.cta),
+.contact-wrapper textarea {
+  color: #1b1b1e;
+  padding: 6px;
+}
+/* line 32, ../sass/Layout/_contact.scss */
+.contact-wrapper label,
+.contact-wrapper input:not(.cta),
+.contact-wrapper textarea {
+  width: 100%;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1000px) {
+  /* line 1, ../sass/Layout/_contact.scss */
+  .contact-wrapper {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    right: 0;
+  }
+  /* line 45, ../sass/Layout/_contact.scss */
+  .contact-wrapper .errorMessage.ng-active {
+    padding: 6px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 5px 10px;
+    position: absolute;
+    right: -162px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  /* line 55, ../sass/Layout/_contact.scss */
+  .contact-wrapper label {
+    width: 31.22172%;
+    float: left;
+    margin-right: 3.16742%;
+    padding: 6px;
+  }
+  /* line 59, ../sass/Layout/_contact.scss */
+  .contact-wrapper input:not(.cta),
+  .contact-wrapper textarea {
+    width: 65.61086%;
+    float: right;
+    margin-right: 0;
+  }
 }
