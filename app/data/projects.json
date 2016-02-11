@@ -14,6 +14,20 @@
 		"websiteUrl": "http://MicrosoftReactor.com",
 		"projectURL": "MicrosoftReactor"
 	},
+	"HaloFrance": {
+		"projectTitle": "Halo France",
+		"projectSummary": "French built Halo vs Locke voting website.",
+		"thumbnail": "img/halo/thumbnail.png",
+		"thumbnailAlt": "Screenshot of site",
+		
+		"heroImg": "img/halo/hero.png",
+		"heroAlt": "Sscreenshot on laptop",
+		
+		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"languages": ["HTML", "CSS", "Javascript", "jQuery"],
+
+		"projectURL": "HaloFrance"
+	},
 	"QR_Generator": {
 		"projectTitle": "QR Code Generator",
 		"projectSummary": "QR Code Generator with integrated images, fully customized QR Code styling and raster image download.",
