@@ -1,5 +1,5 @@
 (function($) {
-	"use strict"
+	"use strict";
 
 	angular.module("myPortfolio", ['ngRoute', 'ngMessages', 'ngAnimate', 'angular-spinkit'])
 		.config(["$routeProvider", "$sceProvider", function($routeProvider, $sceProvider) {
@@ -64,7 +64,7 @@
 						}, 2000);
 					});
 				}
-			}
+			};
 		}])
 
 		.controller("MainController", ["$scope", "$location", function($scope, $location) {
@@ -80,11 +80,11 @@
 			
 			/* Mobile Nav hamburger */
 			$scope.slideNav = function() {
-				$('.nav').slideToggle()
+				$('.nav').slideToggle();
 			};
 		}])
 		
 		;
 
 
-})(jQuery)
+})(jQuery);

@@ -58,4 +58,4 @@ angular.module("myPortfolio")
 
 	}]);
 
-})(jQuery)
+})(jQuery);

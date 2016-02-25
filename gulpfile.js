@@ -27,13 +27,10 @@ function errorMessage ( err ) {
 }
 
 gulp.task('html', ['compileSass'], function() {
-	var assets = useref.assets();
-	gulp.src('index.html')
-		.pipe(assets)
+	return gulp.src('index.html')
 		// Minification pipes
 		// .pipe(iff('*.js', uglify()))
 		// .pipe(iff('*.css', csso()))
-		.pipe(assets.restore())
 		.pipe(useref())
 		.pipe(gulp.dest('dist/'))
 });
@@ -122,6 +119,7 @@ gulp.task('build', ['html', 'jslint'], function() {
 	return gulp.src([
 		// to be included in dist
 		'img/**', 
+		'app/**',
 		// 'videos/**',
 		// 'fonts/**',
 		// 'README.txt'

@@ -10,10 +10,11 @@
 	}
 	@include mq(medium) {
 		.summary {
-			@include span(9);
+			@include span(75%);
+			margin-bottom: 0;
 		}
 		.languages_ul {
-			@include span(3 last);
+			@include span(20% last);
 			border-top: none;
 			border-left: 1px solid $font-color-accent;
 			padding: 0 0 0 40px;

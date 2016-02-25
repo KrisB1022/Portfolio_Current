@@ -8,4 +8,4 @@ angular.module("myPortfolio")
 		}, 3500)
 	}]);
 
-})(jQuery)
+})(jQuery);

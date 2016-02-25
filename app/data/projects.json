@@ -1,14 +1,18 @@
 {
 	"MicrosoftReactor": {
 		"projectTitle": "Microsoft Reactor",
-		"projectSummary": "Customized WordPress site.",
+		"projectSummary": "Customized WordPress site for Microsoft Reactor.",
 		"thumbnail": "img/reactor/thumbnail.png",
 		"thumbnailAlt": "Microsoft Reactor screenshot on Surface Book laptop",
 		
 		"heroImg": "img/reactor/hero.png",
 		"heroAlt": "Microsoft Reactor screenshot on laptop",
 		
-		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"projectDetails": [
+			"Microsoft Reactor is a new venture from Microsoft which helps to facilitate startup growth using Microsoft's Azure development platform. This space is a modern and open place located in San Francisco where individuals or teams, can grab coffee, meet, work on their projects and get in-person answers regarding Microsoft Azure services - at no cost.",
+			"The website was built with the WordPress CMS. A custom events' loop, content modules/blades and other features were integrated into Divi's WordPress theme, allowing for a fast, robust and complete build.",
+			"I was tasked with building completed site, modifying the event plugin to full-fill design and functionality, as well as setting up the web environment."
+		],
 		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
 
 		"websiteUrl": "http://MicrosoftReactor.com",
@@ -17,14 +21,19 @@
 
 	"HaloFrance": {
 		"projectTitle": "Halo France",
-		"projectSummary": "French built Halo vs Locke voting website.",
+		"projectSummary": "French website built to vote for Team Master Chief or Team Locke - Halo.",
 		"thumbnail": "img/halo/thumbnail.png",
 		"thumbnailAlt": "Screenshot of site",
 		
 		"heroImg": "img/halo/hero.png",
 		"heroAlt": "Sscreenshot on laptop",
 		
-		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"projectDetails": [
+			"The basic concept was to create a website to be integrated into an existing site, which would allow visitors to vote on a weekly basis of which Halo team (Master Chief or Locke) they prefer.",
+			"Starting from a mobile-first perspective, I was tasked to create a visual and interactive experience with only a full desktop PSD and some functional specs. Using a fluid grid, the web page adjust based on the user's view port, keeping consistency across multiple browsers and devices.",
+			"Each week of the four weeks of voting, had three different states (voting closed, voting open, voting results), with each week being controlled by a simple Javascript method and each week dynamically showing which prize was available.",
+			"The biggest challenge for this project was to ensure that the site could be dropped into the existing website, and for the results to be accurate based on the voting data (estimated calculations were used for better user experience). The animations of each of the results bar were created using Javascript."
+		],
 		"languages": ["HTML", "CSS", "Javascript", "jQuery"],
 
 		"projectURL": "HaloFrance"
@@ -39,7 +48,12 @@
 		"heroImg": "img/qr_code/responsive.png",
 		"heroAlt": "Screenshots of responsive versions of qr generator",
 
-		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"projectDetails": [
+			"This project is a good example of implementation of a simple design and usability. The single page website, allowed users to generate QR codes with custom colors, text, shapes, and sizes, for download and use in web and print.",
+			"Working closely with a digital designer, we started with the full list of possible tools that could be included, and then researched existing QR tools to determine what was helpful and what was unnecessary. We then created user flows that resulted in a simple 3 step process.",
+			"Taking the newly create design, I modified a small SVG QR code base, adding the ability to place customized copy, sizing and other features utilizing HTML form elements. The project was then skinned and made responsive for three set devices."
+
+		],
 		"languages": ["PHP", "HTML", "CSS", "SVG", "Javascript"],
 
 		"projectURL": "QR_Generator"
@@ -47,15 +61,19 @@
 
 	"MicrosoftVentures": {
 		"projectTitle": "Microsoft Ventures",
-		"projectSummary": "Customized CMS site.",
+		"projectSummary": "Customized CMS for Microsoft Ventures.",
 		"thumbnail": "img/ventures/thumbnail.png",
 		"thumbnailAlt": "Microsoft Ventures screenshot",
 		
 		"heroImg": "img/ventures/hero.png",
 		"heroAlt": "Microsoft Ventures screenshot on laptop",
 		
-		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
+		"projectDetails": [
+			"Microsoft Ventures is a global, startup incubator. I was brought on midway through this project to assist in completion of the fully-customized CMS's front-end.",
+			"While working closely with a team of designers, I assisted in creating a robust and mobile-friendly visual experience. I developed specific content modules/blocks as well as pages and portions of the site's navigation.",
+			"During this project, I helped to implement a Version Control system and project flow, which helped in implementing each content module/block per design."
+		],
+		"languages": ["HTML", "CSS", "jQuery"],
 		
 		"websiteUrl": "http://microsoftventures.com",
 		"projectURL": "MicrosoftVentures"
@@ -70,7 +88,11 @@
 		"heroImg": "img/irishmen/hero.png",
 		"heroAlt": "Screenshot on laptop",
 		
-		"projectDetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"projectDetails": [
+			"As my first custom WordPress site, my first client and essentially my first professional build and design, this web project was a lot of fun and rewarding to complete.",
+			"Having started from a static Twitter Bootstrap build, I migrated and integrated this site to work within WordPress for the client. Fully customized query loops, web templates and plug-in integrations were just a few of the exciting things that I got to grow and learn from."
+
+		],
 		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
 
 		"websiteUrl": "http://Irishmen.com",

@@ -1,6 +1,9 @@
 .home {
 	.intro-wrapper {
 		padding: 12px;
+		.intro_p {
+			max-width: 670px;
+		}
 	}
 	.title_h1 {
 		@include adjust-font-size-to(26px);
@@ -40,12 +43,12 @@
 			}
 			&:hover {
 				img {
-					-webkit-filter: blur(4px) brightness(50%);
-					-moz-filter: blur(4px) brightness(50%);
-					-ms-filter: blur(4px) brightness(50%);
-					-o-filter: blur(4px) brightness(50%);
-					filter: blur(4px) brightness(50%);
-					transition: filter ease-in-out 0.3s;
+					-webkit-filter: brightness(50%);
+					-moz-filter: brightness(50%);
+					-ms-filter: brightness(50%);
+					-o-filter: brightness(50%);
+					filter: brightness(50%);
+					transition: filter ease-in-out 0.1s;
 				}
 				.gallery-info {
 					display: block;
@@ -75,7 +78,7 @@
 			display: none;
 			position: absolute;
 			width: 100%;
-			left: 0;
+			left: 18px;
 			top: 50%;
 			-webkit-transform: translateY(-50%);
 			-ms-transform: translateY(-50%);

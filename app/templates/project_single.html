@@ -19,10 +19,11 @@
 	<img ng-src="{{ project.heroImg }}" alt="{{ project.heroAlt }}">
 
 
-	<p class="summary">{{ project.projectDetails }}
 	<ul class="languages_ul">
 		<li ng-repeat="language in project.languages">{{ language }}</li>
 	</ul>
+	
+	<p class="summary" ng-repeat="details in project.projectDetails">{{ details }}</p>
 
 	<aside class="projectImage-wrapper" ng-if="project.projectImages">
 		<img ng-repeat="image in project.projectImages" 
