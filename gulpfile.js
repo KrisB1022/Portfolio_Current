@@ -56,6 +56,9 @@ gulp.task("csslint", function() {
 
   // Stylelint config rules
   var stylelintConfig = {
+  	"plugins": [
+    	"stylelint-statement-max-nesting-depth"
+  	],
     "rules": {
       "block-no-empty": true,
       "color-no-invalid-hex": true,
@@ -76,6 +79,7 @@ gulp.task("csslint", function() {
       "selector-list-comma-space-before": "never",
       "selector-list-comma-newline-after": "always",
       "selector-no-id": true,
+      "statement-max-nesting-depth": [3, { countAtRules: false }],
       "string-quotes": "double",
       "value-no-vendor-prefix": true
     }
