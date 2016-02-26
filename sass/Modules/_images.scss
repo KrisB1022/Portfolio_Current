@@ -8,10 +8,10 @@
 	background-size: 100% 100%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	-ms-interpolation-mode: bicubic;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+	// -ms-interpolation-mode: bicubic;
+	// -moz-box-sizing: border-box;
+	// -ms-box-sizing: border-box;
+	// -webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	.innerImg {
 		@include hide-text;
@@ -19,30 +19,4 @@
 		height: 0;
 	}
 }
-
-
-
-/*Main Header Featured Image*/
-// .spotlight_img {
-// 	@include span(12);
-// 	@include bgImage('carousel_01', 440px, 310px, 'carousel');
-// }
-
-
-// $carouselImages: 
-// 	carousel_01
-// 	carousel_02
-// 	carousel_03
-// 	carousel_04
-// 	placeholder;
-
-// @each $carouselImage in $carouselImages {
-// 	$i: index($carouselImages, $carouselImage);
-// 	.spotlight-carousel,
-// 	.carousel-wrapper {
-// 		.carousel_#{$i} {
-// 			@include bgImage('#{$carouselImage}', 88px, 54px, 'carousel');
-// 		}
-// 	}
-// }
 

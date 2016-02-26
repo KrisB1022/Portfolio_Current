@@ -4,39 +4,32 @@
 
 // Base Colors
  
- $black					: #1b1b1e !default;
- $white					: #FFF !default;
+ $black: #1b1b1e !default;
+ $white: #FFF !default;
 
 // Color Usage
-$font-color-primary		: #D8DBE2;
-$font-color-accent		: #58a4b0;
+$font-color-primary: #D8DBE2;
+$font-color-accent: #58a4b0;
 $font-color-primary_rgba: rgba(27, 27, 30, 0.7);
 
 // Text
 
-$base-font-size			: 16px !default;
-$base-line-height		: 22px !default;
+$base-font-size: 16px !default;
+$base-line-height: 22px !default;
 $round-to-nearest-half-line: true;
 $rhythm-unit: "rem";
 
 
 // Media Queries
 
-$break-small           	: 500px;
-$break-medium			: 1000px;
-$break-large            : 1200px;
+$break-small: 500px;
+$break-medium: 1000px;
+$break-large: 1200px;
 
 
 
 // Fonts
 
-$font-fallBacks          : sans-serif, Verdana, Arial;
+$font-fallBacks: sans-serif, Verdana, Arial;
 
-$font-family-primary	 : 'Raleway', $font-fallBacks;
-
-
-
-
-
-
-
+$font-family-primary: "Raleway", $font-fallBacks;

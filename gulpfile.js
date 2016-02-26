@@ -11,9 +11,13 @@ var gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	maps = require('gulp-sourcemaps'),
 	plumber = require('gulp-plumber'),
+	postcss = require('gulp-postcss'),
 	rename = require('gulp-rename'),
+	reporter = require('postcss-reporter'),
 	sass = require('gulp-sass'),
 	stripDebug = require('gulp-strip-debug'),
+	stylelint = require('stylelint'),
+	syntaxScss = require('postcss-scss'),
 	uglify = require('gulp-uglify'),
 	useref = require('gulp-useref');
 	
@@ -35,6 +39,11 @@ gulp.task('html', ['compileSass'], function() {
 		.pipe(gulp.dest('dist/'))
 });
 
+/**
+* Linters
+*/
+
+
 gulp.task('jslint', function() {
 	return gulp.src( 'js/app.js' )
 		.pipe(plumber())
@@ -43,7 +52,53 @@ gulp.task('jslint', function() {
 		.pipe(jshint.reporter('fail'));
 });
 
-/*
+gulp.task("csslint", function() {
+
+  // Stylelint config rules
+  var stylelintConfig = {
+    "rules": {
+      "block-no-empty": true,
+      "color-no-invalid-hex": true,
+      "declaration-colon-space-after": "always",
+      "declaration-colon-space-before": "never",
+      "function-comma-space-after": "always",
+      "function-url-quotes": "double",
+      "media-feature-colon-space-after": "always",
+      "media-feature-colon-space-before": "never",
+      "media-feature-name-no-vendor-prefix": true,
+      "max-empty-lines": 5,
+      "number-leading-zero": "always",
+      "number-no-trailing-zeros": true,
+      "property-no-vendor-prefix": true,
+      "rule-no-duplicate-properties": true,
+      "declaration-block-no-single-line": true,
+      "rule-trailing-semicolon": "always",
+      "selector-list-comma-space-before": "never",
+      "selector-list-comma-newline-after": "always",
+      "selector-no-id": true,
+      "string-quotes": "double",
+      "value-no-vendor-prefix": true
+    }
+  }
+
+  var processors = [
+    stylelint(stylelintConfig),
+    // Pretty reporting config
+    reporter({
+      clearMessages: true,
+      // throwError: true
+    })
+  ];
+
+  return gulp.src(
+      // Stylesheet source:
+      ['sass/**/*.scss']
+    )
+    .pipe(postcss(processors, {syntax: syntaxScss}));
+});
+
+
+/**
 * Css related tasks
 */
 gulp.task('compileSass', function() {
@@ -115,7 +170,7 @@ gulp.task('serve', ['watchFiles']);
 
 
 // Dist task. Will clean / build then create new subdirectory for dist
-gulp.task('build', ['html', 'jslint'], function() {
+gulp.task('build', ['html', 'jslint', 'csslint'], function() {
 	return gulp.src([
 		// to be included in dist
 		'img/**', 
