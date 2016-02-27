@@ -1,0 +1,99 @@
+.header {
+	position: relative;
+	background-color: #000;
+	padding-bottom: 24px;
+	.video-container {
+		position: relative;
+		padding-bottom: per(415px, 1000px);
+		height: 0;
+		overflow: hidden;
+		.mobileOnly {
+			display: none;
+		}
+		#headerVideo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.heading-wrapper {
+		position: relative;
+		bottom: 22px;
+		.title {
+			color: #ffb400;
+			font-size: 40px;
+			text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.81);
+			text-align: center;
+			&:hover {
+				color: #1072a3;
+			}
+		}
+		.twitterHash {
+			font-size: em(20px);
+			color: $white;
+			margin-top: 8px;
+			padding: 0 22px;
+			@include span(6);
+			margin-bottom: 0;
+			&:last-of-type {
+				@include last;
+				text-align: right;
+			}
+		}
+		.twitterHashImg {
+			display: none;
+		}
+	}	
+}
+
+// MQ
+.header {
+	.video-container {
+		@media only screen and (max-width: 719px) {
+			#headerVideo {
+				display: none;
+			}
+			.mobileOnly {
+				display: block;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 600px) {
+		.heading-wrapper {
+			.title {
+				@include span(6 no-gutter);
+				float: none;
+				margin: 0 auto;
+			}				
+			.twitterHashImg {
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				&:first-of-type {
+					left: 0;
+					@include span(3 before);
+				}
+				&:last-of-type {
+					right: 0;
+					@include span(3)
+				}
+			}
+			.twitterHash {
+				display: none;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 875px) {
+		.heading-wrapper {
+			.title {
+				font-size: em(60px);
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+$susy: (
+	// for 960w = 80px column && 20px gutter
+	columns: 12,
+	gutters: 1/4,
+	container: $break-large,
+	global-box-sizing: border-box,
+);
