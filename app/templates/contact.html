@@ -1,5 +1,5 @@
 <section ng-controller="ContactController" class="contact-wrapper">
-	<form ng-submit="sumitted()" name="contactForm" method="POST" action="" required>
+	<form name="contactForm" method="POST" required>
 		<div class="input-wrapper">
 			<label>First Name:</label>
 			<input type="text" name="firstName" ng-model="firstName" required />
@@ -56,7 +56,7 @@
 			</div>
 		</div>
 
-		<input class="cta" type="submit" value="Reach Out" name="submit">
+		<input class="cta" type="submit" value="Reach Out" name="submit" ng-click="submitted()">
 	</form>
 </section>
 

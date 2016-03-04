@@ -1,0 +1,1873 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, ../sass/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../sass/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../sass/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../sass/base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../sass/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../sass/base/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../sass/base/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 98, ../sass/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, ../sass/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, ../sass/base/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, ../sass/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, ../sass/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, ../sass/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, ../sass/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, ../sass/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, ../sass/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, ../sass/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, ../sass/base/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, ../sass/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, ../sass/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, ../sass/base/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, ../sass/base/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, ../sass/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, ../sass/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, ../sass/base/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, ../sass/base/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, ../sass/base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, ../sass/base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, ../sass/base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, ../sass/base/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, ../sass/base/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, ../sass/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, ../sass/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, ../sass/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, ../sass/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, ../sass/base/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, ../sass/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, ../sass/base/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, ../sass/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, ../sass/base/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, ../sass/base/_boilerplate.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 27, ../sass/base/_boilerplate.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 32, ../sass/base/_boilerplate.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 41, ../sass/base/_boilerplate.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/* line 56, ../sass/base/_boilerplate.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 69, ../sass/base/_boilerplate.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 79, ../sass/base/_boilerplate.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* line 87, ../sass/base/_boilerplate.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  /* line 101, ../sass/base/_boilerplate.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 111, ../sass/base/_boilerplate.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 116, ../sass/base/_boilerplate.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 120, ../sass/base/_boilerplate.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  /* line 129, ../sass/base/_boilerplate.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 134, ../sass/base/_boilerplate.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  /* line 145, ../sass/base/_boilerplate.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 149, ../sass/base/_boilerplate.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 154, ../sass/base/_boilerplate.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 158, ../sass/base/_boilerplate.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 165, ../sass/base/_boilerplate.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/*Name the colors here -- http://chir.ag/projects/name-that-color/  */
+/* line 4, ../sass/base/_base.scss */
+body {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial;
+  color: #3e3e3e;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 12, ../../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 21, ../../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/susy-2.2.5/sass/susy/language/susy/_box-sizing.scss */
+* *, * *:before, * *:after {
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/base/_base.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 18, ../sass/base/_base.scss */
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 18, ../../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: inherit;
+}
+/* line 24, ../../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #e5e5e5;
+}
+/* line 27, ../../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #FFFFFF;
+}
+
+/* line 23, ../sass/base/_base.scss */
+li {
+  list-style: none;
+}
+
+/* line 106, ../../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 87.5%;
+  line-height: 1.14286em;
+}
+
+/* line 4, ../sass/Utilities/_extend.scss */
+.preorder-wrapper .item-wrapper .info .button .text, .bundle-wrapper .info-wrapper .button .text, .week-wrapper .votingInfo-wrapper .choiceResponse-wrapper, .week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper .socialIcon, .week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper label, .week-wrapper .toggle-wrapper .menuToggle, .results-wrapper {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 10, ../sass/Utilities/_extend.scss */
+.preorder-wrapper .item-wrapper .info .button, .bundle-wrapper .info-wrapper .button {
+  color: #FFFFFF;
+  background-color: #107c10;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  width: 124px;
+  height: 33px;
+  font-size: 13px;
+  padding: 0;
+}
+@media only screen and (min-width: 660px) {
+  /* line 10, ../sass/Utilities/_extend.scss */
+  .preorder-wrapper .item-wrapper .info .button, .bundle-wrapper .info-wrapper .button {
+    width: 148px;
+    height: 45px;
+  }
+}
+/* line 26, ../sass/Utilities/_extend.scss */
+.preorder-wrapper .item-wrapper .info .button .text, .bundle-wrapper .info-wrapper .button .text {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/*Global Settings*/
+/* line 2, ../sass/Modules/_images.scss */
+.img {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  font: 0/0 serif;
+  color: transparent;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -ms-interpolation-mode: bicubic;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 16, ../sass/Modules/_images.scss */
+.img .innerImg {
+  display: block;
+  height: 0;
+}
+
+/* line 23, ../sass/Modules/_images.scss */
+.chiefProfile {
+  background: url('../img/mc-wins.png?1440111405') no-repeat right;
+  background-size: contain;
+}
+
+/* line 27, ../sass/Modules/_images.scss */
+.lockeProfile {
+  background: url('../img/locke-wins.png?1440111403') no-repeat left;
+  background-size: contain;
+}
+
+/* line 33, ../sass/Modules/_images.scss */
+.week1:before {
+  background: url('../img/week1-bg.jpg?1440709623') no-repeat center;
+  background-size: contain;
+}
+
+/* line 39, ../sass/Modules/_images.scss */
+.week2:before {
+  background: url('../img/week2-bg.jpg?1440709622') no-repeat center;
+  background-size: contain;
+}
+
+/* line 45, ../sass/Modules/_images.scss */
+.week3:before {
+  background: url('../img/week3-bg.jpg?1440709625') no-repeat center;
+  background-size: contain;
+}
+
+/* line 51, ../sass/Modules/_images.scss */
+.week4:before {
+  background: url('../img/week4-bg.jpg?1441061283') no-repeat center;
+  background-size: contain;
+}
+
+/* line 57, ../sass/Modules/_images.scss */
+.hashImg {
+  background: url('../img/hashL.png?1440434938') repeat left center;
+  background-size: contain;
+}
+
+/* line 1, ../sass/Layout/_header.scss */
+.header {
+  position: relative;
+  background-color: #000;
+  padding-bottom: 24px;
+}
+/* line 5, ../sass/Layout/_header.scss */
+.header .video-container {
+  position: relative;
+  padding-bottom: 41.5%;
+  height: 0;
+  overflow: hidden;
+}
+/* line 10, ../sass/Layout/_header.scss */
+.header .video-container .mobileOnly {
+  display: none;
+}
+/* line 13, ../sass/Layout/_header.scss */
+.header .video-container #headerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 22, ../sass/Layout/_header.scss */
+.header .heading-wrapper {
+  position: relative;
+  bottom: 22px;
+}
+/* line 25, ../sass/Layout/_header.scss */
+.header .heading-wrapper .title {
+  color: #ffb400;
+  font-size: 40px;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.81);
+  text-align: center;
+}
+/* line 30, ../sass/Layout/_header.scss */
+.header .heading-wrapper .title:hover {
+  color: #1072a3;
+}
+/* line 34, ../sass/Layout/_header.scss */
+.header .heading-wrapper .twitterHash {
+  font-size: 1.42857em;
+  color: #FFFFFF;
+  margin-top: 8px;
+  padding: 0 22px;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-bottom: 0;
+}
+/* line 41, ../sass/Layout/_header.scss */
+.header .heading-wrapper .twitterHash:last-of-type {
+  float: right;
+  margin-right: 0;
+  text-align: right;
+}
+/* line 46, ../sass/Layout/_header.scss */
+.header .heading-wrapper .twitterHashImg {
+  display: none;
+}
+
+@media only screen and (max-width: 719px) {
+  /* line 56, ../sass/Layout/_header.scss */
+  .header .video-container #headerVideo {
+    display: none;
+  }
+  /* line 59, ../sass/Layout/_header.scss */
+  .header .video-container .mobileOnly {
+    display: block;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 67, ../sass/Layout/_header.scss */
+  .header .heading-wrapper .title {
+    width: 49.15254%;
+    float: left;
+    float: none;
+    margin: 0 auto;
+  }
+  /* line 72, ../sass/Layout/_header.scss */
+  .header .heading-wrapper .twitterHashImg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  /* line 77, ../sass/Layout/_header.scss */
+  .header .heading-wrapper .twitterHashImg:first-of-type {
+    left: 0;
+    width: 23.72881%;
+    float: left;
+    margin-left: 1.69492%;
+  }
+  /* line 81, ../sass/Layout/_header.scss */
+  .header .heading-wrapper .twitterHashImg:last-of-type {
+    right: 0;
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 86, ../sass/Layout/_header.scss */
+  .header .heading-wrapper .twitterHash {
+    display: none;
+  }
+}
+@media only screen and (min-width: 875px) {
+  /* line 94, ../sass/Layout/_header.scss */
+  .header .heading-wrapper .title {
+    font-size: 4.28571em;
+  }
+}
+
+/* line 1, ../sass/Layout/_preorder.scss */
+.preorder-wrapper {
+  background-color: #e5e5e5;
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  color: #3e3e3e;
+  font-size: 1em;
+  padding: 12px 10px 5px 15px;
+}
+/* line 8, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .title {
+  font-size: 1.57143em;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+/* line 15, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .item-wrapper {
+  position: relative;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 25px auto;
+  line-height: 1.2;
+  max-width: 400px;
+}
+/* line 21, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .item-wrapper * {
+  margin: 0;
+}
+/* line 24, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .item-wrapper .packageImg1 {
+  width: 51.2%;
+  max-width: 242px;
+}
+/* line 28, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .item-wrapper .packageImg2 {
+  width: 36.56%;
+  margin-left: 24px;
+  max-width: 132px;
+}
+/* line 33, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .item-wrapper .packageImg3 {
+  width: 38.35%;
+  margin-left: 15px;
+  max-width: 138px;
+}
+/* line 38, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .item-wrapper .info {
+  width: 44.45%;
+  right: 0;
+  position: absolute;
+}
+@media only screen and (max-width: 599px) {
+  /* line 38, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper .info {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+/* line 46, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .item-wrapper .info .button {
+  margin: 23px 0 0;
+}
+/* line 49, ../sass/Layout/_preorder.scss */
+.preorder-wrapper .item-wrapper .info .button.firstButton {
+  margin-top: 6px;
+}
+@media only screen and (min-width: 600px) {
+  /* line 1, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper {
+    padding: 31px 48px 39px 48px;
+  }
+  /* line 57, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .title {
+    font-size: 2.57143em;
+  }
+  /* line 60, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-bottom: 0;
+    height: 348px;
+  }
+  /* line 64, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper:last-of-type {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 67, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper .packageImg1,
+  .preorder-wrapper .item-wrapper .packageImg2,
+  .preorder-wrapper .item-wrapper .packageImg3 {
+    margin: 0 auto;
+    display: block;
+  }
+  /* line 73, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper .packageImg1 {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  /* line 77, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper .packageImg2 {
+    width: 80%;
+  }
+  /* line 80, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper .packageImg3 {
+    width: 80%;
+  }
+  /* line 83, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper .packageImg2,
+  .preorder-wrapper .item-wrapper .packageImg3 {
+    margin-bottom: 31px;
+  }
+  /* line 87, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper .info {
+    width: 100%;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    bottom: 0;
+    text-align: center;
+  }
+  /* line 92, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .item-wrapper .info .button,
+  .preorder-wrapper .item-wrapper .info .button.firstButton {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 31px;
+  }
+}
+@media only screen and (min-width: 720px) {
+  /* line 103, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .info .item-title {
+    font-size: 1.42857em;
+  }
+  /* line 106, ../sass/Layout/_preorder.scss */
+  .preorder-wrapper .info p {
+    font-size: 1.07143em;
+  }
+}
+
+/*==========================
+* Prizes
+/=========================*/
+/* line 5, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper {
+  color: #FFFFFF;
+  background: url('../img/prizebg.jpg?1440111528') top no-repeat;
+  background-size: cover;
+  padding: 27px 0 25px;
+  position: relative;
+  line-height: 1.2;
+}
+/* line 12, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .twitterHash {
+  bottom: 25px;
+  z-index: 20;
+  width: 21%;
+}
+/* line 16, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .twitterHash.left {
+  left: 0;
+}
+/* line 19, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .twitterHash.right {
+  right: 0;
+}
+/* line 23, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .lockeImg,
+.contestPrize-wrapper .chiefImg {
+  bottom: -24px;
+  z-index: 0;
+  width: 31.2%;
+}
+/* line 29, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .chiefImg {
+  right: 0;
+}
+/* line 32, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .chevron {
+  margin-top: 16px;
+}
+/* line 34, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .chevron.left {
+  left: 9.6%;
+}
+/* line 37, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .chevron.right {
+  right: 9.7%;
+}
+@media only screen and (min-width: 720px) {
+  /* line 5, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper {
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+/* line 44, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .hide-mobile {
+  display: none;
+}
+@media only screen and (min-width: 720px) {
+  /* line 44, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .hide-mobile {
+    display: inline-block;
+    position: absolute;
+  }
+}
+/* line 52, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .title {
+  width: 100%;
+  font-size: 3.92857em;
+  margin: 0;
+  padding: 0 20px 0 25px;
+}
+/* line 60, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .info {
+  padding: 10px 20px 28px 25px;
+  margin: 0;
+  font-size: 1.14286em;
+  line-height: 1.3;
+}
+/* line 66, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper {
+  padding: 0 8px;
+  max-width: 530px;
+  margin: 0 auto;
+}
+/* line 70, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper .currentWeek-wrapper {
+  border: 1px solid #8fd1f2;
+}
+/* line 72, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper .currentWeek-wrapper .currentWeek-img {
+  width: 100%;
+}
+/* line 76, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper .prizes {
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 5px;
+  width: 100%;
+}
+/* line 81, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper .prize {
+  width: 18.64407%;
+  float: left;
+  margin-right: 1.69492%;
+  text-align: center;
+  font-size: 0.57143em;
+  cursor: pointer;
+}
+/* line 86, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper .prize:hover {
+  color: #8fd1f2;
+}
+/* line 89, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper .prize img {
+  border: 1px solid #8fd1f2;
+}
+/* line 92, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper .prize.currentWeek {
+  border-bottom: 2px solid #8fd1f2;
+  color: #8fd1f2;
+}
+/* line 96, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .prize-wrapper .prize:last-of-type {
+  float: right;
+  margin-right: 0;
+}
+/* line 102, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .facebook,
+.contestPrize-wrapper .center .twitter {
+  position: absolute;
+  top: -17px;
+  width: 34px;
+  height: 34px;
+}
+/* line 109, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .facebook {
+  right: 63px;
+}
+/* line 112, ../sass/Layout/_prizes.scss */
+.contestPrize-wrapper .center .twitter {
+  right: 15px;
+}
+@media only screen and (min-width: 720px) {
+  /* line 119, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .title {
+    font-size: 5.14286em;
+    text-align: center;
+  }
+  /* line 123, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .center {
+    width: 54.6%;
+    margin: 0 auto;
+    display: block;
+    z-index: 30;
+    position: relative;
+  }
+  /* line 129, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .center .info {
+    padding: 31 0 41px;
+  }
+  /* line 132, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .center .prize-wrapper {
+    position: relative;
+    padding: 0;
+    max-width: 546px;
+  }
+  /* line 136, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .center .prize-wrapper .prize {
+    font-size: 1.07143em;
+  }
+  /* line 140, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .center .facebook {
+    top: -24px;
+  }
+  /* line 143, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .center .twitter {
+    top: 30px;
+  }
+  /* line 146, ../sass/Layout/_prizes.scss */
+  .contestPrize-wrapper .center .facebook,
+  .contestPrize-wrapper .center .twitter {
+    right: -24.5px;
+    width: 49px;
+    height: 48px;
+  }
+}
+
+/* line 11, ../sass/Layout/_globals.scss */
+p {
+  font-size: 1em;
+}
+
+/* line 16, ../sass/Layout/_globals.scss */
+h1, h2, h3 {
+  font-weight: normal;
+  font-family: "Fjalla One", sans-serif;
+}
+
+/*======================
+* Weeks
+*======================*/
+/* line 6, ../sass/Layout/_weeks.scss */
+.week-wrapper {
+  height: 200px;
+  color: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.5s ease;
+  border-top: 2px solid #3E3E3E;
+  background: #000;
+}
+/* line 14, ../sass/Layout/_weeks.scss */
+.week-wrapper .term {
+  display: none;
+}
+/* line 18, ../sass/Layout/_weeks.scss */
+.week-wrapper:before {
+  top: -10px;
+  z-index: 1;
+  left: -10px;
+  content: '';
+  right: -10px;
+  bottom: -10px;
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-position: top;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+/* line 31, ../sass/Layout/_weeks.scss */
+.week-wrapper:after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+/* line 45, ../sass/Layout/_weeks.scss */
+.week-wrapper .chooseLocke,
+.week-wrapper .chooseChief {
+  display: none;
+  line-height: 1.2;
+}
+/* line 49, ../sass/Layout/_weeks.scss */
+.week-wrapper .chooseLocke .twitterHash,
+.week-wrapper .chooseChief .twitterHash {
+  display: block;
+}
+@media only screen and (min-width: 720px) {
+  /* line 49, ../sass/Layout/_weeks.scss */
+  .week-wrapper .chooseLocke .twitterHash,
+  .week-wrapper .chooseChief .twitterHash {
+    display: inline;
+  }
+}
+/* line 56, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper {
+  display: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #FFFFFF;
+  min-height: 136px;
+  position: absolute;
+  padding: 13px 14px 20px;
+  background-color: rgba(0, 62, 93, 0.75);
+  z-index: 3;
+}
+/* line 67, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .title {
+  width: 100%;
+  margin: 0 0 28px;
+  text-align: center;
+  font-size: 1.85714em;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 720px) {
+  /* line 67, ../sass/Layout/_weeks.scss */
+  .week-wrapper .votingInfo-wrapper .title {
+    font-size: 2.5em;
+    margin: 14px 0 34px;
+  }
+}
+/* line 78, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .choiceResponse-wrapper {
+  text-align: center;
+  right: 0;
+  left: 0;
+}
+@media only screen and (min-width: 720px) {
+  /* line 84, ../sass/Layout/_weeks.scss */
+  .week-wrapper .votingInfo-wrapper .choiceResponse-wrapper .chooseLocke,
+  .week-wrapper .votingInfo-wrapper .choiceResponse-wrapper .chooseChief {
+    font-size: 3.14286em;
+  }
+}
+/* line 91, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper input[type="radio"] {
+  display: none;
+}
+/* line 94, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper {
+  width: 40.67797%;
+  float: left;
+  min-height: 45px;
+  position: relative;
+  background-color: #1072a3;
+}
+@media only screen and (max-width: 719px) {
+  /* line 94, ../sass/Layout/_weeks.scss */
+  .week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper {
+    width: 100%;
+    float: none;
+    max-width: 393px;
+    margin: 0 auto;
+  }
+}
+/* line 105, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper:hover {
+  background-color: #00aaff;
+}
+/* line 108, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper * {
+  cursor: pointer;
+}
+/* line 113, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper .socialIcon.first {
+  left: 17px;
+}
+/* line 116, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper .socialIcon.last {
+  right: 17px;
+}
+@media only screen and (max-width: 749px) {
+  /* line 111, ../sass/Layout/_weeks.scss */
+  .week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper .socialIcon {
+    display: none;
+  }
+}
+/* line 123, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper label {
+  text-align: center;
+  width: 100%;
+  color: #98d0f1;
+  font-size: 1.78571em;
+  font-family: "Fjalla One", sans-serif;
+  display: inline;
+}
+@media only screen and (min-width: 720px) {
+  /* line 123, ../sass/Layout/_weeks.scss */
+  .week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper label {
+    font-size: 2.14286em;
+  }
+}
+/* line 134, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper .label-wrapper label .twitterHash {
+  display: inline;
+  color: #FFFFFF;
+}
+/* line 140, ../sass/Layout/_weeks.scss */
+.week-wrapper .votingInfo-wrapper .form-wrapper .chooseIcon {
+  width: 15%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  margin-top: 14px;
+}
+@media only screen and (max-width: 719px) {
+  /* line 140, ../sass/Layout/_weeks.scss */
+  .week-wrapper .votingInfo-wrapper .form-wrapper .chooseIcon {
+    float: none;
+    width: 157px;
+    margin: 16px auto;
+    display: block;
+  }
+}
+/* line 154, ../sass/Layout/_weeks.scss */
+.week-wrapper.votingOpen {
+  border-top: 2px solid #1072a3;
+}
+/* line 156, ../sass/Layout/_weeks.scss */
+.week-wrapper.votingOpen:before {
+  -webkit-filter: none;
+          filter: none;
+}
+@media only screen and (max-width: 719px) {
+  /* line 156, ../sass/Layout/_weeks.scss */
+  .week-wrapper.votingOpen:before {
+    top: 0;
+    left: 0;
+    content: '';
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    background-size: 146%;
+    background-position: top;
+  }
+}
+/* line 171, ../sass/Layout/_weeks.scss */
+.week-wrapper.votingOpen:after {
+  display: none;
+}
+/* line 174, ../sass/Layout/_weeks.scss */
+.week-wrapper.votingOpen .lock {
+  background: url('../img/locked-no.svg?1440108349');
+}
+/* line 177, ../sass/Layout/_weeks.scss */
+.week-wrapper.votingOpen .results-wrapper {
+  display: none;
+}
+/* line 180, ../sass/Layout/_weeks.scss */
+.week-wrapper.votingOpen .votingInfo-wrapper {
+  display: block;
+  min-height: 299px;
+}
+@media only screen and (min-width: 720px) {
+  /* line 180, ../sass/Layout/_weeks.scss */
+  .week-wrapper.votingOpen .votingInfo-wrapper {
+    min-height: 164px;
+  }
+}
+/* line 190, ../sass/Layout/_weeks.scss */
+.week-wrapper.open {
+  height: 464px;
+}
+/* line 193, ../sass/Layout/_weeks.scss */
+.week-wrapper.open .menuToggle {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+@media only screen and (min-width: 720px) and (max-width: 849px) {
+  /* line 196, ../sass/Layout/_weeks.scss */
+  .week-wrapper.open .chiefProfile,
+  .week-wrapper.open .lockeProfile {
+    display: none !important;
+  }
+}
+/* line 205, ../sass/Layout/_weeks.scss */
+.week-wrapper .toggle-wrapper {
+  margin: 0;
+  z-index: 99;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+/* line 211, ../sass/Layout/_weeks.scss */
+.week-wrapper .toggle-wrapper .week {
+  font-size: 0.92857em;
+  padding: 0 8px 0 0;
+  margin: 12px 0;
+  float: left;
+}
+@media only screen and (min-width: 720px) {
+  /* line 211, ../sass/Layout/_weeks.scss */
+  .week-wrapper .toggle-wrapper .week {
+    font-size: 1.42857em;
+  }
+}
+/* line 220, ../sass/Layout/_weeks.scss */
+.week-wrapper .toggle-wrapper .menuToggle {
+  display: none;
+  margin-top: -3px;
+  float: left;
+}
+/* line 228, ../sass/Layout/_weeks.scss */
+.week-wrapper .lock {
+  background: url('../img/locked-yes.svg?1440109841');
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+  float: left;
+  content: '';
+}
+/* line 238, ../sass/Layout/_weeks.scss */
+.week-wrapper .chiefProfile,
+.week-wrapper .lockeProfile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 3;
+}
+@media only screen and (max-width: 719px) {
+  /* line 238, ../sass/Layout/_weeks.scss */
+  .week-wrapper .chiefProfile,
+  .week-wrapper .lockeProfile {
+    display: none !important;
+  }
+}
+
+/* line 253, ../sass/Layout/_weeks.scss */
+.results-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 3;
+}
+/* line 259, ../sass/Layout/_weeks.scss */
+.results-wrapper .title {
+  font-size: 1.85714em;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 720px) {
+  /* line 264, ../sass/Layout/_weeks.scss */
+  .results-wrapper .title,
+  .results-wrapper .subtitle {
+    margin: 0 auto 15px;
+  }
+  /* line 268, ../sass/Layout/_weeks.scss */
+  .results-wrapper .title {
+    font-size: 2.42857em;
+  }
+  /* line 271, ../sass/Layout/_weeks.scss */
+  .results-wrapper .subtitle {
+    font-size: 1.78571em;
+  }
+}
+/* line 275, ../sass/Layout/_weeks.scss */
+.results-wrapper .leftFrame,
+.results-wrapper .rightFrame,
+.results-wrapper .lockeWins,
+.results-wrapper .chiefWins {
+  display: none;
+}
+@media only screen and (max-width: 719px) {
+  /* line 281, ../sass/Layout/_weeks.scss */
+  .results-wrapper .leftFrame,
+  .results-wrapper .rightFrame {
+    display: none !important;
+  }
+}
+/* line 289, ../sass/Layout/_weeks.scss */
+.results-wrapper .stats-wrapper {
+  display: none;
+  margin: 20px auto 0;
+  max-width: 431px;
+}
+/* line 293, ../sass/Layout/_weeks.scss */
+.results-wrapper .stats-wrapper .hashTag {
+  float: left;
+  padding-left: 20px;
+}
+/* line 297, ../sass/Layout/_weeks.scss */
+.results-wrapper .stats-wrapper .percent {
+  float: right;
+}
+/* line 300, ../sass/Layout/_weeks.scss */
+.results-wrapper .stats-wrapper .hashTag,
+.results-wrapper .stats-wrapper .percent {
+  font-size: 1.78571em;
+  margin: 18px 0;
+}
+/* line 305, ../sass/Layout/_weeks.scss */
+.results-wrapper .stats-wrapper .hashImg {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+@media only screen and (min-width: 720px) {
+  /* line 316, ../sass/Layout/_weeks.scss */
+  .results-wrapper .stats-wrapper .hashTag {
+    font-size: 2.5em;
+  }
+  /* line 319, ../sass/Layout/_weeks.scss */
+  .results-wrapper .stats-wrapper .percent {
+    font-size: 3.14286em;
+  }
+}
+/* line 324, ../sass/Layout/_weeks.scss */
+.results-wrapper .stats-wrapper .loser-wrapper .hashTag {
+  color: #43b9ec;
+}
+/* line 327, ../sass/Layout/_weeks.scss */
+.results-wrapper .stats-wrapper .loser-wrapper .bar.loser {
+  background-color: #43b9ec;
+}
+/* line 331, ../sass/Layout/_weeks.scss */
+.results-wrapper .stats-wrapper .winner-wrapper {
+  margin-bottom: 20px;
+}
+/* line 335, ../sass/Layout/_weeks.scss */
+.results-wrapper .bar-wrapper {
+  margin-left: 22px;
+  clear: both;
+  height: 10px;
+  -webkit-transform: skew(-45deg, 0);
+      -ms-transform: skew(-45deg, 0);
+          transform: skew(-45deg, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 341, ../sass/Layout/_weeks.scss */
+.results-wrapper .bar-wrapper .result-bar {
+  content: '';
+  height: 10px;
+  background-color: #43b9ec;
+  width: 0%;
+}
+/* line 348, ../sass/Layout/_weeks.scss */
+.results-wrapper .baseBar {
+  clear: both;
+  width: 100%;
+}
+
+/* line 358, ../sass/Layout/_weeks.scss */
+.week-wrapper.hasWinner {
+  cursor: pointer;
+}
+/* line 361, ../sass/Layout/_weeks.scss */
+.week-wrapper.hasWinner .term {
+  display: inline;
+}
+/* line 364, ../sass/Layout/_weeks.scss */
+.week-wrapper.hasWinner .menuToggle {
+  display: inline-block;
+}
+/* line 370, ../sass/Layout/_weeks.scss */
+.week-wrapper.chief:before, .week-wrapper.locke:before {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+/* line 376, ../sass/Layout/_weeks.scss */
+.week-wrapper.chief .chiefProfile {
+  right: 0;
+  display: block;
+}
+/* line 382, ../sass/Layout/_weeks.scss */
+.week-wrapper.locke .lockeProfile {
+  left: 0;
+  display: block;
+}
+/* line 389, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper {
+  margin: 0;
+  max-width: 516px;
+  display: inline-block;
+  width: 90%;
+}
+/* line 394, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper .leftFrame,
+.week-wrapper.winner .results-wrapper .rightFrame {
+  display: inline-block;
+  width: 30px;
+  float: left;
+}
+@media only screen and (min-width: 720px) {
+  /* line 399, ../sass/Layout/_weeks.scss */
+  .week-wrapper.winner .results-wrapper .results {
+    width: 88.37%;
+    float: left;
+  }
+}
+/* line 404, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.chief {
+  left: 48px;
+}
+/* line 407, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.chief .winner-wrapper .hashTag,
+.week-wrapper.winner .results-wrapper.chief .winner-wrapper .percent {
+  color: #e78d23;
+}
+/* line 411, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.chief .winner-wrapper .result-bar {
+  background-color: #e78d23;
+}
+/* line 416, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.locke {
+  right: 48px;
+}
+/* line 419, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.locke .winner-wrapper .hashTag,
+.week-wrapper.winner .results-wrapper.locke .winner-wrapper .percent {
+  color: #43b9ec;
+}
+/* line 423, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.locke .winner-wrapper .bar.winner {
+  background-color: #43b9ec;
+}
+/* line 428, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.locke .loser-wrapper .hashTag {
+  color: #e78d23;
+}
+/* line 431, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.locke .loser-wrapper .result-bar {
+  background-color: #e78d23;
+}
+/* line 436, ../sass/Layout/_weeks.scss */
+.week-wrapper.winner .results-wrapper.chief, .week-wrapper.winner .results-wrapper.locke {
+  z-index: 99;
+}
+@media only screen and (max-width: 849px) {
+  /* line 436, ../sass/Layout/_weeks.scss */
+  .week-wrapper.winner .results-wrapper.chief, .week-wrapper.winner .results-wrapper.locke {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 720px) {
+  /* line 436, ../sass/Layout/_weeks.scss */
+  .week-wrapper.winner .results-wrapper.chief, .week-wrapper.winner .results-wrapper.locke {
+    top: 58%;
+  }
+}
+
+/*============================
+* Video Lightboxes
+*===========================*/
+/* line 6, ../sass/Layout/_videos.scss */
+.video-wrapper {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 8, ../sass/Layout/_videos.scss */
+.video-wrapper .video {
+  margin: 5px;
+  width: 48.33333%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 27.2%;
+}
+/* line 15, ../sass/Layout/_videos.scss */
+.video-wrapper .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 720px) {
+  /* line 6, ../sass/Layout/_videos.scss */
+  .video-wrapper {
+    padding: 15px;
+  }
+  /* line 26, ../sass/Layout/_videos.scss */
+  .video-wrapper .video {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+    padding-bottom: 13.1%;
+  }
+}
+
+/*============================
+* Pre-order Bundle
+============================*/
+/* line 5, ../sass/Layout/_bundle.scss */
+.bundle-wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  padding: 20px 8px 25px 6px;
+  background: white;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(39%, #f6f6f6), color-stop(100%, #d9d9d9));
+  background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 39%, #d9d9d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9d9d9', GradientType=0 );
+}
+/* line 17, ../sass/Layout/_bundle.scss */
+.bundle-wrapper img {
+  max-width: 437px !important;
+  width: 100%;
+}
+/* line 21, ../sass/Layout/_bundle.scss */
+.bundle-wrapper .info-wrapper {
+  color: #2d2d2d;
+}
+/* line 23, ../sass/Layout/_bundle.scss */
+.bundle-wrapper .info-wrapper .title {
+  font-size: 1.42857em;
+  line-height: 1.2;
+  margin: 0;
+}
+/* line 28, ../sass/Layout/_bundle.scss */
+.bundle-wrapper .info-wrapper .subTitle {
+  font-size: 1.14286em;
+  margin-top: 8px;
+}
+/* line 32, ../sass/Layout/_bundle.scss */
+.bundle-wrapper .info-wrapper .button {
+  margin: 20px 9px 0 0;
+}
+@media only screen and (min-width: 660px) {
+  /* line 5, ../sass/Layout/_bundle.scss */
+  .bundle-wrapper {
+    padding: 29px;
+  }
+  /* line 40, ../sass/Layout/_bundle.scss */
+  .bundle-wrapper img {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 43, ../sass/Layout/_bundle.scss */
+  .bundle-wrapper .info-wrapper {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 0;
+  }
+  /* line 49, ../sass/Layout/_bundle.scss */
+  .bundle-wrapper .info-wrapper .title {
+    font-size: 2.14286em;
+  }
+  /* line 52, ../sass/Layout/_bundle.scss */
+  .bundle-wrapper .info-wrapper .subTitle {
+    font-size: 1.42857em;
+  }
+  /* line 55, ../sass/Layout/_bundle.scss */
+  .bundle-wrapper .info-wrapper .button {
+    float: none;
+  }
+}

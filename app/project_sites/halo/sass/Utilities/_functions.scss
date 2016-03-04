@@ -1,0 +1,14 @@
+// ==========================================================================
+// Functions
+// ==========================================================================
+
+
+// Calculate em
+@function em($target, $context: $base-font-size) {
+	@return ($target / $context) * 1em;
+}
+
+// Calcualte percentage - default to max width of page
+@function per($target, $context: $break-large) {
+	@return (($target / $context) * 100 - 1) + 1%;
+}

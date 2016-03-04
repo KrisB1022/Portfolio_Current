@@ -32,7 +32,7 @@ $headers .= "Reply-to: " . $email . "\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
 
-if(mail("krisb@tengundesign.com", "Message from Portfolio Website", $message)) {
+if(mail("krisjbyrum@gmail.com", "Message from Portfolio Website", $message)) {
 	echo "Successful sending";
 } else {
 	echo "Nope. Still not working.";

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title></title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- build:css css/plugins.min.css -->
+    <link rel="stylesheet" href="css/colorbox.css">
+  <!-- endbuild -->
+  <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <!-- build:js js/app.head.min.js -->
+  <script src="js/modernizr-2.8.3.min.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+  <!--[if lte IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <section class="header">
+    <div class="video-container">
+      <img class="mobileOnly" src="video/placeholder.png" alt="Poster for Video">
+      <video id="headerVideo" poster="video/placeholder.png" autoplay="autoplay" loop="true" preload="auto">
+        <source type="video/mp4" src="video/video.mp4">
+        <source type="video/webm" src="video/video.webm">
+        <source type="video/ogg" src="video/video.ogv">
+      </video>
+    </div>
+
+    <div class="heading-wrapper">
+      <a href="#voteNow"><h1 class="title">CHOISIS TON CAMP</h1></a>
+
+      <h2 class="twitterHash">#TEAMLOCKE</h2>
+      <img class="twitterHashImg" src="img/teamlocke.png" alt="Team Locke Twitter Hash Img">
+
+      <h2 class="twitterHash">#TEAMCHIEF</h2>
+      <img class="twitterHashImg" src="img/teamchief.png" alt="Team Chief Twitter Hash Img">
+        
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="preorder-wrapper">
+    <h1 class="title">LA SAGA LÉGENDAIRE EST BIENTÔT DE RETOUR</h1>
+
+    <div class="item-wrapper">
+      <img class="packageImg1" src="img/halo5-lce.png" alt="Edition Collector Limitée">
+      <div class="info">
+        <h3 class="item-title">Edition Collector Limitée</h3>
+        <p class="p">Disponible à partir</p>
+        <p class="date">du 21/10/2015</p>
+        <a href="http://www.micromania.fr/halo-5-guardians-edition-collector-limitee-exclu-mm-60827.html ">
+          <button type="button" class="button firstButton">PRECOMMANDEZ</button></a>
+      </div>
+    </div>
+
+    <div class="item-wrapper">
+      <img class="packageImg2" src="img/halo5-le.png" alt="Edition Limitée">
+      <div class="info">
+        <h3 class="item-title">Edition Limitée</h3>
+        <p class="p">Disponible à partir</p>
+        <p class="date">du 27/10/2015</p>
+        <a href="http://www.micromania.fr/halo-5-guardians-edition-limitee-60826.html ">
+          <button type="button" class="button">PRECOMMANDEZ</button></a>
+      </div>
+    </div>
+
+    <div class="item-wrapper">
+      <img class="packageImg3" src="img/halo5-standard.png" alt="Edition standar">
+      <div class="info">
+        <h3 class="item-title">Edition standard</h3>
+        <p class="p">Disponible à partir</p>
+        <p class="date">du 27/10/2015</p>
+        <a href="http://www.micromania.fr/halo-5-guardians-60824.html ">
+          <button type="button" class="button">PRECOMMANDEZ</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contestPrize-wrapper">
+    <h1 class="title">CHOISIS TON CAMP</h1>
+    
+    <img src="img/chevron.png" class="chevron left hide-mobile" alt="Down Facing Chevron">
+    <img src="img/right-prize-lock.png" class="lockeImg hide-mobile" alt="Image of Locke">
+    <img src="img/teamlocke.png" class="twitterHash left hide-mobile" alt="#TEAMLOCKE">
+    
+    <img src="img/chevron.png" class="chevron right hide-mobile" alt="Down Facing Chevron">
+    <img src="img/left-prize-chief.png" class="chiefImg hide-mobile" alt="Image of Chief">
+    <img src="img/teamchief.png" class="twitterHash right hide-mobile" alt="#TEAMCHIEF">
+    
+
+    <div class="center">
+      <p class="info">Si tu fais partie de l’équipe ayant récolté le plus de tweets, tu pourras participer au tirage au sort pour gagner l’un des lots exclusifs mis en jeu chaque semaine : Tote bag, Tee-shirt aux couleurs de ton camp, Manette exclusive et jeu Halo 5. A la fin du jeu, un grand gagnant sera tiré au sort pour une chance de gagner le grand prix : Edition Collector Limitée + Manette Xbox One Halo + Casque Astrogaming + Tote Bag + Tee-shirt Halo.</p>
+
+      <div class="prize-wrapper">
+        <div class="currentWeek-wrapper">
+          <a href="#">
+            <img src="img/facebook.svg" class="facebook" alt="Facebook Logo"></a>
+          <a href="#">
+            <img src="img/twitter.svg" class="twitter" alt="Twitter Logo"></a>
+          <img src="img/week1.jpg" class="currentWeekImg" alt="Current Week's Prize">
+        </div>
+        <div class="prizes">
+          <div class="prize currentWeek" id="week1">
+            <img src="img/week1.jpg" alt="Week 1 Prize">
+            <p class="week">SEMAINE 1</p>
+          </div>
+          <div class="prize" id="week2">
+            <img src="img/week2.jpg" alt="Week 2 Prize">
+            <p class="week">SEMAINE 2</p>
+          </div>
+          <div class="prize" id="week3">
+            <img src="img/week3.jpg" alt="Week 3 Prize">
+            <p class="week">SEMAINE 3</p>
+          </div>
+          <div class="prize" id="week4">
+            <img src="img/week4.jpg" alt="Week 4 Prize">
+            <p class="week">SEMAINE 4</p>
+          </div>
+          <div class="prize" id="week5">
+            <img src="img/grandprize.jpg" alt="Grand Prize">
+            <p class="week">GRAND PRIX</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Weeks for voting -->
+  <!-- Semaines pour voter -->
+  <section class="week4 week-wrapper" id="voteNow">
+    <div class="toggle-wrapper">
+      <div class="lock"></div>
+      <p class="week">SEMAINE 4 <span class="term">TERMINEE</span></p>
+      <img class="menuToggle" src="img/up-down-arrow.svg" alt="Menu toggle arrow">
+    </div>
+    
+    <!-- Quiz panel -->
+    <!-- Panneau de quizz -->
+    <div class="votingInfo-wrapper">
+      <h1 class="title votingQuestion">AIDE TON HÉROS PRÉFÉRÉ À OBTENIR LA MEILLEURE ÉQUIPE</h1>
+      <div class="choiceResponse-wrapper">
+        
+        <h1 class="chooseLocke">TU CHOISIS <span class="twitterHash">#TEAMLOCKE</span></h1>
+        <h1 class="chooseChief">TU CHOISIS <span class="twitterHash">#TEAMCHIEF</span></h1>
+
+      </div>
+      <div class="form-wrapper">
+        <form action="#" method="post" class="form">     
+    
+          <div class="label-wrapper">
+            <img class="socialIcon first" src="img/vote-twitter.svg" alt="Twitter Logo">
+            <label for="locke-equipe" class="chooseLocke">
+              REJOINDRE <span class="twitterHash">#TEAMLOCKE</span>
+            </label>
+          </div>
+          
+          <img class="chooseIcon" src="img/vote-choose.png" alt="">
+                 
+          <div class="label-wrapper">
+            <label for="chief-equipe" class="chooseChief">
+              REJOINDRE <span class="twitterHash">#TEAMCHIEF</span>
+            </label>
+            <img class="socialIcon last" src="img/vote-twitter.svg" alt="Twitter Logo">
+          </div>
+
+          <input type="radio" value="locke-equipe" id="locke-equipe">
+          <input type="radio" value="chief-equipe" id="chief-equipe">
+        </form>
+      </div>
+    </div>
+
+    <!-- Results panel -->
+    <!-- Panneau des resultats -->
+    <div class="results-wrapper">
+      <h1 class="title">SEMAINE 4 - BIENTÔT</h1>
+      <h3 class="subtitle">
+        <span class="default">AIDE TON HÉROS PRÉFÉRÉ À OBTENIR LA MEILLEURE ÉQUIPE</span>
+        <span class="lockeWins">ET OBTIENT LA MEILLEURE ÉQUIPE</span>
+        <span class="chiefWins">ET OBTIENT LA MEILLEURE ÉQUIPE</span>
+      </h3>
+
+      <img class="leftFrame" src="img/vertframe-left.png" alt="Left Side Frame">
+      <div class="results">
+        <div class="stats-wrapper">
+          <div class="winner-wrapper">
+            <h2 class="hashTag"></h2>
+            <h2 class="percent">0%</h2>
+            <div class="bar-wrapper">
+              <div class="hashImg"></div>
+              <div class="result-bar"></div>
+            </div>
+            <img class="baseBar" src="img/vote-basebar.svg" alt="Flat Bar">
+          </div>
+          <div class="loser-wrapper">
+            <h2 class="hashTag"></h2>
+            <h2 class="percent">0%</h2>
+            <div class="bar-wrapper">
+              <div class="hashImg"></div>
+              <div class="result-bar"></div>
+            </div>
+            <img class="baseBar" src="img/vote-basebar.svg" alt="Flat Bar">
+          </div>
+        </div>
+      </div>
+      <img class="rightFrame" src="img/vertframe-right.png" alt="Right Side Fram">
+    </div>
+    <!-- Winner profile -->
+    <!-- Profil de gagnant -->
+    <div class="chiefProfile"></div>
+    <div class="lockeProfile"></div>
+  </section>
+
+  <section class="week3 week-wrapper">
+    <div class="toggle-wrapper">
+      <div class="lock"></div>
+      <p class="week">SEMAINE 3 <span class="term">TERMINEE</span></p>
+      <img class="menuToggle" src="img/up-down-arrow.svg" alt="Menu toggle arrow">
+    </div>
+    
+    <!-- Quiz panel -->
+    <!-- Panneau de quizz -->
+    <div class="votingInfo-wrapper">
+      <h1 class="title votingQuestion">AIDE TON HÉROS PRÉFÉRÉ À OBTENIR LES MEILLEURS VÉHICULES</h1>
+      <div class="choiceResponse-wrapper">
+
+        <h1 class="chooseLocke">TU CHOISIS <span class="twitterHash">#TEAMLOCKE</span></h1>
+        <h1 class="chooseChief">TU CHOISIS <span class="twitterHash">#TEAMCHIEF</span></h1>
+      
+      </div>
+      <div class="form-wrapper">
+        <form action="#" method="post" class="form">     
+    
+          <div class="label-wrapper">
+            <img class="socialIcon first" src="img/vote-twitter.svg" alt="Twitter Logo">
+            <label for="locke-vehicules" class="chooseLocke">
+              REJOINDRE <span class="twitterHash">#TEAMLOCKE</span>
+            </label>
+          </div>
+          
+          <img class="chooseIcon" src="img/vote-choose.png" alt="">
+                 
+          <div class="label-wrapper">
+            <label for="chief-vehicules" class="chooseChief">
+              REJOINDRE <span class="twitterHash">#TEAMCHIEF</span>
+            </label>
+            <img class="socialIcon last" src="img/vote-twitter.svg" alt="Twitter Logo">
+          </div>
+
+          <input type="radio" value="locke-vehicules" id="locke-vehicules">
+          <input type="radio" value="chief-vehicules" id="chief-vehicules">
+        </form>
+      </div>
+    </div>
+
+    <!-- Results panel -->
+    <!-- Panneau des resultats -->
+    <div class="results-wrapper">
+      <h1 class="title">SEMAINE 3 - BIENTÔT</h1>
+      <h3 class="subtitle">
+        <span class="default">AIDE TON HÉROS PRÉFÉRÉ À OBTENIR LES MEILLEURS VÉHICULES</span>
+        <span class="lockeWins">ET OBTIENT LES MEILLEURS VÉHICULES</span>
+        <span class="chiefWins">ET OBTIENT LES MEILLEURS VÉHICULES</span>
+      </h3>
+
+      <img class="leftFrame" src="img/vertframe-left.png" alt="Left Side Frame">
+      <div class="results">
+        <div class="stats-wrapper">
+          <div class="winner-wrapper">
+            <h2 class="hashTag"></h2>
+            <h2 class="percent">0%</h2>
+            <div class="bar-wrapper">
+              <div class="hashImg"></div>
+              <div class="result-bar"></div>
+            </div>
+            <img class="baseBar" src="img/vote-basebar.svg" alt="Flat Bar">
+          </div>
+          <div class="loser-wrapper">
+            <h2 class="hashTag"></h2>
+            <h2 class="percent">0%</h2>
+            <div class="bar-wrapper">
+              <div class="hashImg"></div>
+              <div class="result-bar"></div>
+            </div>
+            <img class="baseBar" src="img/vote-basebar.svg" alt="Flat Bar">
+          </div>
+        </div>
+      </div>
+      <img class="rightFrame" src="img/vertframe-right.png" alt="Right Side Fram">
+    </div>
+    <!-- Winner profile -->
+    <!-- Profil de gagnant -->
+    <div class="chiefProfile"></div>
+    <div class="lockeProfile"></div>
+  </section>
+
+
+  <section class="week2 week-wrapper">
+    <div class="toggle-wrapper">
+      <div class="lock"></div>
+      <p class="week">SEMAINE 2 <span class="term">TERMINEE</span></p>
+      <img class="menuToggle" src="img/up-down-arrow.svg" alt="Menu toggle arrow">
+    </div>
+    
+    <!-- Quiz panel -->
+    <!-- Panneau de quizz -->
+    <div class="votingInfo-wrapper">
+      <h1 class="title votingQuestion">AIDE TON HÉROS PRÉFÉRÉ À GAGNER LES MEILLEURES MUNITIONS</h1>
+      <div class="choiceResponse-wrapper">
+        
+        <h1 class="chooseLocke">TU CHOISIS <span class="twitterHash">#TEAMLOCKE</span></h1>
+        <h1 class="chooseChief">TU CHOISIS <span class="twitterHash">#TEAMCHIEF</span></h1>
+
+      </div>
+      <div class="form-wrapper">
+        <form action="#" method="post" class="form">     
+    
+          <div class="label-wrapper">
+            <img class="socialIcon first" src="img/vote-twitter.svg" alt="Twitter Logo">
+            <label for="locke-munitions" class="chooseLocke">
+              REJOINDRE <span class="twitterHash">#TEAMLOCKE</span>
+            </label>
+          </div>
+          
+          <img class="chooseIcon" src="img/vote-choose.png" alt="">
+                 
+          <div class="label-wrapper">
+            <label for="chief-munitions" class="chooseChief">
+              REJOINDRE <span class="twitterHash">#TEAMCHIEF</span>
+            </label>
+            <img class="socialIcon last" src="img/vote-twitter.svg" alt="Twitter Logo">
+          </div>
+
+          <input type="radio" value="locke-munitions" id="locke-munitions">
+          <input type="radio" value="chief-munitions" id="chief-munitions">
+        </form>
+      </div>
+    </div>
+
+    <!-- Results panel -->
+    <!-- Panneau des resultats -->
+    <div class="results-wrapper">
+      <h1 class="title">SEMAINE 2 - BIENTÔT</h1>
+      <h3 class="subtitle">
+        <span class="default">AIDE TON HÉROS PRÉFÉRÉ À GAGNER LES MEILLEURES MUNITIONS</span>
+        <span class="lockeWins">ET OBTIENT LES MEILLEURES MUNITIONS</span>
+        <span class="chiefWins">ET OBTIENT LES MEILLEURES MUNITIONS</span>
+      </h3>
+
+      <img class="leftFrame" src="img/vertframe-left.png" alt="Left Side Frame">
+      <div class="results">
+        <div class="stats-wrapper">
+          <div class="winner-wrapper">
+            <h2 class="hashTag"></h2>
+            <h2 class="percent">0%</h2>
+            <div class="bar-wrapper">
+              <div class="hashImg"></div>
+              <div class="result-bar"></div>
+            </div>
+            <img class="baseBar" src="img/vote-basebar.svg" alt="Flat Bar">
+          </div>
+          <div class="loser-wrapper">
+            <h2 class="hashTag"></h2>
+            <h2 class="percent">0%</h2>
+            <div class="bar-wrapper">
+              <div class="hashImg"></div>
+              <div class="result-bar"></div>
+            </div>
+            <img class="baseBar" src="img/vote-basebar.svg" alt="Flat Bar">
+          </div>
+        </div>
+      </div>
+      <img class="rightFrame" src="img/vertframe-right.png" alt="Right Side Fram">
+    </div>
+    <!-- Winner profile -->
+    <!-- Profil de gagnant -->
+    <div class="chiefProfile"></div>
+    <div class="lockeProfile"></div>
+  </section>
+
+  <section class="week1 week-wrapper">
+    <div class="toggle-wrapper">
+      <div class="lock"></div>
+      <p class="week">SEMAINE 1 <span class="term">TERMINEE</span></p>
+      <img class="menuToggle" src="img/up-down-arrow.svg" alt="Menu toggle arrow">
+    </div>
+    
+    <!-- Quiz panel -->
+    <!-- Panneau de quizz -->
+    <div class="votingInfo-wrapper">
+      <h1 class="title votingQuestion">AIDE TON HÉROS PRÉFÉRÉ À GAGNER LA MEILLEURE ARME</h1>
+      <div class="choiceResponse-wrapper">
+        
+        <h1 class="chooseLocke">TU CHOISIS <span class="twitterHash">#TEAMLOCKE</span></h1>
+        <h1 class="chooseChief">TU CHOISIS <span class="twitterHash">#TEAMCHIEF</span></h1>
+
+      </div>
+      <div class="form-wrapper">
+        <form action="#" method="post" class="form">     
+    
+          <div class="label-wrapper">
+            <img class="socialIcon first" src="img/vote-twitter.svg" alt="Twitter Logo">
+            <label for="locke-arme" class="chooseLocke">
+              REJOINDRE <span class="twitterHash">#TEAMLOCKE</span>
+            </label>
+          </div>
+          
+          <img class="chooseIcon" src="img/vote-choose.png" alt="">
+                 
+          <div class="label-wrapper">
+            <label for="chief-arme" class="chooseChief">
+              REJOINDRE <span class="twitterHash">#TEAMCHIEF</span>
+            </label>
+            <img class="socialIcon last" src="img/vote-twitter.svg" alt="Twitter Logo">
+          </div>
+
+          <input type="radio" value="locke-arme" id="locke-arme">
+          <input type="radio" value="chief-arme" id="chief-arme">
+        </form>
+      </div>
+    </div>
+
+    <!-- Results panel -->
+    <!-- Panneau des resultats -->
+    <div class="results-wrapper">
+      <h1 class="title">SEMAINE 1 - BIENTÔT</h1>
+      <h3 class="subtitle">
+        <span class="default">AIDE TON HÉROS PRÉFÉRÉ À GAGNER LA MEILLEURE ARME</span>
+        <span class="lockeWins">ET OBTIENT LA MEILLEURE ARME</span>
+        <span class="chiefWins">ET OBTIENT LA MEILLEURE ARME</span>
+      </h3>
+
+      <img class="leftFrame" src="img/vertframe-left.png" alt="Left Side Frame">
+      <div class="results">
+        <div class="stats-wrapper">
+          <div class="winner-wrapper">
+            <h2 class="hashTag"></h2>
+            <h2 class="percent">0%</h2>
+            <div class="bar-wrapper">
+              <div class="hashImg"></div>
+              <div class="result-bar"></div>
+            </div>
+            <img class="baseBar" src="img/vote-basebar.svg" alt="Flat Bar">
+          </div>
+          <div class="loser-wrapper">
+            <h2 class="hashTag"></h2>
+            <h2 class="percent">0%</h2>
+            <div class="bar-wrapper">
+              <div class="hashImg"></div>
+              <div class="result-bar"></div>
+            </div>
+            <img class="baseBar" src="img/vote-basebar.svg" alt="Flat Bar">
+          </div>
+        </div>
+      </div>
+      <img class="rightFrame" src="img/vertframe-right.png" alt="Right Side Fram">
+    </div>
+    <!-- Winner profile -->
+    <!-- Profil de gagnant -->
+    <div class="chiefProfile"></div>
+    <div class="lockeProfile"></div>
+  </section>
+  <!-- end -->
+  <!-- fin -->
+
+
+  <section class="video-wrapper">
+    <div class="video"></div>
+    <div class="video"></div>
+    <div class="video"></div>
+    <div class="video"></div>
+  </section>
+
+  <section class="bundle-wrapper">
+    <img src="img/pre-oder-group.png" alt="Pre-order Group">
+    <div class="info-wrapper">
+      <h1 class="title">PRECOMMANDEZ HALO: 5 GUARDIANS</h1>
+      <h3 class="subTitle">DISPONIBLE 27.10.15</h3>
+      <a href="http://www.micromania.fr//search/index/?q=halo+5+guardians&sort=relevancy ">
+        <button type="button" class="button">PRECOMMANDEZ</button></a>
+    </div>
+  </section>
+
+
+  <!-- build:js js/app.footer.min.js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.colorbox-min.js"></script>
+  <!-- endbuild -->
+
+  <script src="js/app.js"></script>
+
+  <!-- Google Analytics: uncomment code and change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    // e.src='https://www.google-analytics.com/analytics.js';
+    // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>

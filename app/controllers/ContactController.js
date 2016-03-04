@@ -2,13 +2,12 @@
 	"use strict"
 
 angular.module("myPortfolio")
-	.controller("ContactController", ["$scope", "$http", "$window", function($scope, $http, $window) {
+	.controller("ContactController", ["$scope", "$http", "$window", "$location", function($scope, $http, $window, $location) {
 		$scope.submission = false;
 		$scope.submitted = function() {
 			// check if honey pot if empty
 			// var honeyPot = $scope.winnie_the_pooh;
 			// if(honeyPot.value == '') {
-
 				var request = $http({
 					method: "POST",
 					url: "app/templates/contact.php",
@@ -23,13 +22,12 @@ angular.module("myPortfolio")
 				});
 
 				request.then(function(response) {
-					console.log("successful " + response)
-					console.log("successful " + response.data)
-					console.log("successful " + response.statusText)
+					// TEMP - TODO create redirect for success
+					alert("Thanks for reaching out! I'll get right back to you!");
+					$location.path('/');
+
 				}, function(response) {
-					console.log("error data: " + response.data)
-					console.log("error status: " + response.status)
-					console.log("error statusText: " + response.statusText)
+					alert("Well this is embarassing. An error occured.");
 				});
 
 			// } else {
