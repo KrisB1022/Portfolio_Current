@@ -1,12 +1,15 @@
 .navigation-wrapper {
 	width: 100%;
-	// position: relative;
-	// z-index: 999;
+	display: flex;
+	flex-wrap: wrap;
 
 	.title {
-		display: inline-block;
+		margin-right: auto;
 		padding-left: 12px;
 		color: $white;
+		a, a:hover,	a:visited, a:active {
+			color: $white;
+		}
 		&::after {
 			content: "";
 			border-bottom: 1px solid;
@@ -16,8 +19,6 @@
 		}
 	}
 	.menuHamburger {
-		display: inline-block;
-		float: right;
 		border: 1px solid $font-color-primary;
 		border-radius: 3px;
 		@include adjust-font-size-to(18px);
@@ -28,7 +29,10 @@
 	.nav {
 		padding: 0;
 		text-align: center;
-		display: none;
+		width: 100%;
+		@media only screen and (max-width: $break-medium - 1) {
+			display: none;
+		}
 		li {
 			@include adjust-font-size-to(18px);
 		}
@@ -41,13 +45,11 @@
 			display: none;
 		}
 		.nav {
-			display: inline-block;
-			float: right;
+			display: flex !important;
+			width: auto;
 			margin-bottom: rhythm(1, 20px);
-			text-align: left;
 			padding: 0 12px;
 			li {
-				float: left;
 				margin: 6px 0 0 20px;
 			}
 		}

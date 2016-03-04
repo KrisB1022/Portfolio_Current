@@ -23,16 +23,14 @@
         
         <!-- build:js js/head.js -->
         <script src="node_modules/angular-spinkit/build/angular-spinkit.min.js"></script>
+        <script src="js/modernizr_3.3.1_(Custom Build).js"></script>
         <!-- endbuild -->
 
     </head>
     <body ng-controller="MainController" class="{{ currentPageClass() }}">
-        <!--[if lt IE 10]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
         <nav class="navigation-wrapper" role="navigation">
-            <a href="#/"><h2 class="title">Kris<span>Byrum</span></h2></a>
+            <h2 class="title"><a href="#/">Kris<span>Byrum</span></a></h2>
             <p class="menuHamburger" ng-click="slideNav()">MENU</p>
             <ul class="nav">
                 <li><a href="#/">home</a></li>

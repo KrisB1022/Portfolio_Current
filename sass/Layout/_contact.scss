@@ -1,8 +1,22 @@
+@include mq(medium) {
+	.contact .view-animate {
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+	}
+}
+
+
 .contact-wrapper {
 	max-width: 640px;
 	padding: 12px;
 	margin-bottom: 85px;
 	margin-top: 25px;
+	width: 100%;
 	.errorMessage.ng-active {
 		color: #ff9494;
 		padding: 6px 0;
@@ -36,12 +50,6 @@
 		margin-bottom: 12px;
 	}
 	@include mq(medium) {
-		margin: auto;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		left: 0;
-		right: 0;
 		.errorMessage.ng-active {
 			padding: 6px;
 			width: 150px;

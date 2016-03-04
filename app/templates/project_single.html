@@ -1,5 +1,7 @@
 <section ng-controller="SingleProjectController" class="singleProject-wrapper">
 
+	<h1 class="projectTitle">{{ project.projectTitle }}</h1>
+
 	<nav class="projectNavigation-wrapper">
 		<div class="prev-wrapper" ng-click="previousProject()">
 			<button class="prevButton">
@@ -15,20 +17,22 @@
 		</div>
 	</nav>
 
-	<h1>{{ project.projectTitle }}</h1>
 	<img ng-src="{{ project.heroImg }}" alt="{{ project.heroAlt }}">
 
+	<div class="summary">
+		<p ng-repeat="details in project.projectDetails">{{ details }}</p>
+	</div>
 
 	<ul class="languages_ul">
 		<li ng-repeat="language in project.languages">{{ language }}</li>
 	</ul>
-	
-	<p class="summary" ng-repeat="details in project.projectDetails">{{ details }}</p>
 
-	<aside class="projectImage-wrapper" ng-if="project.projectImages">
+
+
+<!-- 	<aside class="projectImage-wrapper" ng-if="project.projectImages">
 		<img ng-repeat="image in project.projectImages" 
 			ng-src="{{ image }}" alt="Screenshot of project">
-	</aside>
+	</aside> -->
 
 	<a class="cta" ng-href="{{ project.websiteUrl }}" ng-if="project.websiteUrl" target="_blank">
 		<p>Visit the live site.</p>
