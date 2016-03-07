@@ -1,6 +1,38 @@
-//==================================================
-//	Extend Styles
-//==================================================
+.arrow {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	background: transparent;
+	&:hover i {
+		background: $font-color-accent;
+	}
+	i {
+		position: absolute;
+		width: 20px;
+		height: 5px;
+		border-radius: 3px;
+		background: $font-color-primary;
+		transition: background ease 0.2s;
+		top: 50%;
+	}
+	.screenReader {
+		@include hide-text;
+		visibility: hidden;
+	}
+}
+.prev-wrapper {
+	i {
+		transform-origin: 0% 50%;
+	}
+	@include transformArrows(40deg, 1px, -1px);
+}
+.next-wrapper {
+	i {
+		transform-origin: 100% 50%;
+	}
+	@include transformArrows(-40deg, 1px, -1px);;
+}
 
-
-// silence is golden....

@@ -69,8 +69,7 @@ input.cta {
 	margin: auto;
 	transition: background ease 0.2s;
 	@include mq(medium) {
-		position: relative;
-		top: 60px;
+		margin-top: 60px;
 	}
 	&:hover {
 		background: transparent;

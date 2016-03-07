@@ -59,8 +59,19 @@
 }
 
 
+// Vertically Center Item
 @mixin verticalCenter {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+// Arrow Nav
+@mixin transformArrows( $angle, $x: 1, $y: 1) {
+	i:first-child {
+	transform: translate( $x, $y ) rotate( $angle );
+	}
+	i:nth-child(2) {
+	transform: translate( $x, -$y ) rotate( -$angle );		
+	}
 }

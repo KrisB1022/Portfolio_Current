@@ -35,8 +35,15 @@
 			"The biggest challenge for this project was to ensure that the site could be dropped into the existing website, and for the results to be accurate based on the voting data (estimated calculations were used for better user experience). The animations of each of the results bar were created using Javascript."
 		],
 		"languages": ["HTML", "CSS", "Javascript", "jQuery"],
-
-		"projectURL": "HaloFrance"
+		"websiteUrl": "http://review.tenguncreative.com/halo5_france",
+		"projectURL": "HaloFrance",
+		"projectImages": [
+			"img/halo/results.png",
+			"img/halo/prizes.png",
+			"img/halo/mobile-results.png",
+			"img/halo/mobile-prize.png",
+			"img/halo/mobile-hero.png"
+		]
 	},
 
 	"QR_Generator": {

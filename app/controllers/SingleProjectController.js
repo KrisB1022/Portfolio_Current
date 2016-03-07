@@ -8,7 +8,8 @@ angular.module("myPortfolio")
 			projectKeys,
 			projectIdx,
 			prevProject,
-			nextProject;
+			nextProject,
+			slideIndex = 0;
 
 		$scope.projects = [];
 		$scope.project = [];
@@ -55,6 +56,50 @@ angular.module("myPortfolio")
 				$location.url('/project/' + projectKeys[nextProject]);
 			}
 		};
+
+		/* Pagination for Sliders */
+		$scope.slidePosition = function() {
+			var left = -(slideIndex * 100) + '%' || 0;
+			return left;
+		};
+		$scope.currentSlide = function() {
+			return slideIndex;
+		};
+		$scope.prevSlide = function() {
+			if( slideIndex == 0 ) {
+				slideIndex = $('.slide_img').length - 1;
+				return;
+			}
+			slideIndex--;
+		};
+		$scope.nextSlide = function() {
+			if( slideIndex >= $('.slide_img').length - 1 ) {
+				slideIndex = 0;
+				return;
+			}
+			slideIndex++;
+		};
+		$scope.goToSlide = function( indx ) {
+			slideIndex = indx;
+		};
+
+
+		$scope.isFirstSlide = function() {
+			if( slideIndex <= 0 ) {
+				return true;
+			} else {
+				return false;
+			}
+		};
+		$scope.isLastSlide = function() {
+			if( slideIndex >= $('.slide_img').length - 1 ) {
+				return true;
+			} else {
+				return false;
+			}
+		};
+
+
 
 	}]);
 

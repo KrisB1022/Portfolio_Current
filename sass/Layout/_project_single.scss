@@ -40,61 +40,74 @@
 .projectNavigation-wrapper {
 	display: flex;
 	justify-content: space-between;
-	width: 50px;
+	width: 80px;
+	height: 40px;
+	margin-top: 10px;
 	margin-right: 12px;
 	@media only screen and (max-width: $break-small - 1) {
 		display: none;
 	}
-	.screenReader {
-		@include hide-text;
-		visibility: hidden;
-	}
 }
 
 
-/* Arrows */
 
-@mixin transformArrows( $angle, $x: 1, $y: 1) {
-	i:first-child {
-	transform: translate( $x, $y ) rotate( $angle );
+/* Slider Styling */
+.projectImage-wrapper {
+	width: 100%;
+	overflow: hidden;
+	margin: 60px 0 0;
+	position: relative;
+	@media only screen and (max-width: 599px) {
+		display: none;
 	}
-	i:nth-child(2) {
-	transform: translate( $x, -$y ) rotate( -$angle );		
-	}
-}
-
-.projectNavigation-wrapper {
-	button {
-		cursor: pointer;
-		border: none;
-		outline: none;
-		width: 20px;
-		height: 20px;
+	figure {
 		position: relative;
-		background: transparent;
-		&:hover i {
-			background: $font-color-accent;
-		}
-		i {
-			position: absolute;
-			width: 20px;
-			height: 5px;
-			border-radius: 3px;
-			background: $font-color-primary;
-			transition: background ease 0.2s;
-			top: 150%;
+		width: 500%; /* 5 items + 40% */
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		overflow: hidden;
+		transition: all ease-in-out 0.5s;
+		img {
+			width: 20%;
+			height: auto;
+			float: left;
 		}
 	}
-	.prev-wrapper {
-		i {
-			transform-origin: 0% 50%;
+	.slider-arrows {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 20px;
+		@include verticalCenter;
+		z-index: 20;
+		.next-wrapper {
+			margin-left: auto;
 		}
-		@include transformArrows(40deg, 1px, -1px);
+
 	}
-	.next-wrapper {
-		i {
-			transform-origin: 100% 50%;
+	.slider-pagination {
+		margin: 20px auto;
+		text-align: center;
+		span {
+			cursor: pointer;
+			padding: 8px;
+			margin: 6px;
+			height: 8px;
+			width: 8px;
+			background-color: transparent;
+			border: 1px solid $font-color-accent;
+			font-size: 0;
+			border-radius: 100%;
+			&.active,
+			&:hover {
+				background-color: $font-color-accent;
+			}
 		}
-		@include transformArrows(-40deg, 1px, -1px);;
 	}
 }
+
+
+
+
+

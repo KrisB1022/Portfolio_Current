@@ -4,13 +4,13 @@
 
 	<nav class="projectNavigation-wrapper">
 		<div class="prev-wrapper" ng-click="previousProject()">
-			<button class="prevButton">
+			<button class="prevButton arrow">
 				<i></i><i></i>
 				<span class="screenReader">Previous</span>
 			</button>
 		</div>
 		<div class="next-wrapper" ng-click="nextProject()">
-			<button class="nextButton">
+			<button class="nextButton arrow">
 				<i></i><i></i>
 				<span class="screenReader">Next</span>
 			</button>
@@ -28,11 +28,36 @@
 	</ul>
 
 
+	<div class="projectImage-wrapper" ng-if="project.projectImages">
+		<!-- Slider Nav -->
+		<div class="slider-arrows">
+			<div class="prev-wrapper" ng-click="prevSlide()">
+				<button class="prevButton arrow">
+					<i></i><i></i>
+					<span class="screenReader">Previous</span>
+				</button>
+			</div>
+			<div class="next-wrapper" ng-click="nextSlide()">
+				<button class="nextButton arrow">
+					<i></i><i></i>
+					<span class="screenReader">Next</span>
+				</button>
+			</div>
+		</div>
 
-<!-- 	<aside class="projectImage-wrapper" ng-if="project.projectImages">
-		<img ng-repeat="image in project.projectImages" 
-			ng-src="{{ image }}" alt="Screenshot of project">
-	</aside> -->
+		<!-- Slider Elements -->
+		<figure ng-if="project.projectImages" ng-style="{'left': slidePosition() }">
+			<img class="slide_img" ng-repeat="image in project.projectImages" 
+				ng-src="{{ image }}" alt="Screenshot of project">
+		</figure>
+
+		<!-- Pagination -->
+		<div class="slider-pagination">
+			<span ng-class="{active: $index === currentSlide() }" 
+				ng-repeat="item in project.projectImages"
+				ng-click="goToSlide( $index )">{{ $index + 1 }}</span>
+		</div>
+	</div>
 
 	<a class="cta" ng-href="{{ project.websiteUrl }}" ng-if="project.websiteUrl" target="_blank">
 		<p>Visit the live site.</p>
