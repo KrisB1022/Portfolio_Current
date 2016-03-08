@@ -29,20 +29,22 @@
 		"heroAlt": "Sscreenshot on laptop",
 		
 		"projectDetails": [
-			"The basic concept was to create a website to be integrated into an existing site, which would allow visitors to vote on a weekly basis of which Halo team (Master Chief or Locke) they prefer.",
-			"Starting from a mobile-first perspective, I was tasked to create a visual and interactive experience with only a full desktop PSD and some functional specs. Using a fluid grid, the web page adjust based on the user's view port, keeping consistency across multiple browsers and devices.",
-			"Each week of the four weeks of voting, had three different states (voting closed, voting open, voting results), with each week being controlled by a simple Javascript method and each week dynamically showing which prize was available.",
-			"The biggest challenge for this project was to ensure that the site could be dropped into the existing website, and for the results to be accurate based on the voting data (estimated calculations were used for better user experience). The animations of each of the results bar were created using Javascript."
+			"Problem to solve for:",
+			"Starting from a mobile-first perspective, I was tasked to create a visual and interactive experience using only a desktop PSD as my guide. The concept of the site was to allow users to vote weekly for a specific Halo team that they'd prefer. The week's prize needed to current for users to view, and the results from the previous week needed to be shown. The build also had to be able to be dropped into the client's existing website as best as possible.",
+			"Build solutions:",
+			"Using a fluid grid system, I created the site by moving elements around for various viewports, allowing all users on as many devices as possible view and interact with the site.",
+			"Each week of voting had three states: voting coming, voting active, and voting results. Based on the current week, the prize section was dynamically updated to reflect the current week's prize. Each state also has it's own set of dynamically updated content.",
+			"Using Javascript and some math, I created the results sections. Raw results numbers are passed into the script , and an estimated percentage value was then calculated and displayed to users. The results were animated using Javascript and mimicked Halo's health bar filling up.",
+			"This build used a module OOP Javascript approach, and it's CSS was built using Sass, Compass (Sass extension) and Gulp's automating tasks."
 		],
-		"languages": ["HTML", "CSS", "Javascript", "jQuery"],
+		"languages": ["HTML", "CSS (Sass, Compass)", "Javascript", "jQuery", "Gulp"],
 		"websiteUrl": "http://review.tenguncreative.com/halo5_france",
 		"projectURL": "HaloFrance",
 		"projectImages": [
-			"img/halo/results.png",
-			"img/halo/prizes.png",
-			"img/halo/mobile-results.png",
-			"img/halo/mobile-prize.png",
-			"img/halo/mobile-hero.png"
+			"img/halo/hero-halo.png",
+			"img/halo/prize-halo.png",
+			"img/halo/results-halo.png",
+			"img/halo/thumbnail-halo.png"
 		]
 	},
 

@@ -16,6 +16,10 @@ p {
 .view-animate.ng-enter-active {
 	opacity: 1;
 }
+.view-animate.ng-leave,
+.view-animate.ng-leave-active {
+	opacity: 0;
+}
 
 // ng-view loading screen
 .spinner-wrapper {
