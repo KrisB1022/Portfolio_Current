@@ -2,14 +2,18 @@
 	"use strict"
 
 angular.module("myPortfolio")
-	.controller('SingleProjectController', ['$scope', '$http', '$templateCache', '$routeParams', '$location', function($scope, $http, $templateCache, $routeParams, $location) {
+	.controller('SingleProjectController', 
+		['$scope', '$http', '$templateCache', '$routeParams', '$location', 
+		function($scope, $http, $templateCache, $routeParams, $location) {
 		
-		var projectID = $routeParams.project,
+		var projectsSubDirectory = '/project/',
+			projectID = $routeParams.project,
 			projectKeys,
 			projectIdx,
 			prevProject,
 			nextProject,
-			slideIndex = 0;
+			slideIndex = 0,
+			slidesLength;
 
 		$scope.projects = [];
 		$scope.project = [];
@@ -26,79 +30,93 @@ angular.module("myPortfolio")
 			if( projectID in $scope.projects ) {
 				$scope.project = $scope.projects[projectID];
 
-				// If true, set prev and next project indx values in scope for pagination
+				// Set prev and next project indx values in scope for pagination
 				projectKeys = Object.keys( $scope.projects );
 				projectIdx = projectKeys.indexOf(projectID);
 				prevProject = projectIdx - 1;
 				nextProject = projectIdx + 1;
+
+				// Set global reference
+				slidesLength = $scope.project.projectImages ? $scope.project.projectImages.length : null;
+
 
 			} else {
 				$location.url('/_404'); // TODO: Add Error/404 Page
 			}
 
 		}, function(response) {
-			console.log("An error occurred in the SingleProjectController: " + response.statusText)
+			console.log("SingleProjectController: " + response.statusText)
 		});
 
-		/* Pagination for projects */
+
+		/* Pagination Controls for Projects */
 		$scope.previousProject = function() {
 			if(prevProject < 0) {
-				$location.url('/project/' + projectKeys[projectKeys.length - 1]);
+				$location.url(projectsSubDirectory + projectKeys[projectKeys.length - 1]);
 			} else {
-				$location.url('/project/' + projectKeys[prevProject]);
+				$location.url(projectsSubDirectory + projectKeys[prevProject]);
 			}
 		};
 
 		$scope.nextProject = function() {
 			if(nextProject == projectKeys.length) {
-				$location.url('/project/' + projectKeys[0]);
+				$location.url(projectsSubDirectory + projectKeys[0]);
 			} else {
-				$location.url('/project/' + projectKeys[nextProject]);
+				$location.url(projectsSubDirectory + projectKeys[nextProject]);
 			}
 		};
 
-		/* Pagination for Sliders */
+		/* Controls for Slider */
 		$scope.slidePosition = function() {
-			var left = -(slideIndex * 100) + '%' || 0;
-			return left;
-		};
-		$scope.currentSlide = function() {
-			return slideIndex;
+			return -(slideIndex * 100) + '%' || 0;
 		};
 		$scope.prevSlide = function() {
 			if( slideIndex == 0 ) {
-				slideIndex = $('.slide_img').length - 1;
+				slideIndex = slidesLength - 1;
 				return;
 			}
 			slideIndex--;
 		};
 		$scope.nextSlide = function() {
-			if( slideIndex >= $('.slide_img').length - 1 ) {
+			if( slideIndex >= slidesLength - 1 ) {
 				slideIndex = 0;
 				return;
 			}
 			slideIndex++;
+		};
+
+
+		/* Pagination for Sliders */
+		$scope.currentSlide = function() {
+			return slideIndex;
 		};
 		$scope.goToSlide = function( indx ) {
 			slideIndex = indx;
 		};
 
 
+		/* Slider Display Methods */
+		$scope.sliderWidth = function() {
+			var width = (slidesLength * 100) + '%';
+			return width;
+		};
+		$scope.slideWidth = function() {
+			return (100 / slidesLength ) + '%';
+		};
 		$scope.isFirstSlide = function() {
 			if( slideIndex <= 0 ) {
 				return true;
 			} else {
-				return false;
+				return;
 			}
 		};
 		$scope.isLastSlide = function() {
-			if( slideIndex >= $('.slide_img').length - 1 ) {
+			if( slideIndex >= slidesLength - 1 ) {
 				return true;
 			} else {
-				return false;
+				return;
 			}
 		};
-
 
 
 	}]);

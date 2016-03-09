@@ -62,14 +62,12 @@
 	}
 	figure {
 		position: relative;
-		width: 500%; /* 5 items + 40% */
-		margin: 0;
+	 	margin: 0;
 		padding: 0;
 		font-size: 0;
 		overflow: hidden;
 		transition: all ease-in-out 0.5s;
 		img {
-			width: 20%;
 			height: auto;
 			float: left;
 		}

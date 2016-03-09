@@ -510,7 +510,13 @@ h1, h2, h3 {
   opacity: 1;
 }
 
-/* line 21, ../sass/Layout/_globals.scss */
+/* line 19, ../sass/Layout/_globals.scss */
+.view-animate.ng-leave,
+.view-animate.ng-leave-active {
+  opacity: 0;
+}
+
+/* line 25, ../sass/Layout/_globals.scss */
 .spinner-wrapper {
   position: fixed;
   top: 0;
@@ -522,7 +528,7 @@ h1, h2, h3 {
   z-index: 998;
 }
 
-/* line 31, ../sass/Layout/_globals.scss */
+/* line 35, ../sass/Layout/_globals.scss */
 .spinner {
   position: absolute;
   top: 46%;
@@ -534,7 +540,7 @@ h1, h2, h3 {
   width: 100%;
 }
 
-/* line 39, ../sass/Layout/_globals.scss */
+/* line 43, ../sass/Layout/_globals.scss */
 .spinner-wrapper.fade {
   opacity: 0;
   z-index: -20;
@@ -542,28 +548,28 @@ h1, h2, h3 {
           animation: fadeOut 1.6s;
 }
 
-/* line 45, ../sass/Layout/_globals.scss */
+/* line 49, ../sass/Layout/_globals.scss */
 .spinner-title {
   text-align: center;
   -webkit-animation: fadeInOut 1.6s infinite;
           animation: fadeInOut 1.6s infinite;
 }
 
-/* line 49, ../sass/Layout/_globals.scss */
+/* line 53, ../sass/Layout/_globals.scss */
 .chasing-dots-spinner {
   width: 65px;
   height: 65px;
   margin: 0 auto;
 }
 
-/* line 54, ../sass/Layout/_globals.scss */
+/* line 58, ../sass/Layout/_globals.scss */
 .dot1,
 .dot2 {
   background: #FFF;
 }
 
 /* CTA */
-/* line 61, ../sass/Layout/_globals.scss */
+/* line 65, ../sass/Layout/_globals.scss */
 .cta,
 input.cta {
   clear: both;
@@ -576,18 +582,18 @@ input.cta {
   transition: background ease 0.2s;
 }
 @media screen and (min-width: 1000px) {
-  /* line 61, ../sass/Layout/_globals.scss */
+  /* line 65, ../sass/Layout/_globals.scss */
   .cta,
   input.cta {
     margin-top: 60px;
   }
 }
-/* line 74, ../sass/Layout/_globals.scss */
+/* line 78, ../sass/Layout/_globals.scss */
 .cta:hover,
 input.cta:hover {
   background: transparent;
 }
-/* line 77, ../sass/Layout/_globals.scss */
+/* line 81, ../sass/Layout/_globals.scss */
 .cta p,
 input.cta p {
   margin: 8px 0;
@@ -794,21 +800,18 @@ input.cta p {
 /* line 63, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper figure {
   position: relative;
-  width: 500%;
-  /* 5 items + 40% */
   margin: 0;
   padding: 0;
   font-size: 0;
   overflow: hidden;
   transition: all ease-in-out 0.5s;
 }
-/* line 71, ../sass/Layout/_project_single.scss */
+/* line 70, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper figure img {
-  width: 20%;
   height: auto;
   float: left;
 }
-/* line 77, ../sass/Layout/_project_single.scss */
+/* line 75, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-arrows {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -825,16 +828,16 @@ input.cta p {
           transform: translateY(-50%);
   z-index: 20;
 }
-/* line 84, ../sass/Layout/_project_single.scss */
+/* line 82, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-arrows .next-wrapper {
   margin-left: auto;
 }
-/* line 89, ../sass/Layout/_project_single.scss */
+/* line 87, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination {
   margin: 20px auto;
   text-align: center;
 }
-/* line 92, ../sass/Layout/_project_single.scss */
+/* line 90, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination span {
   cursor: pointer;
   padding: 8px;
@@ -846,7 +849,7 @@ input.cta p {
   font-size: 0;
   border-radius: 100%;
 }
-/* line 102, ../sass/Layout/_project_single.scss */
+/* line 100, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination span.active, .projectImage-wrapper .slider-pagination span:hover {
   background-color: #58a4b0;
 }
@@ -944,6 +947,26 @@ input.cta p {
     float: right;
     margin-right: 0;
   }
+}
+
+/* line 1, ../sass/Layout/_404.scss */
+._404wrapper {
+  height: 60vh;
+  width: 100%;
+  background: url("../img/404page.png") no-repeat top left;
+  background-size: cover;
+  position: relative;
+}
+/* line 7, ../sass/Layout/_404.scss */
+._404wrapper div {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 @-webkit-keyframes fadeIn {

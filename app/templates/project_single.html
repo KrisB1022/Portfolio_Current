@@ -46,9 +46,13 @@
 		</div>
 
 		<!-- Slider Elements -->
-		<figure ng-if="project.projectImages" ng-style="{'left': slidePosition() }">
-			<img class="slide_img" ng-repeat="image in project.projectImages" 
-				ng-src="{{ image }}" alt="Screenshot of project">
+		<figure ng-if="project.projectImages" 
+				ng-style="{'left': slidePosition(), 'width': sliderWidth() }">
+			<img class="slide_img" 
+				ng-repeat="image in project.projectImages" 
+				ng-src="{{ image }}" 
+				ng-style="{'width': slideWidth()}"
+				alt="Screenshot of project">
 		</figure>
 
 		<!-- Pagination -->
