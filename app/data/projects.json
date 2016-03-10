@@ -1,24 +1,4 @@
 {
-	"MicrosoftReactor": {
-		"projectTitle": "Microsoft Reactor",
-		"projectSummary": "Customized WordPress site for Microsoft Reactor.",
-		"thumbnail": "img/reactor/thumbnail.png",
-		"thumbnailAlt": "Microsoft Reactor screenshot on Surface Book laptop",
-		
-		"heroImg": "img/reactor/hero.png",
-		"heroAlt": "Microsoft Reactor screenshot on laptop",
-		
-		"projectDetails": [
-			"Microsoft Reactor is a new venture from Microsoft which helps to facilitate startup growth using Microsoft's Azure development platform. This space is a modern and open place located in San Francisco where individuals or teams, can grab coffee, meet, work on their projects and get in-person answers regarding Microsoft Azure services - at no cost.",
-			"The website was built with the WordPress CMS. A custom events' loop, content modules/blades and other features were integrated into Divi's WordPress theme, allowing for a fast, robust and complete build.",
-			"I was tasked with building completed site, modifying the event plugin to full-fill design and functionality, as well as setting up the web environment."
-		],
-		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
-
-		"websiteUrl": "http://MicrosoftReactor.com",
-		"projectURL": "MicrosoftReactor"
-	},
-
 	"HaloFrance": {
 		"projectTitle": "Halo France",
 		"projectSummary": "French website built to vote for Team Master Chief or Team Locke - Halo.",
@@ -46,6 +26,26 @@
 			"img/halo/results-halo.png",
 			"img/halo/thumbnail-halo.png"
 		]
+	},
+
+	"MicrosoftReactor": {
+		"projectTitle": "Microsoft Reactor",
+		"projectSummary": "Customized WordPress site for Microsoft Reactor.",
+		"thumbnail": "img/reactor/thumbnail.png",
+		"thumbnailAlt": "Microsoft Reactor screenshot on Surface Book laptop",
+		
+		"heroImg": "img/reactor/hero.png",
+		"heroAlt": "Microsoft Reactor screenshot on laptop",
+		
+		"projectDetails": [
+			"Microsoft Reactor is a new venture from Microsoft which helps to facilitate startup growth using Microsoft's Azure development platform. This space is a modern and open place located in San Francisco where individuals or teams, can grab coffee, meet, work on their projects and get in-person answers regarding Microsoft Azure services - at no cost.",
+			"The website was built with the WordPress CMS. A custom events' loop, content modules/blades and other features were integrated into Divi's WordPress theme, allowing for a fast, robust and complete build.",
+			"I was tasked with building completed site, modifying the event plugin to full-fill design and functionality, as well as setting up the web environment."
+		],
+		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
+
+		"websiteUrl": "http://MicrosoftReactor.com",
+		"projectURL": "MicrosoftReactor"
 	},
 
 	"QR_Generator": {
@@ -85,7 +85,13 @@
 		"languages": ["HTML", "CSS", "jQuery"],
 		
 		"websiteUrl": "http://microsoftventures.com",
-		"projectURL": "MicrosoftVentures"
+		"projectURL": "MicrosoftVentures",
+		"projectImages": [
+			"img/ventures/programs-ventures.png",
+			"img/ventures/blog-ventures.png",
+			"img/ventures/locations-ventures.png",
+			"img/ventures/thumb-ventures.png"
+		]
 	},
 
 	"Irishmen": {
@@ -108,3 +114,4 @@
 		"projectURL": "Irishmen"
 	}
 }
+
