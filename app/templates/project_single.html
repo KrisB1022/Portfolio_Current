@@ -17,20 +17,11 @@
 		</div>
 	</nav>
 
-	<img ng-src="{{ project.heroImg }}" alt="{{ project.heroAlt }}">
-
-	<div class="summary">
-		<p ng-repeat="details in project.projectDetails">{{ details }}</p>
-	</div>
-
-	<ul class="languages_ul">
-		<li ng-repeat="language in project.languages">{{ language }}</li>
-	</ul>
-
+	<img class="mobile-hero" ng-src="{{ project.projectImages[0] }}" alt="Project Screenshot">
 
 	<div class="projectImage-wrapper" ng-if="project.projectImages">
 		<!-- Slider Nav -->
-		<div class="slider-arrows">
+		<div class="slider-arrows" ng-if="project.projectImages.length > 1">
 			<div class="prev-wrapper" ng-click="prevSlide()">
 				<button class="prevButton arrow">
 					<i></i><i></i>
@@ -56,12 +47,21 @@
 		</figure>
 
 		<!-- Pagination -->
-		<div class="slider-pagination">
+		<div class="slider-pagination" ng-if="project.projectImages.length > 1">
 			<span ng-class="{active: $index === currentSlide() }" 
 				ng-repeat="item in project.projectImages"
 				ng-click="goToSlide( $index )">{{ $index + 1 }}</span>
 		</div>
 	</div>
+
+	<div class="summary">
+		<p ng-repeat="details in project.projectDetails">{{ details }}</p>
+	</div>
+
+	<ul class="languages_ul">
+		<li ng-repeat="language in project.languages">{{ language }}</li>
+	</ul>
+
 
 	<a class="cta" ng-href="{{ project.websiteUrl }}" ng-if="project.websiteUrl" target="_blank">
 		<p>Visit the live site.</p>

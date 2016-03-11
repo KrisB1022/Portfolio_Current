@@ -745,25 +745,29 @@ input.cta p {
 }
 @media screen and (min-width: 1000px) {
   /* line 22, ../sass/Layout/_project_single.scss */
+  .singleProject-wrapper .mobile-hero {
+    display: none;
+  }
+  /* line 25, ../sass/Layout/_project_single.scss */
   .singleProject-wrapper .summary {
     width: 75%;
     margin-bottom: 0;
   }
-  /* line 26, ../sass/Layout/_project_single.scss */
+  /* line 29, ../sass/Layout/_project_single.scss */
   .singleProject-wrapper .languages_ul {
     width: 20%;
     border-top: none;
     border-left: 1px solid #58a4b0;
     padding: 0 0 0 40px;
   }
-  /* line 31, ../sass/Layout/_project_single.scss */
+  /* line 34, ../sass/Layout/_project_single.scss */
   .singleProject-wrapper .languages_ul li {
     padding: 0;
   }
 }
 
 /* Navigation wrapper */
-/* line 40, ../sass/Layout/_project_single.scss */
+/* line 43, ../sass/Layout/_project_single.scss */
 .projectNavigation-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -777,14 +781,14 @@ input.cta p {
   margin-right: 12px;
 }
 @media only screen and (max-width: 499px) {
-  /* line 40, ../sass/Layout/_project_single.scss */
+  /* line 43, ../sass/Layout/_project_single.scss */
   .projectNavigation-wrapper {
     display: none;
   }
 }
 
 /* Slider Styling */
-/* line 55, ../sass/Layout/_project_single.scss */
+/* line 58, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper {
   width: 100%;
   overflow: hidden;
@@ -792,12 +796,12 @@ input.cta p {
   position: relative;
 }
 @media only screen and (max-width: 599px) {
-  /* line 55, ../sass/Layout/_project_single.scss */
+  /* line 58, ../sass/Layout/_project_single.scss */
   .projectImage-wrapper {
     display: none;
   }
 }
-/* line 63, ../sass/Layout/_project_single.scss */
+/* line 66, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper figure {
   position: relative;
   margin: 0;
@@ -806,12 +810,12 @@ input.cta p {
   overflow: hidden;
   transition: all ease-in-out 0.5s;
 }
-/* line 70, ../sass/Layout/_project_single.scss */
+/* line 73, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper figure img {
   height: auto;
   float: left;
 }
-/* line 75, ../sass/Layout/_project_single.scss */
+/* line 78, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-arrows {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -828,16 +832,16 @@ input.cta p {
           transform: translateY(-50%);
   z-index: 20;
 }
-/* line 82, ../sass/Layout/_project_single.scss */
+/* line 85, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-arrows .next-wrapper {
   margin-left: auto;
 }
-/* line 87, ../sass/Layout/_project_single.scss */
+/* line 90, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination {
   margin: 20px auto;
   text-align: center;
 }
-/* line 90, ../sass/Layout/_project_single.scss */
+/* line 93, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination span {
   cursor: pointer;
   padding: 8px;
@@ -849,7 +853,7 @@ input.cta p {
   font-size: 0;
   border-radius: 100%;
 }
-/* line 100, ../sass/Layout/_project_single.scss */
+/* line 103, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination span.active, .projectImage-wrapper .slider-pagination span:hover {
   background-color: #58a4b0;
 }

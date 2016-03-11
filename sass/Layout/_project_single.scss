@@ -19,6 +19,9 @@
 		}
 	}
 	@include mq(medium) {
+		.mobile-hero {
+			display: none;
+		}
 		.summary {
 			width: 75%;
 			margin-bottom: 0;
