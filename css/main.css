@@ -219,6 +219,13 @@ body {
   background-color: #1b1b1e;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
 }
 /* line 12, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 body:after {
@@ -226,19 +233,27 @@ body:after {
   display: block;
   clear: both;
 }
+/* line 15, ../sass/base/_base.scss */
+body footer {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  margin-top: auto;
+  padding-top: 60px;
+}
 
 /* line 21, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 * *, * *:before, * *:after {
   box-sizing: border-box;
 }
 
-/* line 16, ../sass/base/_base.scss */
+/* line 25, ../sass/base/_base.scss */
 img {
   max-width: 100% !important;
   height: auto;
 }
 
-/* line 20, ../sass/base/_base.scss */
+/* line 29, ../sass/base/_base.scss */
 a {
   color: #D8DBE2;
   text-decoration: none;
@@ -256,7 +271,7 @@ a:active {
   color: #D8DBE2;
 }
 
-/* line 25, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 li {
   list-style: none;
 }
@@ -267,7 +282,7 @@ html {
   line-height: 1.375em;
 }
 
-/* line 36, ../sass/base/_base.scss */
+/* line 45, ../sass/base/_base.scss */
 label[for="winnie_the_pooh"],
 input[name="winnie_the_pooh"] {
   display: none;
@@ -831,17 +846,18 @@ input.cta p {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 20;
+  margin-top: -44px;
 }
-/* line 85, ../sass/Layout/_project_single.scss */
+/* line 86, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-arrows .next-wrapper {
   margin-left: auto;
 }
-/* line 90, ../sass/Layout/_project_single.scss */
+/* line 91, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination {
   margin: 20px auto;
   text-align: center;
 }
-/* line 93, ../sass/Layout/_project_single.scss */
+/* line 94, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination span {
   cursor: pointer;
   padding: 8px;
@@ -853,7 +869,7 @@ input.cta p {
   font-size: 0;
   border-radius: 100%;
 }
-/* line 103, ../sass/Layout/_project_single.scss */
+/* line 104, ../sass/Layout/_project_single.scss */
 .projectImage-wrapper .slider-pagination span.active, .projectImage-wrapper .slider-pagination span:hover {
   background-color: #58a4b0;
 }

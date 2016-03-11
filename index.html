@@ -45,6 +45,10 @@
             <div ng-view ng-cloak class="view-animate"></div>
         </section>
 
+        <footer>
+            <p>&copy;{{date | date: 'yyyy'}} Kris Byrum</p>
+        </footer>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
         <!-- build:js js/footer.js -->
@@ -54,15 +58,6 @@
         <script src="app/controllers/ContactController.js"></script>
         <script src="app/controllers/SingleProjectController.js"></script>
         <script src="app/controllers/404Controller.js"></script>
-
-        <div style="display: none;">
-            <!-- Idea from Zillow Dev blog. Preload images in HTML to cache for pages and faster load time -->
-            <img style="display: none;" src="img/halo/hero.png">
-            <img style="display: none;" src="img/irishmen/hero.png">
-            <img style="display: none;" src="img/qr_code/main.png">
-            <img style="display: none;" src="img/reactor/hero.png">
-            <img style="display: none;" src="img/ventures/hero.png">
-        </div>
         
     </body>
 </html>

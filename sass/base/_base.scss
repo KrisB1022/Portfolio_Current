@@ -8,6 +8,15 @@ body {
 	background-color: $black;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	footer {
+		align-self: flex-end;
+		margin-top: auto;
+		padding-top: 60px;
+	}
 }
 // Just to make sure Susy is with us :)
 * {

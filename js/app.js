@@ -82,6 +82,11 @@
 			$scope.slideNav = function() {
 				$('.nav').slideToggle();
 			};
+
+			/* Copywrite Date */
+			$scope.date = new Date();
+
+
 		}])
 		
 		;
