@@ -10,12 +10,18 @@
 		a, a:hover,	a:visited, a:active {
 			color: $white;
 		}
+		&:hover::after {
+			color: $font-color-accent;
+			width: 100%;
+		}
 		&::after {
+			transition: all ease 0.6s;
 			content: "";
 			border-bottom: 1px solid;
 			height: 0;
 			display: block;
 			width: 20px;
+
 		}
 	}
 	.menuHamburger {
@@ -35,6 +41,24 @@
 		}
 		li {
 			@include adjust-font-size-to(18px);
+			a {
+				transition: color ease 0.3s;
+				position: relative;
+				&::after {
+					content: '';
+					bottom: 0;
+					left: 0;
+					right: 0;
+					width: 0;
+					transition: all ease-in 0.3s;
+					display: block;
+					position: absolute;
+				}
+				&:hover::after {
+					width: 100%;
+					border-bottom: 1px solid $font-color-accent;
+				}
+			}
 		}
 		li:first-child {
 			margin-bottom: rhythm(1, 20px);			
