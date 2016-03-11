@@ -3,11 +3,12 @@
 
 angular.module("myPortfolio")
 	.controller("ContactController", ["$scope", "$http", "$window", "$location", function($scope, $http, $window, $location) {
-		$scope.submission = false;
+		$scope.sendSuccess = false;
+		$scope.sendError = false;
 		$scope.submitted = function() {
 			// check if honey pot if empty
-			// var honeyPot = $scope.winnie_the_pooh;
-			// if(honeyPot.value == '') {
+			var honeyPot = $scope.winnie_the_pooh;
+			if( typeof honeyPot === "undefined" ) {
 				var request = $http({
 					method: "POST",
 					url: "app/templates/contact.php",
@@ -22,17 +23,14 @@ angular.module("myPortfolio")
 				});
 
 				request.then(function(response) {
-					// TEMP - TODO create redirect for success
-					alert("Thanks for reaching out! I'll get right back to you!");
-					$location.path('/');
-
+					$scope.sendSuccess = true;				
 				}, function(response) {
-					alert("Well this is embarassing. An error occured.");
+					$scope.sendError = true;
 				});
 
-			// } else {
-			// 	$window.location.href = "https://en.wikipedia.org/wiki/Spamming";
-			// }
+			} else {
+				$window.location.href = "https://en.wikipedia.org/wiki/Spamming";
+			}
 		};
 	}]);
 

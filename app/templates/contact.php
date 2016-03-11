@@ -1,11 +1,12 @@
 <?php
+
 date_default_timezone_set('Etc/UTC');
 
-// echo "File exists? " . file_exists('../../PHPMailer/PHPMailerAutoload.php');
-// require '../../PHPMailer/PHPMailerAutoload.php';
-
-
-
+/***
+* Cleans email input to prevent spam, etc.
+* @param 	$formData 	input date from HTML form
+* @return 	trimed, stripped and html special chars removed
+*/
 function input_validation($formData) {
 	$formData = trim($formData);
 	$formData = stripslashes($formData);

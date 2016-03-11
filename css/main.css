@@ -854,98 +854,145 @@ input.cta p {
   background-color: #58a4b0;
 }
 
-@media screen and (min-width: 1000px) {
-  /* line 2, ../sass/Layout/_contact.scss */
-  .contact .view-animate {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-}
-/* line 14, ../sass/Layout/_contact.scss */
+/* line 1, ../sass/Layout/_contact.scss */
 .contact-wrapper {
-  max-width: 640px;
   padding: 12px;
-  margin-bottom: 85px;
-  margin-top: 25px;
-  width: 100%;
 }
-/* line 20, ../sass/Layout/_contact.scss */
+/* line 3, ../sass/Layout/_contact.scss */
+.contact-wrapper .contactForm {
+  max-width: 640px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 11, ../sass/Layout/_contact.scss */
+.contact-wrapper .message {
+  margin: auto;
+  padding: 12px 0;
+  line-height: 1;
+  text-align: center;
+}
+/* line 17, ../sass/Layout/_contact.scss */
 .contact-wrapper .errorMessage.ng-active {
   color: #ff9494;
-  padding: 6px 0;
-  width: 100%;
 }
-/* line 25, ../sass/Layout/_contact.scss */
+/* line 19, ../sass/Layout/_contact.scss */
+.contact-wrapper .errorMessage.ng-active ~ input, .contact-wrapper .errorMessage.ng-active ~ textarea {
+  background: #ff9494;
+}
+/* line 24, ../sass/Layout/_contact.scss */
 .contact-wrapper .input-wrapper {
-  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 24px;
 }
-/* line 27, ../sass/Layout/_contact.scss */
-.contact-wrapper .input-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
+/* line 29, ../sass/Layout/_contact.scss */
+.contact-wrapper .cta {
+  height: 38px;
+  margin: 0 auto 0 0;
 }
 /* line 33, ../sass/Layout/_contact.scss */
-.contact-wrapper .cta {
-  margin: 8px 0;
-  height: 38px;
-  float: right;
-}
-/* line 38, ../sass/Layout/_contact.scss */
 .contact-wrapper textarea {
   min-height: 120px;
 }
-/* line 41, ../sass/Layout/_contact.scss */
+/* line 36, ../sass/Layout/_contact.scss */
 .contact-wrapper input:not(.cta),
 .contact-wrapper textarea {
   color: #1b1b1e;
   padding: 6px;
 }
-/* line 46, ../sass/Layout/_contact.scss */
-.contact-wrapper label,
-.contact-wrapper input:not(.cta),
-.contact-wrapper textarea {
-  width: 100%;
-  margin-bottom: 12px;
+@media screen and (min-width: 500px) {
+  /* line 43, ../sass/Layout/_contact.scss */
+  .contact-wrapper .contactForm {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+  }
+  /* line 47, ../sass/Layout/_contact.scss */
+  .contact-wrapper .input-wrapper {
+    width: 100%;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  /* line 51, ../sass/Layout/_contact.scss */
+  .contact-wrapper .input-wrapper label {
+    width: 150px;
+  }
+  /* line 54, ../sass/Layout/_contact.scss */
+  .contact-wrapper .input-wrapper input,
+  .contact-wrapper .input-wrapper textarea {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  /* line 60, ../sass/Layout/_contact.scss */
+  .contact-wrapper .errorMessage.ng-active {
+    width: 100%;
+    text-align: right;
+  }
+  /* line 64, ../sass/Layout/_contact.scss */
+  .contact-wrapper .cta {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 1000px) {
-  /* line 53, ../sass/Layout/_contact.scss */
-  .contact-wrapper .errorMessage.ng-active {
-    padding: 6px;
-    width: 150px;
-    border: 1px solid;
-    border-radius: 5px 10px;
-    position: absolute;
-    right: -162px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+  /* line 1, ../sass/Layout/_contact.scss */
+  .contact-wrapper {
+    height: 75vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  /* line 63, ../sass/Layout/_contact.scss */
-  .contact-wrapper label {
-    width: 31.22172%;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 81, ../sass/Layout/_contact.scss */
+  .no-flexbox .contact-wrapper .input-wrapper {
+    display: block;
+  }
+  /* line 83, ../sass/Layout/_contact.scss */
+  .no-flexbox .contact-wrapper .input-wrapper label {
+    max-width: 20%;
+    margin-right: 5%;
+  }
+  /* line 87, ../sass/Layout/_contact.scss */
+  .no-flexbox .contact-wrapper .input-wrapper input,
+  .no-flexbox .contact-wrapper .input-wrapper textarea {
+    width: 75%;
+  }
+  /* line 91, ../sass/Layout/_contact.scss */
+  .no-flexbox .contact-wrapper .input-wrapper label,
+  .no-flexbox .contact-wrapper .input-wrapper input,
+  .no-flexbox .contact-wrapper .input-wrapper textarea {
     float: left;
-    margin-right: 3.16742%;
-    padding: 6px;
-  }
-  /* line 67, ../sass/Layout/_contact.scss */
-  .contact-wrapper input:not(.cta),
-  .contact-wrapper textarea {
-    width: 65.61086%;
-    float: right;
-    margin-right: 0;
   }
 }
 
@@ -955,10 +1002,22 @@ input.cta p {
   width: 100%;
   background: url("../img/404page.png") no-repeat top left;
   background-size: cover;
-  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 /* line 7, ../sass/Layout/_404.scss */
 ._404wrapper div {
+  margin: auto;
+  text-align: center;
+}
+
+/* line 14, ../sass/Layout/_404.scss */
+.no-flexbox ._404wrapper {
+  position: relative;
+}
+/* line 16, ../sass/Layout/_404.scss */
+.no-flexbox ._404wrapper div {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -966,7 +1025,6 @@ input.cta p {
           transform: translateY(-50%);
   left: 0;
   right: 0;
-  text-align: center;
 }
 
 @-webkit-keyframes fadeIn {

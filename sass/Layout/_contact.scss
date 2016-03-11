@@ -1,39 +1,34 @@
-@include mq(medium) {
-	.contact .view-animate {
-		display: flex;
-		justify-content: center;
-		position: absolute;
-		top: 50%;
-		left: 0;
-		right: 0;
-		transform: translateY(-50%);
-	}
-}
-
-
 .contact-wrapper {
-	max-width: 640px;
 	padding: 12px;
-	margin-bottom: 85px;
-	margin-top: 25px;
-	width: 100%;
+	.contactForm {
+		max-width: 640px;
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.message {
+		margin: auto;
+		padding: 12px 0;
+		line-height: 1;
+		text-align: center;
+	}
 	.errorMessage.ng-active {
 		color: #ff9494;
-		padding: 6px 0;
-		width: 100%;
+		& ~ input, 
+		& ~ textarea {
+			background: #ff9494;
+		}		
 	}
 	.input-wrapper {
-		position: relative;
-		&:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 24px;
 	}
 	.cta {
-		margin: 8px 0;
 		height: 38px;
-		float: right;
+		margin: 0 auto 0 0;
 	}
 	textarea {
 		min-height: 120px;
@@ -43,30 +38,61 @@
 		color: $black;
 		padding: 6px;
 	}
-	label,
-	input:not(.cta),
-	textarea {
-		width: 100%;
-		margin-bottom: 12px;
-	}
-	@include mq(medium) {
+
+	@include mq(small) {
+		.contactForm {
+			flex-direction: row;
+			align-self: center;
+		}
+		.input-wrapper {
+			width: 100%;
+			flex-direction: row;
+			flex-wrap: wrap;
+			label {
+				width: 150px;
+			}
+			input,
+			textarea {
+				align-self: flex-end;
+				flex: 1;
+			}
+		}
 		.errorMessage.ng-active {
-			padding: 6px;
-			width: 150px;
-			border: 1px solid;
-			border-radius: 5px 10px;
-			position: absolute;
-			right: -162px;
-			top: 50%;
-			transform: translateY(-50%);
+			width: 100%;
+			text-align: right;
 		}
-		label {
-			@include span(4);
-			padding: 6px;
+		.cta {
+			margin-left: auto;
+			margin-right: 0;
 		}
-		input:not(.cta),
-		textarea {
-			@include span(8 last);		
+	}
+
+
+	@include mq(medium) {
+		height: 75vh;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+.no-flexbox .contact-wrapper {
+	@include mq(small) {
+		.input-wrapper {
+			display: block;
+			label {
+				max-width: 20%;
+				margin-right: 5%;
+			}
+			input, 
+			textarea {
+				width: 75%;
+			}
+			label,
+			input,
+			textarea {
+				float: left;
+			}
 		}
 	}
 }

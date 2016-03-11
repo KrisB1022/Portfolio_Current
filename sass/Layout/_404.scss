@@ -3,11 +3,19 @@
 	width: 100%;
 	background: url('../img/404page.png') no-repeat top left;
 	background-size: cover;	
+	display: flex;
+	div {
+		margin: auto;
+		text-align: center;
+	}
+}
+
+
+.no-flexbox ._404wrapper {
 	position: relative;
 	div {
 		@include verticalCenter;
 		left: 0;
 		right: 0;
-		text-align: center;
 	}
 }
