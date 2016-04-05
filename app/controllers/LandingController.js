@@ -6,7 +6,7 @@ angular.module("myPortfolio")
 		function($scope, $http, $location) {
 
 		$scope.title = "Kris - a Seattle area Web Developer";
-		$scope.introduction = "I'm a passionate, creative web developer, always looking to learn something new, improve what I got and lend a helping hand. Angular.js, Javascript (jQuery included), CSS, Design, UI/UX, PHP, and WordPress are some favorites, although I have knowledge in other front-end and back-end languages and technologies. Take a peek at a small sample of my work, then reach out.";
+		$scope.introduction = "Web development is how I express my creativity and where I do my best work. I am a natural leader with proven leadership abilities and work calmly and effectively under pressure. I have a variety of languages and tools under my belt but always strive to continue learning and growing. Angular.js, Javascript, CSS, design, UI, PHP and WordPress are some of my currently favorite languages to develop for.";
 
 		$scope.projects = [];
 		$http.get("app/data/projects.json")

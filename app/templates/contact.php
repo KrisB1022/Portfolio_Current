@@ -36,7 +36,7 @@ $headers .= "X-Mailer: PHP/" . phpversion();
 if(mail("krisjbyrum@gmail.com", "Message from Portfolio Website", $message)) {
 	echo "Successful sending";
 } else {
-	echo "Nope. Still not working.";
+	echo "Sorry. Something went wrong.";
 }
 return;
 
