@@ -11,7 +11,6 @@ angular.module("myPortfolio")
 
 			$.each( $('.contactForm input'), function() {
 				if( !$(this).val() ) {
-					console.log(this);
 					if( !$(this).is('#winnie_the_pooh') ) {
 						is_passed = false;
 					}
@@ -19,7 +18,6 @@ angular.module("myPortfolio")
 			});
 
 			if( !$('.contactForm textarea').val() ) {
-				console.log('textarea')
 				is_passed = false;
 			}
 
@@ -39,11 +37,11 @@ angular.module("myPortfolio")
 						method: "POST",
 						url: "app/templates/contact.php",
 						data: {
-							firstName: $scope.firstName,
-							lastName: $scope.lastName,
-							email: $scope.email,
-							phoneNumber: $scope.phoneNumber,
-							message: $scope.message
+							firstName: contactForm.firstName.value,
+							lastName: contactForm.lastName.value,
+							email: contactForm.email.value,
+							phoneNumber: contactForm.phoneNumber.value,
+							message: contactForm.message.value
 						},
 						headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
 					});
