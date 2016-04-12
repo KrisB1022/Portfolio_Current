@@ -235,8 +235,8 @@ body:after {
 }
 /* line 15, ../sass/base/_base.scss */
 body footer {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
+  -ms-flex-item-align: end;
+      -webkit-align-self: flex-end;
           align-self: flex-end;
   margin-top: auto;
   padding-top: 60px;
@@ -969,8 +969,8 @@ input.cta p {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
+    -ms-flex-item-align: center;
+        -webkit-align-self: center;
             align-self: center;
   }
   /* line 47, ../sass/Layout/_contact.scss */
@@ -990,8 +990,8 @@ input.cta p {
   /* line 54, ../sass/Layout/_contact.scss */
   .contact-wrapper .input-wrapper input,
   .contact-wrapper .input-wrapper textarea {
-    -webkit-align-self: flex-end;
-        -ms-flex-item-align: end;
+    -ms-flex-item-align: end;
+        -webkit-align-self: flex-end;
             align-self: flex-end;
     -webkit-flex: 1;
         -ms-flex: 1;

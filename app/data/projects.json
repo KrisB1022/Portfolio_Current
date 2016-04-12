@@ -24,6 +24,22 @@
 		"websiteUrl": "http://review.tenguncreative.com/halo5_france"
 	},
 
+	"SurfaceHoliday": {
+		"projectTitle": "Microsoft Surface Holiday Campaign",
+		"projectSummary": "Product Description Pages (PDP) built for Microsoft's Surface team for global distribution.",
+		"thumbnail": "img/surface_holiday/thumb.png",
+		"thumbnailAlt": "Screen shot of PDP builds",
+		"projectURL": "SurfaceHoliday",
+		"projectImages": [
+			"img/surface_holiday/in-context.png",
+			"img/surface_holiday/zzom1.png",
+			"img/surface_holiday/zoom2.png",
+			"img/surface_holiday/accessories.png"
+		],
+		"projectDetails": ["Coming...."],
+		"languages": ["HTML", "CSS (Sass, Compass)", "Javascript", "jQuery", "Gulp"]
+	},
+
 	"MicrosoftReactor": {
 		"projectTitle": "Microsoft Reactor",
 		"projectSummary": "Customized WordPress site for Microsoft Reactor.",

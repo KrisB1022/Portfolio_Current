@@ -8,7 +8,7 @@
 
 	<div class="gallery-wrapper">
 		<div ng-repeat="project in projects|limitTo:8" class="gallery-item">
-			<a href="#/project/{{ project.projectURL }}">
+			<a href="/project/{{ project.projectURL }}">
 				<img ng-src="{{ project.thumbnail }}" alt="{{ project.thumbnailAlt }}">
 				<div class="gallery-info">
 					<h2 class="projectTitle">{{ project.projectTitle }}</h2>

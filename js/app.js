@@ -2,7 +2,7 @@
 	"use strict";
 
 	angular.module("myPortfolio", ['ngRoute', 'ngMessages', 'ngAnimate', 'angular-spinkit'])
-		.config(["$routeProvider", "$sceProvider", function($routeProvider, $sceProvider) {
+		.config(["$routeProvider", "$sceProvider", "$locationProvider", function($routeProvider, $sceProvider, $locationProvider) {
 			$routeProvider
 			.when('/', {
 				templateUrl: 'app/templates/home.html',
@@ -23,6 +23,7 @@
 			.otherwise({ redirectTo: '/_404' });
 
 			$sceProvider.enabled(false);
+			$locationProvider.html5Mode(true);
 		}])
 
 		/* Sets loading status if page loads (prevention for slow reqs / resp) */ 
