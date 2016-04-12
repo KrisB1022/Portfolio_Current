@@ -7,7 +7,10 @@
 		margin-right: auto;
 		padding-left: 12px;
 		color: $white;
-		a, a:hover,	a:visited, a:active {
+		a,
+		a:hover,
+		a:visited,
+		a:active {
 			color: $white;
 		}
 		&:hover::after {
@@ -45,7 +48,7 @@
 				transition: color ease 0.3s;
 				position: relative;
 				&::after {
-					content: '';
+					content: "";
 					bottom: 0;
 					left: 0;
 					right: 0;

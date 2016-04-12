@@ -16,7 +16,7 @@
 	}
 	.errorMessage.ng-active {
 		color: #ff9494;
-		& ~ input, 
+		& ~ input,
 		& ~ textarea {
 			background: #ff9494;
 		}		
@@ -84,7 +84,7 @@
 				max-width: 20%;
 				margin-right: 5%;
 			}
-			input, 
+			input,
 			textarea {
 				width: 75%;
 			}

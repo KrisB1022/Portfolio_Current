@@ -235,8 +235,8 @@ body:after {
 }
 /* line 15, ../sass/base/_base.scss */
 body footer {
-  -ms-flex-item-align: end;
-      -webkit-align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
           align-self: flex-end;
   margin-top: auto;
   padding-top: 60px;
@@ -386,7 +386,7 @@ input[name="winnie_the_pooh"] {
 @media screen and (min-width: 1000px) {
   /* line 3, ../sass/Modules/_modernzr.scss */
   .no-cssfilters .home .gallery-item:hover::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -414,15 +414,18 @@ input[name="winnie_the_pooh"] {
   color: #FFF;
 }
 /* line 10, ../sass/Layout/_nav.scss */
-.navigation-wrapper .title a, .navigation-wrapper .title a:hover, .navigation-wrapper .title a:visited, .navigation-wrapper .title a:active {
+.navigation-wrapper .title a,
+.navigation-wrapper .title a:hover,
+.navigation-wrapper .title a:visited,
+.navigation-wrapper .title a:active {
   color: #FFF;
 }
-/* line 13, ../sass/Layout/_nav.scss */
+/* line 16, ../sass/Layout/_nav.scss */
 .navigation-wrapper .title:hover::after {
   color: #58a4b0;
   width: 100%;
 }
-/* line 17, ../sass/Layout/_nav.scss */
+/* line 20, ../sass/Layout/_nav.scss */
 .navigation-wrapper .title::after {
   transition: all ease 0.6s;
   content: "";
@@ -431,7 +434,7 @@ input[name="winnie_the_pooh"] {
   display: block;
   width: 20px;
 }
-/* line 27, ../sass/Layout/_nav.scss */
+/* line 30, ../sass/Layout/_nav.scss */
 .navigation-wrapper .menuHamburger {
   border: 1px solid #D8DBE2;
   border-radius: 3px;
@@ -443,33 +446,33 @@ input[name="winnie_the_pooh"] {
   padding: 2px;
   margin-right: 12px;
 }
-/* line 35, ../sass/Layout/_nav.scss */
+/* line 38, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav {
   padding: 0;
   text-align: center;
   width: 100%;
 }
 @media only screen and (max-width: 999px) {
-  /* line 35, ../sass/Layout/_nav.scss */
+  /* line 38, ../sass/Layout/_nav.scss */
   .navigation-wrapper .nav {
     display: none;
   }
 }
-/* line 42, ../sass/Layout/_nav.scss */
+/* line 45, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav li {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 22px;
   line-height: 1.375rem;
 }
-/* line 44, ../sass/Layout/_nav.scss */
+/* line 47, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav li a {
   transition: color ease 0.3s;
   position: relative;
 }
-/* line 47, ../sass/Layout/_nav.scss */
+/* line 50, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav li a::after {
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   right: 0;
@@ -478,21 +481,21 @@ input[name="winnie_the_pooh"] {
   display: block;
   position: absolute;
 }
-/* line 57, ../sass/Layout/_nav.scss */
+/* line 60, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav li a:hover::after {
   width: 100%;
   border-bottom: 1px solid #58a4b0;
 }
-/* line 63, ../sass/Layout/_nav.scss */
+/* line 66, ../sass/Layout/_nav.scss */
 .navigation-wrapper .nav li:first-child {
   margin-bottom: 1.375rem;
 }
 @media screen and (min-width: 500px) {
-  /* line 68, ../sass/Layout/_nav.scss */
+  /* line 71, ../sass/Layout/_nav.scss */
   .navigation-wrapper .menuHamburger {
     display: none;
   }
-  /* line 71, ../sass/Layout/_nav.scss */
+  /* line 74, ../sass/Layout/_nav.scss */
   .navigation-wrapper .nav {
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
@@ -501,20 +504,20 @@ input[name="winnie_the_pooh"] {
     margin-bottom: 1.375rem;
     padding: 0 12px;
   }
-  /* line 76, ../sass/Layout/_nav.scss */
+  /* line 79, ../sass/Layout/_nav.scss */
   .navigation-wrapper .nav li {
     margin: 6px 0 0 20px;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 82, ../sass/Layout/_nav.scss */
+  /* line 85, ../sass/Layout/_nav.scss */
   .navigation-wrapper .title {
     font-size: 28px;
     font-size: 1.75rem;
     line-height: 33px;
     line-height: 2.0625rem;
   }
-  /* line 85, ../sass/Layout/_nav.scss */
+  /* line 88, ../sass/Layout/_nav.scss */
   .navigation-wrapper .nav li {
     font-size: 22px;
     font-size: 1.375rem;
@@ -969,8 +972,8 @@ input.cta p {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-item-align: center;
-        -webkit-align-self: center;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
             align-self: center;
   }
   /* line 47, ../sass/Layout/_contact.scss */
@@ -990,8 +993,8 @@ input.cta p {
   /* line 54, ../sass/Layout/_contact.scss */
   .contact-wrapper .input-wrapper input,
   .contact-wrapper .input-wrapper textarea {
-    -ms-flex-item-align: end;
-        -webkit-align-self: flex-end;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
             align-self: flex-end;
     -webkit-flex: 1;
         -ms-flex: 1;

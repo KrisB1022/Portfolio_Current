@@ -12,13 +12,10 @@
 			"img/halo/thumbnail-halo.png"
 		],			
 		"projectDetails": [
-			"Problem to solve for:",
-			"Starting from a mobile-first perspective, I was tasked to create a visual and interactive experience using only a desktop PSD as my guide. The concept of the site was to allow users to vote weekly for a specific Halo team that they'd prefer. The week's prize needed to current for users to view, and the results from the previous week needed to be shown. The build also had to be able to be dropped into the client's existing website as best as possible.",
-			"Build solutions:",
-			"Using a fluid grid system, I created the site by moving elements around for various viewports, allowing all users on as many devices as possible view and interact with the site.",
-			"Each week of voting had three states: voting coming, voting active, and voting results. Based on the current week, the prize section was dynamically updated to reflect the current week's prize. Each state also has it's own set of dynamically updated content.",
-			"Using Javascript and some math, I created the results sections. Raw results numbers are passed into the script , and an estimated percentage value was then calculated and displayed to users. The results were animated using Javascript and mimicked Halo's health bar filling up.",
-			"This build used a module OOP Javascript approach, and it's CSS was built using Sass, Compass (Sass extension) and Gulp's automating tasks."
+			"Concept: Create a fluidly responsive website, where users can vote for one of two Halo teams, review results from previous weeks' voting, and see which prize they could win for the current week voting.",
+			"Approach: Starting from a desktop version of an Adobe Photoshop file (PSD), I developed a mobile-first, fluidly responsive layout. Mobile versions were designed by myself based on past experience and in collaboration with our design team. Animations were created using both CSS3 animations/transforms, as well as modular OOP JavaScript and jQuery conditional logic.",
+			"Functionality: Based on the current week open to voting, the respective week's prize and voting content block were dynamically updated via JavaScript to allow users to interact with the page. On completion of a week's voting period, raw data for each Halo team, would be input into the application's JavaScript file.",
+			"The application's JavaScript logic would auto calculate an estimated percentage (1% - 99%) for each team, then follow by showing the winning team's hero, and both team's results in order based on the results. The preceding and following week (if applicable) would dynamically update to their respective states."
 		],
 		"languages": ["HTML", "CSS (Sass, Compass)", "Javascript", "jQuery", "Gulp"],
 		"websiteUrl": "http://review.tenguncreative.com/halo5_france"
@@ -26,7 +23,7 @@
 
 	"SurfaceHoliday": {
 		"projectTitle": "Microsoft Surface Holiday Campaign",
-		"projectSummary": "Product Description Pages (PDP) built for Microsoft's Surface team for global distribution.",
+		"projectSummary": "Product Detail Pages (PDP) built for Microsoft's Surface team for global distribution.",
 		"thumbnail": "img/surface_holiday/thumb.png",
 		"thumbnailAlt": "Screen shot of PDP builds",
 		"projectURL": "SurfaceHoliday",
@@ -36,7 +33,12 @@
 			"img/surface_holiday/zoom2.png",
 			"img/surface_holiday/accessories.png"
 		],
-		"projectDetails": ["Coming...."],
+		"projectDetails": [
+			"Concept: The Microsoft Surface Product Detail Pages (PDP) were a large set of individualized web pages, built for Microsoft's Surface 3, Surface 4, Surface Pro 4, Surface Book and 16 Surface related accessories. The majority of the PDPs had a similar layout, although each needed to have the ability to easily move content blocks, left-to-right configuration and other required features to full-fill each of the 22 separate builds. Further, each page needed to have a breakpoint responsive layout, and be able to be easily implemented in a very wide range of retailer websites globally distributed and widely varied in size (ex. Best Buy to a mom-and-pop).",
+			"Approach: With a relatively short turn around time to complete each of the 22 separate builds, as well as to be able to fully-support multiple browsers, devices and as early as Internet Explorer 9, I took the approach to create a fully responsive and modular PDP template. This template allowed myself to meet the requirements of each build, and gave enough flexibility to turn on/off portions of each content block, as well as manipulate each as needed per the requirements.",
+			"Functionality: Using a module Sass (CSS preprocessor) and OOP JavaScript and jQuery development style, I gave myself the ability to attach simple class names onto specific HTML elements and change those contents to fit the module required for the build. This development style, also permitted a constant outcome for each of the 22 builds in this project cycle, and continues to be our template of choice for PDPs with similar designs. The template helps in reducing needed QA testing as well as design and development costs.",
+			"The PDP template is easily modifiable and has a relatively low level of ramp up time for other developers to utilize for future projects."
+		],
 		"languages": ["HTML", "CSS (Sass, Compass)", "Javascript", "jQuery", "Gulp"]
 	},
 
