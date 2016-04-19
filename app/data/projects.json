@@ -56,9 +56,9 @@
 			"img/reactor/events-reactor.png"
 		],	
 		"projectDetails": [
-			"Microsoft Reactor is a new venture from Microsoft which helps to facilitate startup growth using Microsoft's Azure development platform. This space is a modern and open place located in San Francisco where individuals or teams, can grab coffee, meet, work on their projects and get in-person answers regarding Microsoft Azure services - at no cost.",
-			"The website was built with the WordPress CMS. A custom events' loop, content modules/blades and other features were integrated into Divi's WordPress theme, allowing for a fast, robust and complete build.",
-			"I was tasked with building completed site, modifying the event plugin to full-fill design and functionality, as well as setting up the web environment."
+			"Concept: Microsoft Reactor is a new venture from Microsoft. The ideas is to create a place where startups and developers, can work together and have assistance from Microsoft staff on anything built with Microsoft's product line. Microsoft Reactor needed a simple website to be able to showcase their activities, while allowing participates to see where the office was and when events were being help.",
+			"Approach: Utilizing Elegant Theme's Divi framework, I created a customized version that fulfilled the client's needs. I was able to hook into both native WordPress, Divi and another plugin's WordPress Hooks, allowing the ability to create a customized experience for the end user.",
+			"Functionality: Both the front end, back end and administrative side were customed developed using a variety of CSS, WordPress funcations, hooks and filters, as well as modification of the PHP theme template. I was able to maintain the functionality and ease of use that WordPress and Divi provides, while providing a simple but robust build."
 		],
 		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
 		"websiteUrl": "http://MicrosoftReactor.com"
@@ -74,9 +74,9 @@
 			"img/qr_code/responsive.png"
 		],
 		"projectDetails": [
-			"This project is a good example of implementation of a simple design and usability. The single page website, allowed users to generate QR codes with custom colors, text, shapes, and sizes, for download and use in web and print.",
-			"Working closely with a digital designer, we started with the full list of possible tools that could be included, and then researched existing QR tools to determine what was helpful and what was unnecessary. We then created user flows that resulted in a simple 3 step process.",
-			"Taking the newly create design, I modified a small SVG QR code base, adding the ability to place customized copy, sizing and other features utilizing HTML form elements. The project was then skinned and made responsive for three set devices."
+			"Concept: This project is a good example of implementation of a simple design and usability. The single page website, allowed users to generate QR codes with custom colors, text, shapes, and sizes, for download and use in web and print. It is primarily being used within Microsoft's marketing team for a variety of projects.",
+			"Approach: Working closely with a digital designer, we started with the full list of possible tools that could be included, and then researched existing QR tools to determine what was helpful and what was unnecessary. We then created user flows that resulted in a simple 3 step process and expanded on them to create an even better user experience.",
+			"Functionality: Taking the newly created design, I modified an existing SVG QR code base, added the ability to place customized copy, adjust sizing, place and modify colors and logos, and allow user download of the created QR code. Each of the HTML form elements were custom created to allow for ease of use by users, giving the user the ability to finely tune their end product. The project was then skinned and made responsive for three set device viewports."
 
 		],
 		"languages": ["PHP", "HTML", "CSS", "SVG", "Javascript"]
@@ -99,7 +99,7 @@
 			"While working closely with a team of designers, I assisted in creating a robust and mobile-friendly visual experience. I developed specific content modules/blocks as well as pages and portions of the site's navigation.",
 			"During this project, I helped to implement a Version Control system and project flow, which helped in implementing each content module/block per design."
 		],
-		"languages": ["HTML", "CSS", "jQuery"],
+		"languages": ["HTML", "CSS", "jQuery", "JavaScript"],
 		"websiteUrl": "http://microsoftventures.com"
 	},
 
@@ -116,7 +116,7 @@
 			"As my first custom WordPress site, my first client and essentially my first professional build and design, this web project was a lot of fun and rewarding to complete.",
 			"Having started from a static Twitter Bootstrap build, I migrated and integrated this site to work within WordPress for the client. Fully customized query loops, web templates and plug-in integrations were just a few of the exciting things that I got to grow and learn from."
 		],
-		"languages": ["WordPress", "PHP", "CSS", "jQuery"],
+		"languages": ["WordPress", "Twitter Bootstrap", "PHP", "CSS", "jQuery"],
 		"websiteUrl": "http://Irishmen.com"
 	}
 }
